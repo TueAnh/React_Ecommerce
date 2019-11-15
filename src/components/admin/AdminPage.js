@@ -3,6 +3,7 @@ import './../layout/admin.css'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 import DashboardContainer from '../../containers/admin/DashboardContainer';
 import Chart from './Chart';
+import ProductsMana from './ProductsMana'
 class AdminPage extends React.Component {
     render() {
         var { lengthProducts } = this.props
@@ -11,7 +12,6 @@ class AdminPage extends React.Component {
 
             <Router>
                 <div>
-
                     <div className="container-fluid">
                         <div className="row content">
                             <div className="col-sm-3 sidenav hidden-xs">
@@ -25,8 +25,9 @@ class AdminPage extends React.Component {
                             <br />
                             {/* <DashboardContainer /> */}
                             <Switch>
-                                <Route path="/admin/dashboard" component={DashboardContainer} />
+                                <Route path="/admin/dashboard" exact component={DashboardContainer} />
                                 <Route path="/admin/chart" component={Chart} />
+                                <Route path="/admin/dashboard/Products" component={ProductsMana} />
                             </Switch>
                         </div>
                     </div>

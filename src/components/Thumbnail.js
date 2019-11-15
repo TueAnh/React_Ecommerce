@@ -6,9 +6,7 @@ import ThumbnailItem from './ThumbnailItem';
 class Thumbnail extends React.Component {
     render() {
         var {label,trending} = this.props;
-        console.log(trending)
         var trendingBig = trending[0];
-        console.log(trending[0].image)
         var trendingSmall = trending.slice(1, 5);
         return (
             <>
@@ -25,7 +23,7 @@ class Thumbnail extends React.Component {
                             </div>
                             <div className="caption">
                                 <div className="price">
-                                    {/* <strong>{trendingBig.price} </strong> */}
+                                    <strong>{trendingBig.price} </strong>
                                 </div>
                             </div>
                         </div>

@@ -5,31 +5,31 @@ class TrendingCarouselItem extends React.Component {
 
         var rate = Math.floor(Math.random() * 5) + 1;
         var sale = Math.floor(Math.random() *100);
-        var { products, trendingcarousel } = this.props;
+        var { trendingproducts, trendingcarousel } = this.props;
         var active = 'active'
         return (
             <div className="carousel-inner">
-                {this.showTrendingItem(products, rate,sale, trendingcarousel)}
+                {this.showTrendingItem(trendingproducts, rate,sale, trendingcarousel)}
             </div>
         );
 
     }
-    showTrendingItem = (products, rate,sale, trendingcarousel) => {
+    showTrendingItem = (trendingproducts, rate,sale, trendingcarousel) => {
         var result = [];
-        for (let i = 0; i < products.length; i += 4) {
+        for (let i = 0; i < trendingproducts.length; i += 4) {
             var active = '';
             if ((i) / 4 === trendingcarousel) {
                 active = 'active'
             }
-            result.push(this.showContent(products.slice(i, i + 4), rate,sale, active,i));
+            result.push(this.showContent(trendingproducts.slice(i, i + 4), rate,sale, active,i));
         }
         return result;
     }
-    showContent = (products, rate,sale, active, i) => {
+    showContent = (trendingproducts, rate,sale, active, i) => {
         return (
             <div key ={i}className={`item carousel-item ${active}`}>
                 <div className="row">
-                    {products.map((product, index) => {
+                    {trendingproducts.map((product, index) => {
                         return (
                             <div key={index} className="col-sm-3">
                                 <div className="thumb-wrapper">

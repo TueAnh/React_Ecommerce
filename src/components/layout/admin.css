@@ -38,3 +38,9 @@
 .css {width: 30%; background-color: #2196F3;}
 .js {width: 8%; background-color: #f44336;}
 .php {width: 2%; background-color: #808080;}
+table{
+  width: 75% !important;
+}
+hr{
+  width: 150%;
+}

@@ -1,9 +1,10 @@
 
 import React from 'react';
 import './../layout/admin.css'
+import { Link } from 'react-router-dom'
 class Dashboard extends React.Component {
     render() {
-        var {lengthProducts} = this.props;
+        var { lengthProducts } = this.props;
         return (
             <div className="col-sm-9">
                 <div className="well">
@@ -15,16 +16,16 @@ class Dashboard extends React.Component {
                         <div className="well">
                             <h4>Product</h4>
                             <p><b>{lengthProducts}</b> Items</p>
-                            <a href="#">View Details:<span className="glyphicon">&#xe032;</span>
-                            </a>
+                            <Link to="/admin/dashboard/Products">View Details <span className="glyphicon">&#xe032;</span>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="well">
                             <h4>Catagories</h4>
                             <p>24 Thousand</p>
-                            <a href="#">View Details:<span className="glyphicon">&#xe032;</span>
-                            </a>
+                            <Link to="/admin/dashboard/Products">View Details <span className="glyphicon">&#xe032;</span>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-sm-3">
@@ -44,7 +45,7 @@ class Dashboard extends React.Component {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="row">
                     <div className="col-sm-4">
                         <div className="well">

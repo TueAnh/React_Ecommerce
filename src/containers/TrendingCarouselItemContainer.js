@@ -3,10 +3,10 @@ import { connect } from 'react-redux'
 import TrendingCarouselItem from '../components/TrendingCarouselItem'
 class TrendingCarouselItemContainer extends React.Component {
     render() {
-        var { products ,trendingcarousel} = this.props
+        var { trendingproducts ,trendingcarousel} = this.props
         return (
             <TrendingCarouselItem
-                products={products}
+                trendingproducts={trendingproducts}
                 trendingcarousel ={trendingcarousel}
             >
             </TrendingCarouselItem>
@@ -15,7 +15,7 @@ class TrendingCarouselItemContainer extends React.Component {
 }
 const mapStateToProps = (state) => {
     return {
-        products: state.trendingproducts,
+        trendingproducts: state.trendingproducts,
         trendingcarousel : state.trendingcarousel,
     }
 }

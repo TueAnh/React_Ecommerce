@@ -4,6 +4,9 @@ import Carousel from './../components/Carousel'
 import CarouselItem from './../components/CarouselItem'
 import * as actions from './../actions/index'
 class CarouselContainer extends React.Component {
+    componentDidMount(){
+        this.props.fectchAllProducts();
+    }
     render() {
         var { products, carousel } = this.props
         return (
@@ -40,8 +43,10 @@ class CarouselContainer extends React.Component {
 }
 const mapStateToProps = (state) => {
     return {
-        products: state.products,
         carousel: state.carousel,
+
+        products: state.products,
+
     }
 }
 const mapDispatchToProps = (dispatch) => {
@@ -52,6 +57,9 @@ const mapDispatchToProps = (dispatch) => {
         reductionIndex: () => {
             dispatch(actions.reductionIndex())
         },
+        fectchAllProducts : ()=>{
+            dispatch(actions.actFetchProductsRequest())
+        }
 
     }
 }

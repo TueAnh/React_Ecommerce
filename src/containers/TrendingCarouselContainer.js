@@ -3,14 +3,17 @@ import { connect } from 'react-redux'
 import TrendingCarousel from './../components/TrendingCarousel'
 import * as actions from '../actions/index'
 class TrendingCarouselContainer extends React.Component {
+    componentDidMount(){
+        this.props.fectchAllTrendingProducts();
+    }
     render() {
-        var { products, trendingcarousel } = this.props
-        products = products.slice(0,products.length-(products.length%4))
+        var { trendingproducts, trendingcarousel } = this.props
+        var trendingproducts = trendingproducts.slice(0,trendingproducts.length-(trendingproducts.length%4))
         return (
             <TrendingCarousel
                 increase={this.controlImageNext}
                 reduction={this.controlImagePre}
-                length={products.length}
+                length={trendingproducts.length}
                 index={trendingcarousel}>
             </TrendingCarousel>
         );
@@ -24,7 +27,7 @@ class TrendingCarouselContainer extends React.Component {
 }
 const  mapStateToProps = (state, ownProps) => {
     return {
-        products: state.trendingproducts,
+        trendingproducts: state.trendingproducts,
         trendingcarousel: state.trendingcarousel,
     }
 }
@@ -36,6 +39,9 @@ const mapDispatchToProps = (dispatch) => {
         reductionTrendingIndex: () => {
             dispatch(actions.reductionTrendingIndex())
         },
+        fectchAllTrendingProducts : ()=>{
+            dispatch(actions.actFetchTrendingProductsRequest())
+        }
 
     }
 }
