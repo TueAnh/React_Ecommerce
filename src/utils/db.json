@@ -45,12 +45,12 @@
       "quantity": 100
     },
     {
-      "id": 5,
-      "category_id": 1,
-      "name": "iPhone 11 Pro Max 64GB",
-      "price": "33990000",
-      "image": "https://cdn.tgdd.vn/Products/Images/42/200533/iphone-11-pro-max-green-600x600.jpg",
-      "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+      "id": 121,
+      "category_id": 17,
+      "name": "Dell Vostro 3468 i3 7020U (70161069)",
+      "price": "11690000",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/186375/dell-vostro-3468-i3-7020u-70161069-15-600x600.jpg",
+      "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.76 kg, Pin: 4 cell",
       "trending": 1,
       "rating": 5,
       "quantity": 1000
@@ -63,16 +63,16 @@
       "image": "https://cdn.tgdd.vn/Products/Images/42/190324/TimerThumb/iphone-xs-256gb-halloween.jpg",
       "description": "/Man hinh: 5.8 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 2658 mAh",
       "trending": 0,
-      "rating": 5,
-      "quantity": 100
+      "rating": 3,
+      "quantity": 150
     },
     {
       "id": 38,
-        "category_id": 8,
-        "name": "Xiaomi Redmi Note 8 (4GB/64GB)",
-        "price": "4990000",
-        "image": "https://cdn.tgdd.vn/Products/Images/42/209535/xiaomi-redmi-note-8-white-18thangbh-600x600.jpg",
-        "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Qualcomm Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 4000 mAh",
+      "category_id": 8,
+      "name": "Xiaomi Redmi Note 8 (4GB/64GB)",
+      "price": "4990000",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/209535/xiaomi-redmi-note-8-white-18thangbh-600x600.jpg",
+      "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Qualcomm Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 4000 mAh",
       "trending": 1,
       "rating": 5,
       "quantity": 100
@@ -120,6 +120,61 @@
       "trending": 1,
       "rating": 5,
       "quantity": 160
+    },
+    {
+      "id": 147,
+      "category_id": 11,
+      "name": "Itel it5025",
+      "price": "260000",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg",
+      "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh",
+      "trending": 1,
+      "rating": 3,
+      "quantity": 150
+    },
+    {
+      "id": 148,
+      "category_id": 11,
+      "name": "Itel it2171",
+      "price": "230000",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/204125/itel-it2171-red-600x600.jpg",
+      "description": "/Man hinh: 1.77 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1000 mAh",
+      "trending": 1,
+      "rating": 3,
+      "quantity": 150
+    },
+    {
+      "id": 149,
+      "category_id": 11,
+      "name": "Itel Value 100",
+      "price": "170000",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/211009/itel-value-100-black-600x600.jpg",
+      "description": "/Man hinh: 1.77 inch, WVGA/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 SIM thuong/PIN: 1000 mAh",
+      "trending": 1,
+      "rating": 3,
+      "quantity": 150
+    },
+    {
+      "id": 150,
+      "category_id": 17,
+      "name": "Dell Inspiron N3576 i3 8130U (P63F002N76D)",
+      "price": "12290000",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/209726/dell-inspire-n3576-i3-8130u-4gb-1tb-win10-p63f002-600x600.jpg",
+      "description": "/Man hinh: 15.6 inch, HD/CPU: Core i3 Coffee Lake, 2.20 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.3 kg, Pin: 4 cell",
+      "trending": 1,
+      "rating": 3,
+      "quantity": 150
+    },
+    {
+      "id": 151,
+      "category_id": 17,
+      "name": "Dell Vostro 14 3481 i3 7020U (70187645)",
+      "price": "12290000",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/204127/dell-vostro-3481-core-i3-7020u-6-1-1-1-600x600.jpg",
+      "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.79 kg, Pin: 3 cell",
+      "trending": 1,
+      "rating": 3,
+      "quantity": 150
     },
     {
       "id": 12,

@@ -2,30 +2,28 @@ import React from 'react';
 import './layout/TrendingCarousel.css'
 class TrendingCarouselItem extends React.Component {
     render() {
-
-        var rate = Math.floor(Math.random() * 5) + 1;
         var sale = Math.floor(Math.random() *100);
         var { trendingproducts, trendingcarousel } = this.props;
         var active = 'active'
         return (
             <div className="carousel-inner">
-                {this.showTrendingItem(trendingproducts, rate,sale, trendingcarousel)}
+                {this.showTrendingItem(trendingproducts,sale, trendingcarousel)}
             </div>
         );
 
     }
-    showTrendingItem = (trendingproducts, rate,sale, trendingcarousel) => {
+    showTrendingItem = (trendingproducts,sale, trendingcarousel) => {
         var result = [];
         for (let i = 0; i < trendingproducts.length; i += 4) {
             var active = '';
             if ((i) / 4 === trendingcarousel) {
                 active = 'active'
             }
-            result.push(this.showContent(trendingproducts.slice(i, i + 4), rate,sale, active,i));
+            result.push(this.showContent(trendingproducts.slice(i, i + 4),sale, active,i));
         }
         return result;
     }
-    showContent = (trendingproducts, rate,sale, active, i) => {
+    showContent = (trendingproducts,sale, active, i) => {
         return (
             <div key ={i}className={`item carousel-item ${active}`}>
                 <div className="row">
@@ -42,7 +40,7 @@ class TrendingCarouselItem extends React.Component {
                                         <div className="star-rating">
                                             <ul className="list-inline">
                                                 <li className="list-inline-item">
-                                                    {this.showRating(rate)}
+                                                    {this.showRating(product.rating)}
                                                 </li>
                                             </ul>
                                         </div>
