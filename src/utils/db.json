@@ -29,9 +29,7 @@
       "price": "32490000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
       "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
-      "trending": 1,
-      "rating": 4,
-      "quantity": 120
+      "quantity": "0"
     },
     {
       "id": 34,
@@ -51,9 +49,7 @@
       "price": "11690000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/186375/dell-vostro-3468-i3-7020u-70161069-15-600x600.jpg",
       "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.76 kg, Pin: 4 cell",
-      "trending": 1,
-      "rating": 5,
-      "quantity": 1000
+      "quantity": "0"
     },
     {
       "id": 6,
@@ -73,9 +69,7 @@
       "price": "4990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/209535/xiaomi-redmi-note-8-white-18thangbh-600x600.jpg",
       "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Qualcomm Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 4000 mAh",
-      "trending": 1,
-      "rating": 5,
-      "quantity": 100
+      "quantity": "0"
     },
     {
       "id": 8,
@@ -95,9 +89,7 @@
       "price": "27990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/114111/iphone-x-256gb-a1-600x600.jpg",
       "description": "/Man hinh: 5.8 inch, Super Retina/HDH: iOS 12/CPU: Apple A11 Bionic 6 nhan/RAM: 3 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 2716 mAh",
-      "trending": 1,
-      "rating": 5,
-      "quantity": 100
+      "quantity": "0"
     },
     {
       "id": 10,
@@ -172,9 +164,7 @@
       "price": "12290000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/204127/dell-vostro-3481-core-i3-7020u-6-1-1-1-600x600.jpg",
       "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.79 kg, Pin: 3 cell",
-      "trending": 1,
-      "rating": 3,
-      "quantity": 150
+      "quantity": "0"
     },
     {
       "id": 12,
@@ -205,9 +195,7 @@
       "price": "9490000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/160296/acer-aspire-e5-476-i3-8130u-nxgwtsv002-450-300-1-600x600.jpg",
       "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake Refresh, 2.20 GHz/RAM: 4 GB, HDD: 500 GB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.9 kg, Pin: 4 cell",
-      "trending": 1,
-      "rating": 5,
-      "quantity": 1000
+      "quantity": "0"
     },
     {
       "id": 214,
@@ -255,27 +243,115 @@
     }
   ],
   "categories": [
-    { "id": 1, "type_id": 1, "name": "iPhone (Apple)" },
-    { "id": 2, "type_id": 1, "name": "Nokia" },
-    { "id": 3, "type_id": 1, "name": "Samsung" },
-    { "id": 4, "type_id": 1, "name": "Huawei" },
-    { "id": 5, "type_id": 1, "name": "Vsmart" },
-    { "id": 6, "type_id": 1, "name": "Realme" },
-    { "id": 7, "type_id": 1, "name": "Mobell" },
-    { "id": 8, "type_id": 1, "name": "Xiaomi" },
-    { "id": 9, "type_id": 1, "name": "Vivo" },
-    { "id": 10, "type_id": 1, "name": "OPPO" },
-    { "id": 11, "type_id": 1, "name": "Itel" },
-    { "id": 12, "type_id": 1, "name": "Coolpad" },
-    { "id": 13, "type_id": 1, "name": "Mobiistar" },
-    { "id": 14, "type_id": 1, "name": "BlackBerry" },
-    { "id": 15, "type_id": 1, "name": "Masstel" },
-    { "id": 16, "type_id": 2, "name": "Macbook" },
-    { "id": 17, "type_id": 2, "name": "Dell" },
-    { "id": 18, "type_id": 2, "name": "MSI" },
-    { "id": 19, "type_id": 2, "name": "Lenovo" },
-    { "id": 20, "type_id": 2, "name": "Acer" },
-    { "id": 21, "type_id": 2, "name": "HP" },
-    { "id": 22, "type_id": 2, "name": "Asus" }
+    {
+      "id": 1,
+      "type_id": 1,
+      "name": "iPhone (Apple)"
+    },
+    {
+      "id": 2,
+      "type_id": 1,
+      "name": "Nokia"
+    },
+    {
+      "id": 3,
+      "type_id": 1,
+      "name": "Samsung"
+    },
+    {
+      "id": 4,
+      "type_id": 1,
+      "name": "Huawei"
+    },
+    {
+      "id": 5,
+      "type_id": 1,
+      "name": "Vsmart"
+    },
+    {
+      "id": 6,
+      "type_id": 1,
+      "name": "Realme"
+    },
+    {
+      "id": 7,
+      "type_id": 1,
+      "name": "Mobell"
+    },
+    {
+      "id": 8,
+      "type_id": 1,
+      "name": "Xiaomi"
+    },
+    {
+      "id": 9,
+      "type_id": 1,
+      "name": "Vivo"
+    },
+    {
+      "id": 10,
+      "type_id": 1,
+      "name": "OPPO"
+    },
+    {
+      "id": 11,
+      "type_id": 1,
+      "name": "Itel"
+    },
+    {
+      "id": 12,
+      "type_id": 1,
+      "name": "Coolpad"
+    },
+    {
+      "id": 13,
+      "type_id": 1,
+      "name": "Mobiistar"
+    },
+    {
+      "id": 14,
+      "type_id": 1,
+      "name": "BlackBerry"
+    },
+    {
+      "id": 15,
+      "type_id": 1,
+      "name": "Masstel"
+    },
+    {
+      "id": 16,
+      "type_id": 2,
+      "name": "Macbook"
+    },
+    {
+      "id": 17,
+      "type_id": 2,
+      "name": "Dell"
+    },
+    {
+      "id": 18,
+      "type_id": 2,
+      "name": "MSI"
+    },
+    {
+      "id": 19,
+      "type_id": 2,
+      "name": "Lenovo"
+    },
+    {
+      "id": 20,
+      "type_id": 2,
+      "name": "Acer"
+    },
+    {
+      "id": 21,
+      "type_id": 2,
+      "name": "HP"
+    },
+    {
+      "id": 22,
+      "type_id": 2,
+      "name": "Asus"
+    }
   ]
 }

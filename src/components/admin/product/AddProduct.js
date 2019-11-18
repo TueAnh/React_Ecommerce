@@ -43,12 +43,12 @@ class ProductsMana extends React.Component {
         var { id, txtCode, txtName, txtPrice, txtQuantity, txtImage, txtDescription } = this.state;
         var product = {
             id: id,
-            category_id: txtCode,
+            category_id: parseInt(txtCode),
             name: txtName,
-            price: txtPrice,
+            price: parseFloat(txtPrice),
             image: txtImage,
             description: txtDescription,
-            quantity: txtQuantity
+            quantity: parseInt(txtQuantity)
         }
         if (id) {//update
             this.props.onUpdateProduct(product);

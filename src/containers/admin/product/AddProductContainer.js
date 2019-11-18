@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import AddProduct from './../../../components/admin/product/AddProduct'
-import { actFetchProductsRequest, actGetProductRequest ,actUpdateProductRequest, actAddProductRequest} from '../../../actions';
+import { actGetProductRequest ,actUpdateProductRequest, actAddProductRequest} from '../../../actions';
 class AddProductContainer extends React.Component {
     componentDidMount() {
         var { match } = this.props;

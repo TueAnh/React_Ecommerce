@@ -5,7 +5,32 @@ import { Link } from 'react-router-dom'
 import ProductsManaItemContainer from './../../../containers/admin/product/ProductsManaItemContainer'
 
 class ProductsMana extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            filterName: '',
+            filterStatus: -1,
+            keyword: ''
+        }
+    }
+    onChange = (e) => {
+        var target = e.target;
+        var name = target.name;
+        var value = target.type === 'checkbox' ? target.checked : target.value;
+        var filter = {
+            name: name === 'filterName' ? value : this.state.filterName,
+            status: name === 'filterStatus' ? value : this.state.filterStatus,
+        };
+        this.props.onFilterProduct(filter);
+        this.setState({
+            [name]: value
+        })
+    }
+    onSearch=()=>{
+        this.props.onSearchProduct(this.state.keyword)
+    }
     render() {
+        var { filterName, filterStatus,keyword } = this.state
         return (
             <div>
                 <div className="text-center">
@@ -15,14 +40,18 @@ class ProductsMana extends React.Component {
                     <span className="fa fa-plus mr-5" />Add Product
              </Link>
                 <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Nhập từ khóa..." />
+                    <input type="text" className="form-control" placeholder="Nhập từ khóa..."
+                        name="keyword"
+                        value={keyword}
+                        onChange={this.onChange}
+                    />
                     <span className="input-group-btn">
-                        <button className="btn btn-primary" type="button">
+                        <button className="btn btn-primary" type="button" onClick = {this.onSearch  }>
                             <span className="fa fa-search mr-5" />Tìm
                      </button>
                     </span>
                 </div>
-                <div className="dropdown">
+                {/* <div className="dropdown">
                     <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Sắp Xếp <span className="fa fa-caret-square-o-down ml-5" />
                     </button>
@@ -45,7 +74,7 @@ class ProductsMana extends React.Component {
                         <li><a role="button">Trạng Thái Kích Hoạt</a></li>
                         <li><a role="button">Trạng Thái Ẩn</a></li>
                     </ul>
-                </div>
+                </div> */}
 
                 <table className="table  table-bordered table-hover">
                     <thead>
@@ -63,11 +92,21 @@ class ProductsMana extends React.Component {
                             <td />
                             <td />
                             <td>
-                                <input type="text" className="form-control" />
+                                <input type="text"
+                                    className="form-control"
+                                    name="filterName"
+                                    value={filterName}
+                                    onChange={this.onChange}
+                                />
                             </td>
                             <td />
                             <td>
-                                <select className="form-control">
+                                <select
+                                    className="form-control"
+                                    name="filterStatus"
+                                    value={filterStatus}
+                                    onChange={this.onChange}
+                                >
                                     <option value={-1}>All</option>
                                     <option value={0}>In Stock</option>
                                     <option value={1}>Out Of Stock</option>

@@ -4,10 +4,12 @@ import ProductsManaItem from './../../../components/admin/product/ProductsManaIt
 import { actDeleteProductRequest } from '../../../actions';
 class ProductsManaItemContainer extends React.Component {
     render() {
-        var { products, onDeleteProduct,onUpdateProduct } = this.props;
+        var { products, onDeleteProduct,filterProduct,searchProduct} = this.props;
         return (
             <ProductsManaItem products={products}
                 onDeleteProduct={onDeleteProduct}
+                filterProduct ={filterProduct}
+                searchProduct ={searchProduct}
             />
         );
     }
@@ -16,6 +18,9 @@ class ProductsManaItemContainer extends React.Component {
 const mapStateToProps = (state) => {
     return {
         products: state.products,
+        filterProduct : state.filterProduct,
+        searchProduct : state.searchProduct
+
     }
 }
 const mapDispatchToProps = (dispatch) => {

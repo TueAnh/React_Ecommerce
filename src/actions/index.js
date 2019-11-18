@@ -124,3 +124,17 @@ export const actUpdateProduct = (product) => {
         product
     }
 }
+//Fillter table product admin
+export const actFilterProduct = (filter) => {
+    return {
+        type: types.FILTER_PRODUCT,
+        filter
+    }
+}
+//Fillter table product admin
+export const actSeachProduct = (keyword) => {
+    return {
+        type: types.SEARCH_PRODUCT,
+        keyword
+    }
+}
