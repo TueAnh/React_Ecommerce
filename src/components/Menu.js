@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom'
-import CartPage from './CartPage';
+import './layout/menu.css'
 const menus = [
     {
         name: 'Home',
@@ -17,21 +17,10 @@ const menus = [
         to: '/laptop',
         exact: false
     },
-    ,
-    // {
-    //     name: 'Login',
-    //     to: '/login',
-    //     exact: false
-    // },
-    // {
-    //     name: 'Register',
-    //     to: '/register',
-    //     exact: false
-    // },
     {
         name: 'Admin',
         to: '/admin',
-        exact: false
+        exact: true
     },
 ];
 const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
@@ -74,9 +63,12 @@ class Menu extends React.Component {
                                 </div>
                                 <button type="submit" className="btn btn-default">Search</button>
                             </form>
-                                <ul className="nav navbar-nav navbar-right">
+                            <ul className="nav navbar-nav navbar-right">
                                 <li><Link to="/Register"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
                                 <li><Link to="/Login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
+                                <li>
+                                    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatarIcon" />
+                                </li>
                             </ul>
                         </ul>
                     </div>

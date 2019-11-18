@@ -1,5 +1,5 @@
 import React from 'react';
-import './layout/Login.css';
+import './../layout/Login.css';
 export default class Register extends React.Component {
     render() {
         return (

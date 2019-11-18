@@ -11,7 +11,8 @@ export const EDIT_PRODUCT = 'EDIT_PRODUCT';
 export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
 export const FILTER_PRODUCT = 'FILTER_PRODUCT';
 export const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
-
+//login
+export const USER_LOGNIN = 'USER_LOGNIN';  // user login session
 
 export const LIST_PHONE_TRENDING = 'LIST_PHONE_TRENDING';
 export const LIST_LAPTOP_TRENDING = 'LIST_LAPTOP_TRENDING';

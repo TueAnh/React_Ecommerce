@@ -138,3 +138,18 @@ export const actSeachProduct = (keyword) => {
         keyword
     }
 }
+
+//Try User
+export const actGetUserRequest = (user) => {
+    return (dispatch) => {
+        return callApi(`products/?email=${user.email}&&password=${user.password}`, 'GET', null).then(res => {
+            dispatch(actGetProduct(res.data))
+        });
+    }
+}
+export const actGetUser = (user) => {
+    return {
+        type: types.USER_LOGNIN,
+        user
+    }
+}

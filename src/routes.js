@@ -1,12 +1,12 @@
 import React from 'react'
 import HomePage from './components/HomePage';
-import Login from './components/Login';
-import Register from './components/Register';
+import Register from './components/login_register/Register';
 import PhonePage from './components/PhonePage';
 import LaptopPage from './components/LaptopPage';
 import NotFoundPage from './components/NotFoundPage';
 import CartPage from './components/CartPage';
 import AdminPage from './components/admin/AdminPage';
+import LoginContainer from './containers/login_register/LoginContainer';
 const routes = [
     {
         path : '/',
@@ -27,7 +27,7 @@ const routes = [
     {
         path : '/login',
         exact : false,
-        main :()=><Login/>
+        main :()=><LoginContainer/>
     }
     ,
     {
