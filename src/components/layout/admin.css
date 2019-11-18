@@ -26,7 +26,9 @@
 .mb{
   margin-bottom: 20px;
 }
-
+.mr-5{
+  margin-right: 5px;
+}
 .skills {
   text-align: right;
   padding-top: 10px;

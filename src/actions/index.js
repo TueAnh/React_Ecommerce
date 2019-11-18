@@ -56,7 +56,6 @@ export const actTrendingFetchProducts = (trendingproducts) => {
     }
 }
 
-
 export const listPhoneTrending = () => {
     return {
         type: types.LIST_PHONE_TRENDING
@@ -65,5 +64,92 @@ export const listPhoneTrending = () => {
 export const listLatopTrending = () => {
     return {
         type: types.LIST_LAPTOP_TRENDING
+    }
+}
+//Admin
+//Delete Product
+export const actDeleteProductRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`products/${id}`, 'DELETE',null).then(res => {
+            dispatch(actDeleteProduct(res.data))
+        });
+    }
+}
+export const actDeleteProduct = (id) => {
+    return {
+        type: types.DELETE_PRODUCT,
+        id
+    }
+}
+//add Product
+export const actAddProductRequest = (product) => {
+    return (dispatch) => {
+        return callApi('products/', 'POST', product).then(res => {
+            dispatch(actAddProduct(res.data))
+        });
+    }
+}
+export const actAddProduct = (product) => {
+    return {
+        type: types.ADD_PRODUCT,
+        product
+    }
+}
+//get Product to Update
+export const actGetProductRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`products/${id}`, 'GET', null).then(res => {
+            dispatch(actGetProduct(res.data))
+        });
+    }
+}
+export const actGetProduct = (product) => {
+    return {
+        type: types.EDIT_PRODUCT,
+        product
+    }
+}
+
+//Update Product
+export const actUpdateProductRequest = (product) => {
+    return (dispatch) => {
+        return callApi(`products/${product.id}`, 'PUT', product).then(res => {
+            dispatch(actUpdateProduct(res.data))
+        });
+    }
+}
+export const actUpdateProduct = (product) => {
+    return {
+        type: types.UPDATE_PRODUCT,
+        product
+    }
+}
+//Fillter table product admin
+export const actFilterProduct = (filter) => {
+    return {
+        type: types.FILTER_PRODUCT,
+        filter
+    }
+}
+//Fillter table product admin
+export const actSeachProduct = (keyword) => {
+    return {
+        type: types.SEARCH_PRODUCT,
+        keyword
+    }
+}
+
+//Try User
+export const actGetUserRequest = (user) => {
+    return (dispatch) => {
+        return callApi(`products/?email=${user.email}&&password=${user.password}`, 'GET', null).then(res => {
+            dispatch(actGetProduct(res.data))
+        });
+    }
+}
+export const actGetUser = (user) => {
+    return {
+        type: types.USER_LOGNIN,
+        user
     }
 }

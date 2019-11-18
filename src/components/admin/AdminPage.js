@@ -3,11 +3,10 @@ import './../layout/admin.css'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 import DashboardContainer from '../../containers/admin/DashboardContainer';
 import Chart from './Chart';
-import ProductsMana from './ProductsMana'
+import ProductsManaContainer from './../../containers/admin/product/ProductsManaContainer'
+import AddProductContainer from './../../containers/admin/product/AddProductContainer'
 class AdminPage extends React.Component {
     render() {
-        var { lengthProducts } = this.props
-        console.log(lengthProducts)
         return (
 
             <Router>
@@ -27,7 +26,9 @@ class AdminPage extends React.Component {
                             <Switch>
                                 <Route path="/admin/dashboard" exact component={DashboardContainer} />
                                 <Route path="/admin/chart" component={Chart} />
-                                <Route path="/admin/dashboard/Products" component={ProductsMana} />
+                                <Route exact path="/admin/dashboard/products" component={ProductsManaContainer} />
+                                <Route path="/admin/dashboard/products/add" component={()=> <AddProductContainer/>} />
+                                <Route path="/admin/dashboard/products/:id/edit" component={({match})=> <AddProductContainer match = {match}/>} />
                             </Switch>
                         </div>
                     </div>
