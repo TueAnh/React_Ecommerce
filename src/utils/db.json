@@ -238,15 +238,6 @@
       "trending": 1,
       "rating": 5,
       "quantity": 100
-    },
-    {
-      "id": 238,
-      "category_id": null,
-      "name": "aa",
-      "price": 1000,
-      "image": "https://www.gizmochina.com/wp-content/uploads/2019/09/Xiaomi-Mi-Mix-Alpha-600x600.jpg",
-      "description": "fsaf",
-      "quantity": 0
     }
   ],
   "categories": [

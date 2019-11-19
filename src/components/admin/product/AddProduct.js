@@ -1,7 +1,5 @@
 
 import React from 'react';
-import callApi from './../../../utils/apiCaller'
-
 class ProductsMana extends React.Component {
     constructor(props) {
         super(props);
