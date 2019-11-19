@@ -6,7 +6,7 @@ import LaptopPage from './components/LaptopPage';
 import NotFoundPage from './components/NotFoundPage';
 import CartPage from './components/CartPage';
 import AdminPage from './components/admin/AdminPage';
-import ProductDetailsPage from './components/product/ProductDetailsPage';
+// import ProductDetailsPage from './components/product/ProductDetailsPage';
 import LoginContainer from './containers/login_register/LoginContainer';
 const routes = [
     {
@@ -25,11 +25,11 @@ const routes = [
         exact : false,
         main :()=><LaptopPage/>
     },
-    {
-        path : '/(product)/:id',
-        exact : false,
-        main :()=><ProductDetailsPage/>
-    },
+    // {
+    //     path : '/(product)/:id',
+    //     exact : false,
+    //     main :()=><ProductDetailsPage/>
+    // },
     {
         path : '/login',
         exact : false,

@@ -12,7 +12,19 @@ export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
 export const FILTER_PRODUCT = 'FILTER_PRODUCT';
 export const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
 //login
-export const USER_LOGNIN = 'USER_LOGNIN';  // user login session
+export const LOGIN_REQUEST = 'USERS_LOGIN_REQUEST';
+export const LOGOUT = 'LOGOUT';
+//authentication 
+export const LOGIN_SUCCESS = 'USERS_LOGIN_SUCCESS';
+export const LOGIN_FAILURE = 'USERS_LOGIN_FAILURE';
+export const LOGIN_CLEAR = 'LOGIN_CLEAR'
+
+//Alert 
+export const ALERT_SUCCESS = 'ALERT_SUCCESS';
+export const ALERT_ERROR = 'ALERT_ERROR';
+
+
+
 
 export const LIST_PHONE_TRENDING = 'LIST_PHONE_TRENDING';
 export const LIST_LAPTOP_TRENDING = 'LIST_LAPTOP_TRENDING';

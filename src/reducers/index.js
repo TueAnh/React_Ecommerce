@@ -8,6 +8,9 @@ import trendinglaptop from './trendinglaptop'
 import productEditting from './productEditting'
 import filterProduct from './filterProduct'
 import searchProduct from './searchProduct'
+import authentication from './login/authentication'
+import user from './login/user'
+import alert from './login/alert'
 const appReducer = combineReducers({
     products,
     carousel,
@@ -17,6 +20,9 @@ const appReducer = combineReducers({
     trendinglaptop,
     productEditting,
     filterProduct,
-    searchProduct
+    searchProduct,
+    authentication,
+    user,
+    alert
 });
 export default appReducer;

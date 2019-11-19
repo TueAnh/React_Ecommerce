@@ -1,6 +1,6 @@
 import * as types from './../constants/ActionTypes'
 import callApi from './../utils/apiCaller'
-
+import { history } from '../_helpers/history';
 // Carousel 
 export const increaseIndex = () => {
     return {
@@ -70,7 +70,7 @@ export const listLatopTrending = () => {
 //Delete Product
 export const actDeleteProductRequest = (id) => {
     return (dispatch) => {
-        return callApi(`products/${id}`, 'DELETE',null).then(res => {
+        return callApi(`products/${id}`, 'DELETE', null).then(res => {
             dispatch(actDeleteProduct(res.data))
         });
     }
@@ -139,17 +139,70 @@ export const actSeachProduct = (keyword) => {
     }
 }
 
-//Try User
-export const actGetUserRequest = (user) => {
+// Login
+export const login = (email, password) => {
     return (dispatch) => {
-        return callApi(`products/?email=${user.email}&&password=${user.password}`, 'GET', null).then(res => {
-            dispatch(actGetProduct(res.data))
+        return callApi(`users/?email=${email}&&password=${password}`, 'GET', null).then(res => {
+            if (res.data.length === 1) {
+                dispatch(request(res.data[0]))
+                dispatch(success())
+                dispatch(alertSuccess('Registration successful'))
+            } else {
+                console.log('fail')
+                dispatch(failure())
+                dispatch(alertFailure('Username or password is incorrect'))
+            }
         });
     }
 }
-export const actGetUser = (user) => {
+export const request = (user) => {
     return {
-        type: types.USER_LOGNIN,
+        type: types.LOGIN_REQUEST,
         user
+    }
+}
+
+export const logout = () => {
+    return {
+        type: types.LOGOUT,
+    }
+}
+
+export const success = () => {
+    return {
+        type: types.LOGIN_SUCCESS,
+    }
+}
+
+export const failure = () => {
+    return {
+        type: types.LOGIN_FAILURE,
+    }
+}
+export const loginClear = () => {
+    return {
+        type: types.LOGIN_CLEAR,
+    }
+}
+// logout + loginClear
+export const logoutRequest = () => {
+    return (dispatch) => {
+        dispatch(logout())
+        dispatch(loginClear())
+    }
+}
+
+// alert logins
+export const alertSuccess = (message) => {
+    return {
+        type: types.ALERT_SUCCESS,
+        message
+    }
+}
+
+export const alertFailure = (message) => {
+    return {
+        type: types.ALERT_ERROR,
+        message
     }
 }

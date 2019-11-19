@@ -43,6 +43,8 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
 };
 class Menu extends React.Component {
     render() {
+        var { user, authentication } = this.props;
+        console.log(user,authentication)
         return (
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
@@ -64,10 +66,19 @@ class Menu extends React.Component {
                                 <button type="submit" className="btn btn-default">Search</button>
                             </form>
                             <ul className="nav navbar-nav navbar-right">
-                                <li><Link to="/Register"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
-                                <li><Link to="/Login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
+                                {authentication === false &&
+                                    <>
+                                        <li><Link to="/Register"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+                                        <li><Link to="/Login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
+                                    </>
+                                }
+
                                 <li>
-                                    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatarIcon" />
+                                    <button className="btn"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" className="avatarIcon" onClick = {this.onLogOut} />
+                                    </button>
+                                </li>
+                                <li>
+                                    <p >{user.email}</p>
                                 </li>
                             </ul>
                         </ul>
@@ -91,6 +102,9 @@ class Menu extends React.Component {
             })
         }
         return result;
+    }
+    onLogOut=()=>{
+        this.props.onLogOut();
     }
 }
 

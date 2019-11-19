@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-import Menu from './Menu'
+import { history } from '../_helpers/history';
+import MenuContainer from './../containers/MenuContainer'
 import routes from './../routes'
 
 class MenuBar extends React.Component {
@@ -23,8 +23,8 @@ class MenuBar extends React.Component {
     }
     render() {
         return (
-            <Router>
-                <Menu />
+            <Router history={history}>  
+                <MenuContainer />
                 {this.routerLinkMenu(routes)}
             </Router>
         );
