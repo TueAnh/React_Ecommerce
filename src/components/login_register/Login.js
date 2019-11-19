@@ -48,17 +48,10 @@ export default class Login extends React.Component {
                     <div className="imgcontainer">
                         <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" className="avatar" />
                     </div>
-
-                    {/* <div class="alert alert-danger" role="alert">
-                        This is a danger alert—check it out!
-</div> */}
-                    {/* <div class="alert alert-success" role="alert">
-                            This is a success alert—check it out!
-</div> */}
                     <div className="container">
                         <div className={'form-group ' + (submitted && !txtEmail ? 'has-error' : '')}>
-                            <label ><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname"
+                            <label ><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="uname"
                                 className='form-control'
                                 name="txtEmail"
                                 value={txtEmail}

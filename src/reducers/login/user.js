@@ -12,6 +12,9 @@ var appReducer = (state = initialState, action) => {
         case types.LOGOUT:
             state = {}
             return state;
+        case types.REGISTER_REQUEST:
+            state = action.user
+            return state;
         default: return state;
 
     }

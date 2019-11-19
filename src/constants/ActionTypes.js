@@ -18,7 +18,8 @@ export const LOGOUT = 'LOGOUT';
 export const LOGIN_SUCCESS = 'USERS_LOGIN_SUCCESS';
 export const LOGIN_FAILURE = 'USERS_LOGIN_FAILURE';
 export const LOGIN_CLEAR = 'LOGIN_CLEAR'
-
+//
+export const REGISTER_REQUEST = 'USERS_REGISTER_REQUEST';
 //Alert 
 export const ALERT_SUCCESS = 'ALERT_SUCCESS';
 export const ALERT_ERROR = 'ALERT_ERROR';

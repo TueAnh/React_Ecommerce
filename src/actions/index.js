@@ -85,6 +85,7 @@ export const actDeleteProduct = (id) => {
 export const actAddProductRequest = (product) => {
     return (dispatch) => {
         return callApi('products/', 'POST', product).then(res => {
+            console.log(product)
             dispatch(actAddProduct(res.data))
         });
     }
@@ -140,22 +141,21 @@ export const actSeachProduct = (keyword) => {
 }
 
 // Login
-export const login = (email, password) => {
+export const loginRequest = (email, password) => {
     return (dispatch) => {
         return callApi(`users/?email=${email}&&password=${password}`, 'GET', null).then(res => {
             if (res.data.length === 1) {
-                dispatch(request(res.data[0]))
+                dispatch(login(res.data[0]))
                 dispatch(success())
                 dispatch(alertSuccess('Registration successful'))
             } else {
-                console.log('fail')
                 dispatch(failure())
                 dispatch(alertFailure('Username or password is incorrect'))
             }
         });
     }
 }
-export const request = (user) => {
+export const login = (user) => {
     return {
         type: types.LOGIN_REQUEST,
         user
@@ -191,7 +191,32 @@ export const logoutRequest = () => {
         dispatch(loginClear())
     }
 }
-
+//Register 
+export const registerRequest = (email, password) => {
+    var user = {
+        email: email,
+        password: password,
+        isAdmin: 0
+    }
+    return (dispatch) => {
+        return callApi('users/', 'POST', user).then(res => {
+        if (res.data) {
+            dispatch(register(res.data))
+            dispatch(success())
+            dispatch(alertSuccess('Registration successful'))
+        } else {
+            dispatch(failure())
+            dispatch(alertFailure('Registration is failed'))
+        }
+        });
+    }
+}
+export const register = (user) => {
+    return {
+        type: types.REGISTER_REQUEST,
+        user
+    }
+}
 // alert logins
 export const alertSuccess = (message) => {
     return {

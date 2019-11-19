@@ -17,11 +17,11 @@ const menus = [
         to: '/laptop',
         exact: false
     },
-    {
-        name: 'Admin',
-        to: '/admin',
-        exact: true
-    },
+    // {
+    //     name: 'Admin',
+    //     to: '/admin',
+    //     exact: true
+    // },
 ];
 const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
     return (
@@ -44,7 +44,6 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
 class Menu extends React.Component {
     render() {
         var { user, authentication } = this.props;
-        console.log(user,authentication)
         return (
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
@@ -58,6 +57,7 @@ class Menu extends React.Component {
                         <ul className='collapse navbar-collapse navbar-ex1-collapse' >
                             <ul className="nav navbar-nav">
                                 {this.showMenu(menus)}
+                                {user.isAdmin === 1 && <li><Link to='/admin' exact >Admin</Link></li>}
                             </ul>
                             <form className="navbar-form navbar-left" role="search">
                                 <div className="form-group">
@@ -74,7 +74,7 @@ class Menu extends React.Component {
                                 }
 
                                 <li>
-                                    <button className="btn"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" className="avatarIcon" onClick = {this.onLogOut} />
+                                    <button className="btn"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" className="avatarIcon" onClick={this.onLogOut} />
                                     </button>
                                 </li>
                                 <li>
@@ -103,7 +103,7 @@ class Menu extends React.Component {
         }
         return result;
     }
-    onLogOut=()=>{
+    onLogOut = () => {
         this.props.onLogOut();
     }
 }

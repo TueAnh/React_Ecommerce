@@ -8,6 +8,7 @@ import CartPage from './components/CartPage';
 import AdminPage from './components/admin/AdminPage';
 // import ProductDetailsPage from './components/product/ProductDetailsPage';
 import LoginContainer from './containers/login_register/LoginContainer';
+import RegisterContainer from './containers/login_register/RegisterContainer';
 const routes = [
     {
         path : '/',
@@ -39,7 +40,7 @@ const routes = [
     {
         path : '/register',
         exact : false,
-        main :()=><Register/>
+        main :()=><RegisterContainer/>
     },
     {
         path : '/cart',
