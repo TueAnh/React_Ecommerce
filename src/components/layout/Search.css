@@ -1,0 +1,43 @@
+/*Loader*/
+.search-loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/*Show and hide*/
+.show {
+  display: inline-block;
+}
+.hide {
+  display: none;
+}
+
+div.live {
+  margin: 20px;
+}
+ul.live {
+  list-style-type: none;
+  width: 500px;
+}
+h3.live {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+li.live img.live {
+  float: left;
+  margin: 0 15px 0 0;
+  width: 50px;
+  height: 50px;
+}
+li.live p.live {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  color: red;
+}
+li.live {
+  padding: 10px;
+  overflow: auto;
+}
+li.live:hover {
+  background: #eee;
+  cursor: pointer;
+}
