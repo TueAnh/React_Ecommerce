@@ -9,20 +9,20 @@ class CartPage extends React.Component {
     render() {
         return (
             <div>
-        <main id="mainContainer">
-            <div className="container">
-                {/* <!-- Products --> */}
-                {/* <ProductsContainer/> */}
-                <TrendingCarouselContainer />
-                {/* <!-- Message --> */}
-                <MessageContainer/>
-                {/* <!-- Cart --> */}
-                <CartContainer/>
+                <main id="mainContainer">
+                    <div className="container">
+                        {/* <!-- Products --> */}
+                        {/* <ProductsContainer/> */}
+                        {/* <TrendingCarouselContainer /> */}
+                        {/* <!-- Message --> */}
+                        <MessageContainer />
+                        {/* <!-- Cart --> */}
+                        <CartContainer />
+                    </div>
+                </main>
+                {/* <!-- Footer --> */}
+                {/* <Footer /> */}
             </div>
-        </main>
-        {/* <!-- Footer --> */}
-        <Footer />
-    </div>
         );
     }
 }
