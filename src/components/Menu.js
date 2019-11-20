@@ -17,6 +17,11 @@ const menus = [
         to: '/laptop',
         exact: false
     },
+    {
+        name: 'Cart',
+        to: '/cart',
+        exact: false
+    },
     // {
     //     name: 'Admin',
     //     to: '/admin',

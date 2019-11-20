@@ -20,7 +20,6 @@ const routes = [
         exact : false,
         main :()=><PhonePage/>
     },
-    ,
     {
         path : '/laptop',
         exact : false,
