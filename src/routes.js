@@ -6,9 +6,10 @@ import LaptopPage from './components/LaptopPage';
 import NotFoundPage from './components/NotFoundPage';
 import CartPage from './components/CartPage';
 import AdminPage from './components/admin/AdminPage';
- import ProductDetailsPage from './components/product/ProductDetailsPage';
+import ProductDetailsPage from './components/product/product_details/ProductDetailsPage';
 import LoginContainer from './containers/login_register/LoginContainer';
 import RegisterContainer from './containers/login_register/RegisterContainer';
+import ProductsShowPage from './components/product/products_show/ProductsShowPage';
 const routes = [
     {
         path : '/',
@@ -18,9 +19,9 @@ const routes = [
     {
         path : '/phone',
         exact : false,
-        main :()=><PhonePage/>
+        // main :()=><PhonePage/>
+        main :()=><ProductsShowPage/>
     },
-    ,
     {
         path : '/laptop',
         exact : false,

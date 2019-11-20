@@ -60,7 +60,7 @@ const mapDispatchToProps = (dispatch) => {
         fectchAllProducts : ()=>{
             dispatch(actions.actFetchProductsRequest())
         }
-
     }
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(CarouselContainer);
