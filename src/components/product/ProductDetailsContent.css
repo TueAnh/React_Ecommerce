@@ -1,0 +1,59 @@
+.ProductDetailsContent .Info {
+    width: 100%;
+    height: auto;
+}
+
+.ProductDetailsContent img,h1,h3,hr,span {
+    padding: 0px;
+    /* margin: 5px; */
+}
+
+/* .ProductDetailsContent h1 {
+    font-size: 30px
+} */
+
+.ProductDetailsContent h3 {
+    /* font-size: 25px; */
+    color : red
+}
+
+.checked {
+    color: orange;
+}
+
+
+.ProductDetailsContent img {
+    margin: 0px 10px;
+}
+
+hr{
+    margin: 10px 0px;
+    width: auto;
+}
+
+
+/* .ProductDetailsContent p {
+    font-size: 35px;
+}
+
+.ProductDetailsContent span {
+    font-size: 15px;
+} */
+
+.ProductDetailsContent button {
+    margin: 15px 0px;
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 0;
+}
+
+.ProductDetailsContent button:hover {
+    background: #34A853  ;
+    transition: 0.5s;
+}
+
+.ProductDetailsContent button:visited { 
+    border: 1px #58D3F7;
+}
