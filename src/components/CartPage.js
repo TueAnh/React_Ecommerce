@@ -1,14 +1,28 @@
 import React from 'react';
-
+import Footer from './../components/Footer';
+import ProductsContainer from './../containers/ProductsContainer';
+// import Message from './CartComponent/Message';
+import CartContainer from '../containers/CartContainer';
+import MessageContainer from '../containers/MessageContainer';
+import TrendingCarouselContainer from './../containers/TrendingCarouselContainer'
 class CartPage extends React.Component {
     render() {
         return (
+            <div>
+        <main id="mainContainer">
             <div className="container">
-                <div className="alert alert-warning">
-                    <button type="button" className="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    <strong>Cart PAGE</strong> This is Cart
-      </div>
+                {/* <!-- Products --> */}
+                {/* <ProductsContainer/> */}
+                <TrendingCarouselContainer />
+                {/* <!-- Message --> */}
+                <MessageContainer/>
+                {/* <!-- Cart --> */}
+                <CartContainer/>
             </div>
+        </main>
+        {/* <!-- Footer --> */}
+        <Footer />
+    </div>
         );
     }
 }
