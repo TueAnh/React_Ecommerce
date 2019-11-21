@@ -7,29 +7,23 @@ class ProductsShowFilter extends Component {
 
     }
 
+    componentDidMount() {
+        this.props.fetchCategoriesRequest(this.props.type_id);
+    }
+
     render() {
-        let categories = [
-            { "id": 1, "name": "Iphone", "type_id": 1 },
-            { "id": 2, "name": "Nokia", "type_id": 1 },
-            { "id": 3, "name": "Dell", "type_id": 2 },
-            { "id": 4, "name": "Asus", "type_id": 2 },
-        ]
-        let type = [
-            { "id": 1, "name": "Phone" },
-            { "id": 2, "name": "Laptop" },
-        ]
+        let { type_id ,categories, fetchCategoriesRequest } = this.props
+
         return (
             <div id="ProductsShowFilter">
                 <ul id="ProductsShowFilterUl">
                     <li className="ProductsShowFilterLi">All</li>
                     {
                         categories.map((category, key) => {
+                            return (
+                                <li key={key} className="ProductsShowFilterLi">{category.name}</li>
+                            )
 
-                            if (category.type_id == this.props.type_id) {
-                                return (
-                                    <li key={key} className="ProductsShowFilterLi">{category.name}</li>
-                                )
-                            }
                         })
                     }
                 </ul>

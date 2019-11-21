@@ -9,10 +9,13 @@ class ProductsShowListProducts extends Component {
     }
 
     componentDidMount() {
-        this.props.fetchProductsRequest();
+        this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
     }
 
     showProduct = (products) => {
+        let styleHeight = "200px";
+        // if(this.props.type_id == 2)
+        //     styleHeight = "150px"
         let rows = []
         let cols = []
         let styleRow = {
@@ -28,7 +31,7 @@ class ProductsShowListProducts extends Component {
                     contentHeight="100px"
                     imgWidth="100%"
                     imgDivWidth="100%"
-                    imgDivHeight="200px"
+                    imgDivHeight={styleHeight}
                     imgDivMargin=""
                     h1FontSize="15px"
                     h1Height="30px"
@@ -51,10 +54,10 @@ class ProductsShowListProducts extends Component {
     }
 
     render() {
-        let { products, fetchProductsRequest } = this.props;
+        let { productsPhonesOrLaptops, fetchProductPhoneOrLapRequest } = this.props;
         return (
             <div id="ProductsShowListProducts">
-                {this.showProduct(products)}
+                {this.showProduct(productsPhonesOrLaptops)}
             </div>
         );
     }

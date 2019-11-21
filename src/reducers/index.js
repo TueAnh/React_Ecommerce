@@ -13,11 +13,15 @@ import user from './login/user'
 import alert from './login/alert'
 import cart from './cart'
 import message from './messege'
+import categories from './product/categories'
+import productsPhonesOrLaptops from './product/productsPhonesOrLaptops'
 import order from './order/order'
 import users from './users'
 import userEditting from './userEditting'
 import orderAdmin from './orderAdmin'
 const appReducer = combineReducers({
+    productsPhonesOrLaptops,
+    categories,
     products,
     carousel,
     trendingcarousel,

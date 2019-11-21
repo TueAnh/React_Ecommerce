@@ -354,6 +354,44 @@ export const actUpdateProductInCart = (product,quantity) => {
     }
 }
 
+///product 
+
+//
+
+export const actFetchProductPhoneOrLapRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`type/${id}/category?_embed=products`, 'GET', null).then(res => {
+            let products = [];
+            res.data.map((category,key) => 
+                category.products.map((product, key) => products.push(product)));
+            dispatch(actFetchProductPhoneOrLap(products));
+        });
+    }
+}
+
+export const actFetchProductPhoneOrLap = (products) => {
+    return {
+        type : types.LIST_PRODUCT_PHONE_OR_LAPTOP,
+        products
+    }
+}
+
+export const actFetchCategoriesRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`category?typeId=${id}`, 'GET', null).then(res => {
+            dispatch(actFetchCategories(res.data))
+        });
+    }
+}
+export const actFetchCategories = (categories) => {
+    return {
+        type : types.LIST_CATEGORY,
+        categories
+    }
+}
+
+/////////////////
+
 export const actAddOrderRequest = (order) => {
     return (dispatch) => {
         return callApi('orders/', 'POST', order).then(res => {
