@@ -40,6 +40,78 @@ export const actFetchProducts = (products) => {
         products
     }
 }
+// get user-admin
+export const actFetchUsersRequest = () => {
+    return (dispatch) => {
+        return callApi('users', 'GET', null).then(res => {
+            dispatch(actFetchUsers(res.data))
+        });
+    }
+}
+//get all users
+export const actFetchUsers = (users) => {
+    return {
+        type: types.FETCH_USERS,
+        users
+    }
+}
+//Delete User
+export const actDeleteUserRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`users/${id}`, 'DELETE', null).then(res => {
+            dispatch(actDeleteUser(res.data))
+        });
+    }
+}
+export const actDeleteUser = (id) => {
+    return {
+        type: types.DELETE_USER,
+        id
+    }
+}
+//add User
+export const actAddUserRequest = (user) => {
+    return (dispatch) => {
+        return callApi('users/', 'POST', user).then(res => {
+            console.log(user)
+            dispatch(actAddUser(res.data))
+        });
+    }
+}
+export const actAddUser = (user) => {
+    return {
+        type: types.ADD_USER,
+        user
+    }
+}
+//get Product to Update User
+export const actGetUserRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`users/${id}`, 'GET', null).then(res => {
+            dispatch(actGetUser(res.data))
+        });
+    }
+}
+export const actGetUser = (user) => {
+    return {
+        type: types.EDIT_USER,
+        user
+    }
+}
+//Update User
+export const actUpdateUserRequest = (user) => {
+    return (dispatch) => {
+        return callApi(`users/${user.id}`, 'PUT', user).then(res => {
+            dispatch(actUpdateUser(res.data))
+        });
+    }
+}
+export const actUpdateUser = (user) => {
+    return {
+        type: types.UPDATE_USER,
+        user
+    }
+}
 
 export const actFetchTrendingProductsRequest = () => {
     return (dispatch) => {

@@ -5,6 +5,8 @@ import DashboardContainer from '../../containers/admin/DashboardContainer';
 import Chart from './Chart';
 import ProductsManaContainer from './../../containers/admin/product/ProductsManaContainer'
 import AddProductContainer from './../../containers/admin/product/AddProductContainer'
+import UsersContainer from './../../containers/admin/users/UsersContainer'
+import AddUserContainer from './../../containers/admin/users/AddUserContainer'
 class AdminPage extends React.Component {
     render() {
         return (
@@ -29,6 +31,9 @@ class AdminPage extends React.Component {
                                 <Route exact path="/admin/dashboard/products" component={ProductsManaContainer} />
                                 <Route path="/admin/dashboard/products/add" component={()=> <AddProductContainer/>} />
                                 <Route path="/admin/dashboard/products/:id/edit" component={({match})=> <AddProductContainer match = {match}/>} />
+                                <Route exact path="/admin/dashboard/Users" component={UsersContainer} />
+                                <Route path="/admin/dashboard/users/add" component={ ()=> <AddUserContainer/>} />
+                                <Route path="/admin/dashboard/users/:id/edit" component={({match})=> <AddUserContainer match = {match}/>} />
                             </Switch>
                         </div>
                     </div>

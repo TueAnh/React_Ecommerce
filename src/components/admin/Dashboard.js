@@ -1,10 +1,9 @@
-
 import React from 'react';
 import './../layout/admin.css'
 import { Link } from 'react-router-dom'
 class Dashboard extends React.Component {
     render() {
-        var { lengthProducts } = this.props;
+        var { lengthProducts,lengthUsers } = this.props;
         return (
             <div className="col-sm-9">
                 <div className="well">
@@ -38,10 +37,10 @@ class Dashboard extends React.Component {
                     </div>
                     <div className="col-sm-3">
                         <div className="well">
-                            <h4>Revenue</h4>
-                            <p>Up 30%<span className="glyphicon">&#xe093;</span></p>
-                            <a href="#">View Details:<span className="glyphicon">&#xe032;</span>
-                            </a>
+                            <h4>Users</h4>
+                            <p><b>{lengthUsers}</b> Items</p>
+                            <Link to="/admin/dashboard/Users">View Details <span className="glyphicon">&#xe032;</span>
+                            </Link>
                         </div>
                     </div>
                 </div>
