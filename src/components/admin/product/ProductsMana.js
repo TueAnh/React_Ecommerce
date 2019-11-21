@@ -80,7 +80,7 @@ class ProductsMana extends React.Component {
                     <thead>
                         <tr>
                             <th className="text-center">STT</th>
-                            <th className="text-center">Code</th>
+                            <th className="text-center">Category_Id</th>
                             <th className="text-center">Name</th>
                             <th className="text-center">Price</th>
                             <th className="text-center">Status</th>

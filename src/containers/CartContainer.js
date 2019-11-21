@@ -6,16 +6,16 @@ import * as Message from './../constants/Message'
 import CartItem from '../components/CartComponent/CartItem';
 import CartResult from '../components/CartComponent/CartResult';
 import {actDeleteProductInCart, actChangeMessage,actUpdateProductInCart} from './../actions/index';
+import CartResultContainer from './CartResultContainer';
 // import message from '../reducers/messege';
 class CartContainer extends React.Component {
     render() {
         var  {cart} = this.props;
-        // console.log(cart);
         return (
             <Cart>
                 {this.showCartItem(cart)}
                 {/* tính tông tiền */}
-                {this.showTotalAmount(cart)}
+                <CartResultContainer/>
             </Cart>
         );
     }
@@ -40,14 +40,7 @@ class CartContainer extends React.Component {
         }
         return result;
     }
-    showTotalAmount = (cart) => {
-        var result = null;
-        if (cart.length >0){
-            result = < CartResult cart = {cart} />
-        }
-        return result;
-
-    }
+    
 }
 CartContainer.propTypes = {
     cart: PropTypes.arrayOf(PropTypes.shape({

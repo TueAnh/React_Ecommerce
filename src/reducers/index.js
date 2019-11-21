@@ -15,6 +15,9 @@ import cart from './cart'
 import message from './messege'
 import categories from './product/categories'
 import productsPhonesOrLaptops from './product/productsPhonesOrLaptops'
+import order from './order/order'
+import users from './users'
+import userEditting from './userEditting'
 const appReducer = combineReducers({
     productsPhonesOrLaptops,
     categories,
@@ -31,6 +34,10 @@ const appReducer = combineReducers({
     user,
     alert,
     cart,
-    message
+    message,
+    order,
+    users,
+    userEditting,
+
 });
 export default appReducer;

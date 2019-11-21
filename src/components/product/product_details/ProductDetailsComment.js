@@ -78,7 +78,6 @@ class ProductDetailsComment extends Component {
     }
 
     onMouseOutEvent = (e) => {
-        console.log(this.state.commented.length);
         if(this.state.commented.length === 0){
             let starCheck = [
                 "",
@@ -104,7 +103,6 @@ class ProductDetailsComment extends Component {
     }
 
     onClickEvent = () => {
-        console.log(this.state.rating);
         this.setState({
            commented : this.state.star
         })

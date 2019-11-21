@@ -13,6 +13,14 @@ export const EDIT_PRODUCT = 'EDIT_PRODUCT';
 export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
 export const FILTER_PRODUCT = 'FILTER_PRODUCT';
 export const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
+//admin-user
+export const ADD_USER = 'ADD_USER';
+export const FETCH_USERS = 'FETCH_USERS';
+export const DELETE_USER = 'DELETE_USER';
+export const EDIT_USER = 'EDIT_USER';
+export const UPDATE_USER = 'UPDATE_USER';
+export const SEARCH_USER = 'SEARCH_USER';
+
 //login
 export const LOGIN_REQUEST = 'USERS_LOGIN_REQUEST';
 export const LOGOUT = 'LOGOUT';
@@ -31,7 +39,8 @@ export const ADD_TO_CART = 'ADD_TO_CART';
 export const CHANGE_MESSAGE = 'CHANGE_MESSAGE';
 export const DELETE_PRODUCT_IN_CART = 'DELETE_PRODUCT_IN_CART';
 export const UPDATE_PRODUCT_IN_CART = 'UPDATE_PRODUCT_IN_CART';
-
+// Cart checkout
+export const CHECKOUT_CART = 'CHECKOUT_CART';
 
 export const LIST_PHONE_TRENDING = 'LIST_PHONE_TRENDING';
 export const LIST_LAPTOP_TRENDING = 'LIST_LAPTOP_TRENDING';
