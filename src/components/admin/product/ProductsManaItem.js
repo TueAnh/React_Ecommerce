@@ -48,7 +48,7 @@ class ProductsManaItem extends React.Component {
                 return (
                     <tr key={index}>
                         <td>{index + 1}</td>
-                        <td>{product.category_id}</td>
+                        <td>{product.categoryId}</td>
                         <td>{product.name}</td>
                         <td>${product.price}</td>
                         <td className="text-center">
