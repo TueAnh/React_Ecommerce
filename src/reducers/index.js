@@ -13,6 +13,7 @@ import user from './login/user'
 import alert from './login/alert'
 import cart from './cart'
 import message from './messege'
+import order from './order/order'
 const appReducer = combineReducers({
     products,
     carousel,
@@ -27,6 +28,8 @@ const appReducer = combineReducers({
     user,
     alert,
     cart,
-    message
+    message,
+    order
+
 });
 export default appReducer;

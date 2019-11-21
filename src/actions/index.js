@@ -282,3 +282,17 @@ export const actUpdateProductInCart = (product,quantity) => {
         quantity
     }
 }
+
+export const actAddOrderRequest = (order) => {
+    return (dispatch) => {
+        return callApi('orders/', 'POST', order).then(res => {
+            dispatch(actAddOrder(res.data))
+        });
+    }
+}
+export const actAddOrder= (order) => {
+    return {
+        type: types.CHECKOUT_CART,
+        order
+    }
+}

@@ -33,7 +33,6 @@ export default class Login extends React.Component {
     }
     render() {
         var { txtEmail, txtPassword, submitted } = this.state;
-        console.log(this.props.user, this.props.authentication,this.props.alert)
         var {user,authentication,alert} = this.props;
         if(authentication === true) {
             return (<Redirect to ='/' />);

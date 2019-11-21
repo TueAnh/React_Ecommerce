@@ -27,7 +27,6 @@ class ProductsManaItem extends React.Component {
         }
         //search
         if (searchProduct) {
-            console.log(products)
             products = products.filter((product) => {
                 return product.name.toLowerCase().indexOf(searchProduct.toLowerCase()) !== -1 || product.category_id === parseInt(searchProduct) ;
             })

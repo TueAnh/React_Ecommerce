@@ -1,7 +1,27 @@
 import React from 'react';
+import { Link, Redirect } from 'react-router-dom'
 class CartResult extends React.Component {
+    onCheckout = (user, _order) => {
+        // console.log(user)
+        if (!user.email) {
+            if (confirm('You must login to Checkout ? ')) {// eslint-disable-line
+                // return (<Redirect to='/login/' />); ??? wwhy not 
+            }
+        }
+        // console.log(order)
+        this.props.onAddOder(_order);
+    }
     render() {
-        var { cart } = this.props;
+        var { cart, user } = this.props;
+        console.log(this.props.order)
+        var total = this.showTotalAmount(cart)
+        var _order = {
+            user_order: user,
+            products_order: cart,
+            total: total,
+            status: "accept"
+        };
+
         return (
             <tr>
                 <td colSpan="3"></td>
@@ -12,11 +32,13 @@ class CartResult extends React.Component {
                 </td>
                 <td>
                     <h4>
-                        <strong>{this.showTotalAmount(cart)}$</strong>
+                        <strong>{total}$</strong>
                     </h4>
                 </td>
                 <td colSpan="3">
-                    <button type="button" className="btn btn-primary waves-effect waves-light">
+                    <button type="button" className="btn btn-primary waves-effect waves-light"
+                        onClick={() => this.onCheckout(user, _order)}
+                    >
                         Complete purchase
                     </button>
                 </td>
