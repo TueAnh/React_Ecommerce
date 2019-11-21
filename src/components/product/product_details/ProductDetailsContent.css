@@ -25,11 +25,6 @@
     margin: 0px 10px;
 }
 
-img:hover {
-    height: auto;
-    width: auto;
-    transition: 0.3s;
-}
 
 hr{
     margin: 10px 0px;

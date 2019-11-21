@@ -8,10 +8,6 @@ class ProductsShowListProducts extends Component {
 
     }
 
-    componentDidMount() {
-        this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
-    }
-
     showProduct = (products) => {
         let styleHeight = "250px";
         if(this.props.type_id == 2)
@@ -55,10 +51,7 @@ class ProductsShowListProducts extends Component {
     }
 
     componentDidUpdate(){
-        if(this.props.selectedCategory == 0)
-            this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
-        else    
-            this.props.fetchProductWithIdRequest(this.props.selectedCategory);
+        
     }
 
     render() {

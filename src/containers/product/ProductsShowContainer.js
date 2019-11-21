@@ -11,21 +11,24 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 class ProductsShowContainer extends Component {
-    render() {
+    
+    componentDidMount() {
+        this.props.fetchCategoriesRequest(this.props.type_id);
+        this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
+    }
 
+    render() {
         return (
             <div id="ProductsShowPage">
                 <ProductsShowFilter
                     type_id={this.props.type_id}
                     categories={this.props.categories}
-                    fetchCategoriesRequest={this.props.fetchCategoriesRequest}
-                    selectedCategoryFunc={this.props.selectedCategoryFunc} />
+                    fetchProductWithIdRequest={this.props.fetchProductWithIdRequest}
+                    fetchProductPhoneOrLapRequest={this.props.fetchProductPhoneOrLapRequest}
+                    />
                 <ProductsShowListProducts
                     type_id={this.props.type_id}
-                    productsPhonesOrLaptops={this.props.productsPhonesOrLaptops}
-                    fetchProductPhoneOrLapRequest={this.props.fetchProductPhoneOrLapRequest}
-                    selectedCategory={this.props.selectedCategory} 
-                    fetchProductWithIdRequest={this.props.fetchProductWithIdRequest}/>
+                    productsPhonesOrLaptops={this.props.productsPhonesOrLaptops} />
             </div>
         )
     }
