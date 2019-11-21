@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom'
 import './layout/menu.css'
+import './layout/Search.css'
+import axios from 'axios';
+import Loader from './../loader.gif';
 const menus = [
     {
         name: 'Home',
@@ -47,8 +50,82 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
     );
 };
 class Menu extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            query: '',
+            loading: false,
+            message: '',
+        };
+        // this.cancel = '';
+    }
+    fetchSearchResults = (query) => {
+        const searchUrl = `http://localhost:3000/products/?name_like=${query}`;
+        if (this.cancel) {
+            // Cancel the previous request before making a new request
+            this.cancel.cancel();
+        }
+        // Create a new CancelToken
+        this.cancel = axios.CancelToken.source();
+        axios
+            .get(searchUrl, {
+                cancelToken: this.cancel.token,
+            })
+            .then((res) => {
+                const resultNotFoundMsg = !res.data.length
+                    ? 'There are no more search results. Please try a new search.'
+                    : '';
+                this.setState({
+                    results: res.data,
+                    message: resultNotFoundMsg,
+                    loading: false,
+                });
+            })
+            .catch((error) => {
+                if (axios.isCancel(error) || error) {
+                    this.setState({
+                        loading: false,
+                        message: 'Failed to fetch results.Please check network',
+                    });
+                }
+            });
+    };
+    handleOnInputChange = (event) => {
+        const query = event.target.value;
+        if (!query) {
+            this.setState({ query, results: {}, message: '' });
+        } else {
+            this.setState({ query, loading: true, message: '' }, () => {
+                this.fetchSearchResults(query);
+            });
+        }
+    };
+    renderSearchResults = () => {
+        const { results } = this.state;
+        if (results) {
+            if (Object.keys(results).length && results.length) {
+                return (
+                    <div className ="live">
+                        <ul className ="live">
+                            {results.map((result) => {
+                                return (
+                                    <li key={result.id} className ="live">
+                                        <img src={result.image} className ="live" />
+                                        <h3 className ="live">{result.name} </h3>
+                                        <p className ="live">$ {result.price/20000}</p>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                );
+            }
+        }
+    };
     render() {
         var { user, authentication } = this.props;
+        const { query } = this.state;
+        const { message, loading } = this.state;
         return (
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
@@ -66,10 +143,18 @@ class Menu extends React.Component {
                             </ul>
                             <form className="navbar-form navbar-left" role="search">
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Product, catagories ... " />
+                                    <input type="text" className="form-control" placeholder="Product, catagories ... "
+                                        type="text"
+                                        value={query}
+                                        id="search-input"
+                                        placeholder="Search..."
+                                        onChange={this.handleOnInputChange}
+                                    />
                                 </div>
                                 <button type="submit" className="btn btn-default">Search</button>
+
                             </form>
+
                             <ul className="nav navbar-nav navbar-right">
                                 {authentication === false &&
                                     <>
@@ -89,6 +174,12 @@ class Menu extends React.Component {
                         </ul>
                     </div>
                 </div>
+                {/*Error Message*/}
+                {message && <p className="message">{message}</p>}
+                {/*Loader*/}
+                <img src={Loader} className={`search-loading ${loading ? 'show' : 'hide'}`} alt="loader" />
+                {/*Result*/}
+                {this.renderSearchResults()}
             </nav>
         );
     }

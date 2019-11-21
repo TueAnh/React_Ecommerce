@@ -62,6 +62,7 @@ class TrendingCarouselItem extends React.Component {
         this.props.onChangeMessage(Message.MSG_ADD_TO_CART_SUCCESS);
     }
     showRating = (rate) => {
+        rate= rate> 5 ? 5 :rate;
         if (rate > 0) {
             var result = [];
             for (let i = 1; i <= rate; i++) {
