@@ -36,3 +36,9 @@ export const CHECKOUT_CART = 'CHECKOUT_CART';
 
 export const LIST_PHONE_TRENDING = 'LIST_PHONE_TRENDING';
 export const LIST_LAPTOP_TRENDING = 'LIST_LAPTOP_TRENDING';
+
+
+//product
+
+export const LIST_PRODUCT = 'LIST_PRODUCT';
+
