@@ -13,7 +13,11 @@ import user from './login/user'
 import alert from './login/alert'
 import cart from './cart'
 import message from './messege'
+import categories from './product/categories'
+import productsPhonesOrLaptops from './product/productsPhonesOrLaptops'
 const appReducer = combineReducers({
+    productsPhonesOrLaptops,
+    categories,
     products,
     carousel,
     trendingcarousel,
