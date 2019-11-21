@@ -23,7 +23,7 @@ class Dashboard extends React.Component {
                         <div className="well">
                             <h4>Catagories</h4>
                             <p><b>{lengthProducts}</b> Items</p>
-                            <Link to="/admin/dashboard/Products">View Details <span className="glyphicon">&#xe032;</span>
+                            <Link to="/admin/dashboard/Orders">View Details <span className="glyphicon">&#xe032;</span>
                             </Link>
                         </div>
                     </div>

@@ -16,6 +16,7 @@ import message from './messege'
 import order from './order/order'
 import users from './users'
 import userEditting from './userEditting'
+import orderAdmin from './orderAdmin'
 const appReducer = combineReducers({
     products,
     carousel,
@@ -34,6 +35,7 @@ const appReducer = combineReducers({
     order,
     users,
     userEditting,
+    orderAdmin
 
 });
 export default appReducer;

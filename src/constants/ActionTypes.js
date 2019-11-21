@@ -20,6 +20,9 @@ export const DELETE_USER = 'DELETE_USER';
 export const EDIT_USER = 'EDIT_USER';
 export const UPDATE_USER = 'UPDATE_USER';
 export const SEARCH_USER = 'SEARCH_USER';
+//admin-order
+export const FETCH_ORDERS = 'FETCH_ORDERS';
+export const DELETE_ORDER = 'DELETE_ORDER';
 
 //login
 export const LOGIN_REQUEST = 'USERS_LOGIN_REQUEST';
