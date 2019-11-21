@@ -653,6 +653,47 @@
       "total": 22980000,
       "status": "accept",
       "id": 38
+    },
+    {
+      "user_order": {
+        "id": 1,
+        "email": "admin@gmail.com",
+        "password": "1234",
+        "isAdmin": 1
+      },
+      "products_order": [
+        {
+          "product": {
+            "id": 1,
+            "categoryId": 1,
+            "name": "iPhone 11 Pro Max 512GB",
+            "price": "43990000",
+            "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+            "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+            "trending": 1,
+            "rating": 5,
+            "quantity": 7
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 147,
+            "categoryId": 11,
+            "name": "Itel it5025",
+            "price": "260000",
+            "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg",
+            "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh",
+            "trending": 1,
+            "rating": 3,
+            "quantity": 150
+          },
+          "quantity": 1
+        }
+      ],
+      "total": 44250000,
+      "status": "accept",
+      "id": 39
     }
   ]
 }
