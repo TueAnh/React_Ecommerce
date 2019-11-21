@@ -6,6 +6,9 @@ var appReducer = (state = initialState, action) => {
         case types.LIST_PRODUCT_PHONE_OR_LAPTOP:
             state = action.products
             return [...state]
+        case types.LIST_PRODUCT_WITH_CATEGORY_ID:
+            state = action.products
+            return [...state]
         default: return state
     }
 }

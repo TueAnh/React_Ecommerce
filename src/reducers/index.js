@@ -18,7 +18,9 @@ import productsPhonesOrLaptops from './product/productsPhonesOrLaptops'
 import order from './order/order'
 import users from './users'
 import userEditting from './userEditting'
+import selectedCategory from './product/selectedCategory'
 const appReducer = combineReducers({
+    selectedCategory,
     productsPhonesOrLaptops,
     categories,
     products,

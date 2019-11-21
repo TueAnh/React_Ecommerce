@@ -354,9 +354,9 @@ export const actUpdateProductInCart = (product,quantity) => {
     }
 }
 
-///product 
-
-//
+/*
+    <TuanAnh>
+*/
 
 export const actFetchProductPhoneOrLapRequest = (id) => {
     return (dispatch) => {
@@ -383,6 +383,7 @@ export const actFetchCategoriesRequest = (id) => {
         });
     }
 }
+
 export const actFetchCategories = (categories) => {
     return {
         type : types.LIST_CATEGORY,
@@ -390,7 +391,32 @@ export const actFetchCategories = (categories) => {
     }
 }
 
-/////////////////
+export const actSelectedCategory = (id) => {
+    return {
+        type : types.SELECTED_CATEGORY,
+        id
+    }
+}
+
+export const actFetchProductWithIdRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`products?categoryId=${id}`, 'GET', null).then(res => {
+            dispatch(actFetchProductWithId(res.data))
+        });
+    }
+}
+
+export const actFetchProductWithId = (products) => {
+    return {
+        type : types.LIST_PRODUCT_WITH_CATEGORY_ID,
+        products
+    }
+}
+
+
+/*
+    </TuanAnh>
+*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 export const actAddOrderRequest = (order) => {
     return (dispatch) => {
