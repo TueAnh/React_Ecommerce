@@ -3,6 +3,9 @@ import { connect } from 'react-redux'
 import Thumbnail from './../components/Thumbnail'
 import * as actions from '../actions/index'
 class ThumbnailContainer extends React.Component {
+    componentDidMount(){
+        this.props.fetchAllTrendingLaptops();
+    }
     render() {
         var { trendingphone, trendinglaptop } = this.props
         trendingphone = trendingphone.slice(0, 5)
@@ -21,5 +24,11 @@ const mapStateToProps = (state) => {
         trendinglaptop: state.trendinglaptop,
     }
 }
-
-export default connect(mapStateToProps, null)(ThumbnailContainer);
+const mapDistpatchtoProps = (dispatch) => {
+    return {
+        fetchAllTrendingLaptops : () =>{
+            dispatch(actions.actFetchTrendingLaptopsRequest())
+        }
+    }
+}
+export default connect(mapStateToProps, mapDistpatchtoProps)(ThumbnailContainer);

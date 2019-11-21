@@ -48,11 +48,36 @@ export const actFetchTrendingProductsRequest = () => {
         });
     }
 }
+//trending laptop
+export const actFetchTrendingLaptopsRequest = () => {
+
+    return (dispatch) => {  
+        var result = [];
+        var phones = [];
+        
+         callApi('type/2/category?_embed=products', 'GET', null).then(res =>{ 
+             var laptop = [];
+             result = res.data;
+             result.forEach( item=> item.products.forEach((product) => {if (product.trending==1) laptop.push(product)}));
+             return dispatch(actFetchTrendingLaptops(laptop));
+         });
+        
+    }
+}
 // get all products
 export const actTrendingFetchProducts = (trendingproducts) => {
     return {
+        
         type: types.FETCH_TRENDING_PRODUCTS,
         trendingproducts
+    }
+}
+
+export const actFetchTrendingLaptops = (trendinglaptop) => {
+    console.log(trendinglaptop);
+    return {
+        type: types.FETCH_TRENDING_LAPTOPS,
+        trendinglaptop
     }
 }
 

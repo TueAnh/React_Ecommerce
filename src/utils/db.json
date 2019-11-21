@@ -1,8 +1,18 @@
 {
+  "type": [
+    {
+      "id": 1,
+      "name": "laptop"
+    },
+    {
+      "id": 2,
+      "name": "phone"
+    }
+  ],
   "products": [
     {
       "id": 1,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone 11 Pro Max 512GB",
       "price": "43990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
@@ -13,7 +23,7 @@
     },
     {
       "id": 31,
-      "category_id": 10,
+      "categoryId": 10,
       "name": "OPPO Reno 10x Zoom Edition",
       "price": 16990000,
       "image": "https://cdn.tgdd.vn/Products/Images/42/201235/TimerThumb/oppo-reno-10x-zoom-edition-halloween.jpg",
@@ -22,7 +32,7 @@
     },
     {
       "id": 3,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone Xs Max 256GB",
       "price": "32490000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
@@ -31,7 +41,7 @@
     },
     {
       "id": 34,
-      "category_id": 9,
+      "categoryId": 9,
       "name": "Vivo S1",
       "price": "6690000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/202861/vivo-s1-blue-600x600.jpg",
@@ -42,7 +52,7 @@
     },
     {
       "id": 121,
-      "category_id": 17,
+      "categoryId": 17,
       "name": "Dell Vostro 3468 i3 7020U (70161069)",
       "price": "11690000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/186375/dell-vostro-3468-i3-7020u-70161069-15-600x600.jpg",
@@ -51,7 +61,7 @@
     },
     {
       "id": 6,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone Xs 256GB",
       "price": "28990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/190324/TimerThumb/iphone-xs-256gb-halloween.jpg",
@@ -62,7 +72,7 @@
     },
     {
       "id": 38,
-      "category_id": 8,
+      "categoryId": 8,
       "name": "Xiaomi Redmi Note 8 (4GB/64GB)",
       "price": "4990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/209535/xiaomi-redmi-note-8-white-18thangbh-600x600.jpg",
@@ -71,7 +81,7 @@
     },
     {
       "id": 8,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone Xs Max 64GB",
       "price": "26990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
@@ -82,7 +92,7 @@
     },
     {
       "id": 9,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone X 256GB",
       "price": "27990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/114111/iphone-x-256gb-a1-600x600.jpg",
@@ -91,7 +101,7 @@
     },
     {
       "id": 10,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone Xs 64GB",
       "price": "24990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/190323/TimerThumb/iphone-xs-halloween.jpg",
@@ -102,7 +112,7 @@
     },
     {
       "id": 11,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone 11 128GB",
       "price": "23990000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/210644/iphone-11-128gb-purple-600x600.jpg",
@@ -113,7 +123,7 @@
     },
     {
       "id": 147,
-      "category_id": 11,
+      "categoryId": 11,
       "name": "Itel it5025",
       "price": "260000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg",
@@ -124,7 +134,7 @@
     },
     {
       "id": 148,
-      "category_id": 11,
+      "categoryId": 11,
       "name": "Itel it2171",
       "price": "230000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/204125/itel-it2171-red-600x600.jpg",
@@ -135,7 +145,7 @@
     },
     {
       "id": 149,
-      "category_id": 11,
+      "categoryId": 11,
       "name": "Itel Value 100",
       "price": "170000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/211009/itel-value-100-black-600x600.jpg",
@@ -146,7 +156,7 @@
     },
     {
       "id": 150,
-      "category_id": 17,
+      "categoryId": 17,
       "name": "Dell Inspiron N3576 i3 8130U (P63F002N76D)",
       "price": "12290000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/209726/dell-inspire-n3576-i3-8130u-4gb-1tb-win10-p63f002-600x600.jpg",
@@ -157,7 +167,7 @@
     },
     {
       "id": 151,
-      "category_id": 17,
+      "categoryId": 17,
       "name": "Dell Vostro 14 3481 i3 7020U (70187645)",
       "price": "12290000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/204127/dell-vostro-3481-core-i3-7020u-6-1-1-1-600x600.jpg",
@@ -166,7 +176,7 @@
     },
     {
       "id": 12,
-      "category_id": 1,
+      "categoryId": 1,
       "name": "iPhone X 64GB",
       "price": "20490000",
       "image": "https://cdn.tgdd.vn/Products/Images/42/114115/TimerThumb/iphone-x-64gb-halloween.jpg",
@@ -177,7 +187,7 @@
     },
     {
       "id": 212,
-      "category_id": 22,
+      "categoryId": 22,
       "name": "Asus VivoBook ",
       "price": "12290000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/201930/asus-x507uf-i3-8130u-4gb-1tb-mx130-win10-ej117t-1-1-600x600.jpg",
@@ -188,7 +198,7 @@
     },
     {
       "id": 213,
-      "category_id": 20,
+      "categoryId": 20,
       "name": "Acer Aspire E5 476 i3 ",
       "price": "9490000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/160296/acer-aspire-e5-476-i3-8130u-nxgwtsv002-450-300-1-600x600.jpg",
@@ -197,7 +207,7 @@
     },
     {
       "id": 214,
-      "category_id": 20,
+      "categoryId": 20,
       "name": "Acer Aspire 3 A315 ",
       "price": "9790000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/207884/acer-aspire-3-a315-54-30fk-i3-7020u-4gb-1tb-win10-18-600x600.jpg",
@@ -208,7 +218,7 @@
     },
     {
       "id": 235,
-      "category_id": 22,
+      "categoryId": 22,
       "name": "Asus VivoBook A512FA",
       "price": "16290000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/202559/asus-a512fa-i5-8265u-8gb-1tb-win10-ej552t-16-1-600x600.jpg",
@@ -219,7 +229,7 @@
     },
     {
       "id": 236,
-      "category_id": 20,
+      "categoryId": 20,
       "name": "Acer Aspire A515 ",
       "price": "10990000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/198789/acer-aspire-a515-53-3153-i3-8145u-4gb-1gb-win10-n-33397-thumb-1-600x600.jpg",
@@ -230,7 +240,7 @@
     },
     {
       "id": 237,
-      "category_id": 20,
+      "categoryId": 20,
       "name": "Acer Spin 3 SP314 51 ",
       "price": "11990000",
       "image": "https://cdn.tgdd.vn/Products/Images/44/145919/acer-spin-3-sp314-51-39wk-i3-7130u-nxguwsv001-cava-1-600x600.jpg",
@@ -240,115 +250,115 @@
       "quantity": 100
     }
   ],
-  "categories": [
+  "category": [
     {
       "id": 1,
-      "type_id": 1,
+      "typeId": 1,
       "name": "iPhone (Apple)"
     },
     {
       "id": 2,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Nokia"
     },
     {
       "id": 3,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Samsung"
     },
     {
       "id": 4,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Huawei"
     },
     {
       "id": 5,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Vsmart"
     },
     {
       "id": 6,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Realme"
     },
     {
       "id": 7,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Mobell"
     },
     {
       "id": 8,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Xiaomi"
     },
     {
       "id": 9,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Vivo"
     },
     {
       "id": 10,
-      "type_id": 1,
+      "typeId": 1,
       "name": "OPPO"
     },
     {
       "id": 11,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Itel"
     },
     {
       "id": 12,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Coolpad"
     },
     {
       "id": 13,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Mobiistar"
     },
     {
       "id": 14,
-      "type_id": 1,
+      "typeId": 1,
       "name": "BlackBerry"
     },
     {
       "id": 15,
-      "type_id": 1,
+      "typeId": 1,
       "name": "Masstel"
     },
     {
       "id": 16,
-      "type_id": 2,
+      "typeId": 2,
       "name": "Macbook"
     },
     {
       "id": 17,
-      "type_id": 2,
+      "typeId": 2,
       "name": "Dell"
     },
     {
       "id": 18,
-      "type_id": 2,
+      "typeId": 2,
       "name": "MSI"
     },
     {
       "id": 19,
-      "type_id": 2,
+      "typeId": 2,
       "name": "Lenovo"
     },
     {
       "id": 20,
-      "type_id": 2,
+      "typeId": 2,
       "name": "Acer"
     },
     {
       "id": 21,
-      "type_id": 2,
+      "typeId": 2,
       "name": "HP"
     },
     {
       "id": 22,
-      "type_id": 2,
+      "typeId": 2,
       "name": "Asus"
     }
   ],
