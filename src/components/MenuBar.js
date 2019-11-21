@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { history } from '../_helpers/history';
 import MenuContainer from './../containers/MenuContainer'
 import routes from './../routes'
+import ProductsShowContainer from '../containers/product/ProductsShowContainer'
+ 
+
 
 class MenuBar extends React.Component {
     routerLinkMenu = (routes) => {

@@ -27,33 +27,37 @@ class ProductsShowListProducts extends Component {
                     contentWidth="30%"
                     contentHeight="100px"
                     imgWidth="100%"
+                    imgDivWidth="100%"
+                    imgDivHeight="200px"
+                    imgDivMargin=""
                     h1FontSize="15px"
+                    h1Height="30px"
                     h3FontSize="14px"
                     spanFontSize="14px"
                     buttonFontSize="14px"
-                    marginElement="4px"
+                    marginElement="2px"
                     showInfo="false"
                 />
             }
-            rows[i/3] = <div style = {styleRow}>
-                        {
-                            cols.map((col, key) => <>{col}</>) 
-                        }   
-                        </div>
+            rows[i / 3] = <div style={styleRow}>
+                {
+                    cols.map((col, key) => <>{col}</>)
+                }
+            </div>
         }
-            return (
-                rows.map((row, key) => <>{row}</>)
-            )
-        }
-
-        render() {
-            let { products, fetchProductsRequest } = this.props;
-            return (
-                <div id="ProductsShowListProducts">
-                    {this.showProduct(products)}
-                </div>
-            );
-        }
+        return (
+            rows.map((row, key) => <>{row}</>)
+        )
     }
 
-    export default ProductsShowListProducts;
+    render() {
+        let { products, fetchProductsRequest } = this.props;
+        return (
+            <div id="ProductsShowListProducts">
+                {this.showProduct(products)}
+            </div>
+        );
+    }
+}
+
+export default ProductsShowListProducts;

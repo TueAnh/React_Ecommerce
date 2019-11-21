@@ -122,7 +122,7 @@ class ProductDetailsComment extends Component {
         return (
             <div>
                 <span class="heading">Người dùng đánh giá</span>
-                {this.setStar(product.product_rating)}
+                {this.setStar(product.rating)}
                 <div>4.1 điểm trên 1 đống người dùng đã đánh giá sản phẩm.</div>
                 <hr style={styleHr} />
 
