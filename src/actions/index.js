@@ -73,7 +73,6 @@ export const actDeleteUser = (id) => {
 export const actAddUserRequest = (user) => {
     return (dispatch) => {
         return callApi('users/', 'POST', user).then(res => {
-            console.log(user)
             dispatch(actAddUser(res.data))
         });
     }
@@ -84,7 +83,7 @@ export const actAddUser = (user) => {
         user
     }
 }
-//get Product to Update User
+//get User to Update User
 export const actGetUserRequest = (id) => {
     return (dispatch) => {
         return callApi(`users/${id}`, 'GET', null).then(res => {

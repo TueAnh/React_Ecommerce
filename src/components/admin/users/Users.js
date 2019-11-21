@@ -7,8 +7,6 @@ class Users extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            filterName: '',
-            filterStatus: -1,
             keyword: ''
         }
     }
@@ -16,20 +14,15 @@ class Users extends React.Component {
         var target = e.target;
         var name = target.name;
         var value = target.type === 'checkbox' ? target.checked : target.value;
-        var filter = {
-            name: name === 'filterName' ? value : this.state.filterName,
-            status: name === 'filterStatus' ? value : this.state.filterStatus,
-        };
-        this.props.onFilterProduct(filter);
         this.setState({
             [name]: value
         })
     }
-    onSearch=()=>{
+    onSearch = () => {
         this.props.onSearchProduct(this.state.keyword)
     }
     render() {
-        var { filterName, filterStatus,keyword } = this.state
+        var { keyword } = this.state
         return (
             <div>
                 <div className="text-center">
@@ -45,7 +38,7 @@ class Users extends React.Component {
                         onChange={this.onChange}
                     />
                     <span className="input-group-btn">
-                        <button className="btn btn-primary" type="button" onClick = {this.onSearch  }>
+                        <button className="btn btn-primary" type="button" onClick={this.onSearch}>
                             <span className="fa fa-search mr-5" />Tìm
                      </button>
                     </span>
@@ -54,41 +47,14 @@ class Users extends React.Component {
                     <thead>
                         <tr>
                             <th className="text-center">STT</th>
-                            <th className="text-center">Code</th>
+                            <th className="text-center">UserId</th>
                             <th className="text-center">Email</th>
-                            <th className="text-center">member type</th>
-                            <th className="text-center">Status</th>
+                            <th className="text-center">Member Type</th>
                             <th className="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td />
-                            <td />
-                            <td>
-                                <input type="text"
-                                    className="form-control"
-                                    name="filterName"
-                                    value={filterName}
-                                    onChange={this.onChange}
-                                />
-                            </td>
-                            <td />
-                            <td>
-                                <select
-                                    className="form-control"
-                                    name="filterStatus"
-                                    value={filterStatus}
-                                    onChange={this.onChange}
-                                >
-                                    <option value={-1}>All</option>
-                                    <option value={0}>In Stock</option>
-                                    <option value={1}>Out Of Stock</option>
-                                </select>
-                            </td>
-                            <td />
-                        </tr>
-                        <UsersItemContainer/>
+                        <UsersItemContainer />
                     </tbody>
                 </table>
             </div>

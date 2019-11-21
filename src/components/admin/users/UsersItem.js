@@ -5,30 +5,12 @@ import { Link } from 'react-router-dom'
 class UserItem extends React.Component {
 
     render() {
-        var { users, filterProduct,searchProduct } = this.props;
-
-        //filer name
-        if (filterProduct.name) {
-            users = users.filter((product) => {
-                return product.name.toLowerCase().indexOf(filterProduct.name.toLowerCase()) !== -1
-            })
-        }
-        //filer quantity
-        if (filterProduct.status === 0) {
-            users = users.filter((product) => {
-                return product.quantity > 0
-            })
-        }
-        if (filterProduct.status === 1) {
-            users = users.filter((product) => {
-                return product.quantity === 0
-            })
-        }
+        var { users, searchProduct } = this.props;
         //search
         if (searchProduct) {
             console.log(users)
             users = users.filter((product) => {
-                return product.name.toLowerCase().indexOf(searchProduct.toLowerCase()) !== -1 || product.category_id === parseInt(searchProduct) ;
+                return product.name.toLowerCase().indexOf(searchProduct.toLowerCase()) !== -1 || product.category_id === parseInt(searchProduct);
             })
         }
         return (
@@ -38,7 +20,7 @@ class UserItem extends React.Component {
         );
     }
     onDelete = (id) => {
-        if (confirm('You sure delete this product ? ')) {// eslint-disable-line
+        if (confirm('You sure delete this user ? ')) {// eslint-disable-line
             this.props.onDeleteUser(id);
         }
     }
@@ -50,8 +32,8 @@ class UserItem extends React.Component {
                         <td>{index + 1}</td>
                         <td>{user.id}</td>
                         <td>{user.email}</td>
-                        <td>{user.isAdmin}</td>
                         <td className="text-center">
+                            {this.showIsAdmin(user.isAdmin,index)}
                         </td>
                         <td className="text-center">
                             <Link
@@ -70,15 +52,15 @@ class UserItem extends React.Component {
             })
         );
     }
-    showStatus = (quantity, index) => {
+    showIsAdmin = (isAdmin, index) => {
         var result = [];
-        if (quantity > 0) {
+        if (isAdmin === 1) {
             result.push(<span key={index} className="label label-success">
-                {quantity}
+                true
             </span>)
         } else {
-            result.push(<span key={index} className="label label-default">
-                Sold Out
+            result.push(<span key={index} className="label label-info">
+                false
         </span>)
         }
         return result;

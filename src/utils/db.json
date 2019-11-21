@@ -454,10 +454,10 @@
       "id": 15
     },
     {
-      "email": "admin34@gmail.com",
+      "id": 16,
+      "email": "adminqqq@gmail.com",
       "password": "23",
-      "isAdmin": 0,
-      "id": 16
+      "isAdmin": 0
     },
     {
       "email": "bubune1111w@gmail.com",
@@ -476,18 +476,6 @@
       "password": "12",
       "isAdmin": 0,
       "id": 19
-    },
-    {
-      "email": "a12dmin@gmail.com",
-      "password": "a12",
-      "isAdmin": 0,
-      "id": 20
-    },
-    {
-      "email": "bubune11w@gmail.com",
-      "password": "12",
-      "isAdmin": 0,
-      "id": 21
     }
   ],
   "orders": [
