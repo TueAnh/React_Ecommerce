@@ -1,5 +1,5 @@
 import React from 'react';
-import './layout/TrendingCarousel.css'
+import * as Message from './../constants/Message';
 class TrendingCarouselItem extends React.Component {
     render() {
         var sale = Math.floor(Math.random() *100);
@@ -44,7 +44,10 @@ class TrendingCarouselItem extends React.Component {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <a href="#" className="btn btn-primary">Add to Cart</a>
+                                        <a 
+                                         className="btn btn-primary"
+                                        onClick = {() => this.onAddToCart(product)}
+                                        >Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -53,6 +56,10 @@ class TrendingCarouselItem extends React.Component {
                 </div>
             </div>
         );
+    }
+    onAddToCart =(product) => {
+        this.props.onAddToCart(product);
+        this.props.onChangeMessage(Message.MSG_ADD_TO_CART_SUCCESS);
     }
     showRating = (rate) => {
         if (rate > 0) {

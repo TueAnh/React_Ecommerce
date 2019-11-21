@@ -2,6 +2,31 @@ import React, {Component} from 'react'
 import './ProductDetailsContent.css'
 
 class ProductDetailsContent extends Component {
+    constructor(props){
+        super(props);
+        this.setStar = this.setStar.bind(this);
+    }
+
+    setStar = (rating) => {
+        let stars = [];
+        for(let i = 1; i <= 5; i++){
+            if(i <= rating){
+                stars[i] = <span class="fa fa-star"></span>;
+            }
+            else{
+                if(rating > i-1)
+                    stars[i] = <span class="fa fa-star-half-o"></span>
+                else
+                    stars[i] = <span class="fa fa-star-o"></span>
+            }
+        }
+        return (
+            <div>
+                {stars[1]}{stars[2]}{stars[3]}{stars[4]}{stars[5]}
+            </div>
+        );
+    }
+
     render() {
         let styleProductDetailsContent = {
             display : this.props.contentDisplay,
@@ -36,6 +61,10 @@ class ProductDetailsContent extends Component {
             margin : this.props.marginElement
         }
 
+        let styleButton = {
+            fontSize : this.props.buttonFontSize,
+        }
+
         let hr = <hr style = {styleHr}/>
         let {product} = this.props
         let description = product.product_desciption.split('/');
@@ -44,11 +73,7 @@ class ProductDetailsContent extends Component {
                 <img style = {styleProductDetailsContentImg} src={product.product_image} alt=""/ >
                 <div className = "Info" >
                     <h1 style = {styleH1} >{product.product_name}</h1>
-                    <span className="fa fa-star checked"></span>
-                    <span className="fa fa-star checked"></span>
-                    <span className="fa fa-star checked"></span>
-                    <span className="fa fa-star checked"></span>
-                    <span className="fa fa-star checked"></span>
+                    {this.setStar(product.product_rating)}
                     {hr}
                     <h3 style = {styleH3} >{product.product_price}đ</h3>
                     {hr}
@@ -60,7 +85,7 @@ class ProductDetailsContent extends Component {
                             }
                         )
                     }
-                    <button>MUA NGAY</button>
+                    <button style = {styleButton}><span class="glyphicon glyphicon-shopping-cart"></span> MUA NGAY</button>
                 </div>
             </div>
         )

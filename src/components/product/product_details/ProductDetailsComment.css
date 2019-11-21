@@ -1,0 +1,10 @@
+#ProductDetailsComment{
+    padding: 20px;
+    border: rgb(169, 169, 169) solid 1px;
+    border-radius: 10px;
+}
+
+#ProductDetailsComment:hover {
+  background: #E1E8ED  ;
+  transition: 0.5s;
+}

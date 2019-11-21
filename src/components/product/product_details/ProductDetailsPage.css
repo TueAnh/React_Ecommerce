@@ -23,11 +23,9 @@
   margin-right: 25px;
 }
 
-.ProductDetailsPage .fa {
-  font-size: 25px;
-}
-
-.ProductDetailsPage .checked {
+.ProductDetailsPage .fa{
+  font-size: 20px;
+  margin-right: 4px;
   color: orange;
 }
 
