@@ -26,7 +26,7 @@ const routes = [
     {
         path : '/laptop',
         exact : false,
-        main :()=><ProductsShowPage type_id = "2"/>
+        main :()=><ProductsShowContainer type_id = "2"/>
     },
     {
         path : '/product/:id',
