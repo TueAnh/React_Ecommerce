@@ -47,7 +47,7 @@ class CartItem extends React.Component {
                         </table>
                         <label
                             onClick={() => this.onUpdateQuantity(item.product, item.quantity + 1)}
-                            className=" button1 btn btn-primary btn-rounded waves-effect waves-light"
+                            // className=" button1 btn btn-primary btn-rounded waves-effect waves-light"
                         >
                             <a>+</a>
                         </label>
