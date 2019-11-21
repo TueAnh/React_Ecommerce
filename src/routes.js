@@ -10,6 +10,7 @@ import ProductDetailsPage from './components/product/product_details/ProductDeta
 import LoginContainer from './containers/login_register/LoginContainer';
 import RegisterContainer from './containers/login_register/RegisterContainer';
 import ProductsShowPage from './components/product/products_show/ProductsShowPage';
+import ProductsShowContainer from './containers/product/ProductsShowContainer'
 const routes = [
     {
         path : '/',
@@ -20,12 +21,12 @@ const routes = [
         path : '/phone',
         exact : false,
         // main :()=><PhonePage/>
-        main :()=><ProductsShowPage/>
+        main :()=><ProductsShowContainer type_id = "1"/>
     },
     {
         path : '/laptop',
         exact : false,
-        main :()=><LaptopPage/>
+        main :()=><ProductsShowPage type_id = "2"/>
     },
     {
         path : '/product/:id',

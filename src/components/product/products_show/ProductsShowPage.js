@@ -8,7 +8,7 @@ class ProductsShowPage extends Component{
 
         return(
             <div id = "ProductsShowPage">
-                <ProductsShowFilter/>
+                <ProductsShowFilter type_id = {this.props.type_id}/>
                 <ProductsShowListProducts/>
             </div>
         )

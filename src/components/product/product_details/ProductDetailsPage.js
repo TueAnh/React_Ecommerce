@@ -12,8 +12,8 @@ class ProductDetailsPage extends Component {
     render() {
         let product = {"product_id:": 262, "category_id": 19, "product_rating": 4.3, "product_name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)", "product_price": "16.490.000", "product_image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg", "product_desciption": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell"}        ;
         let productsSame = [{"product_id:": 262, "category_id": 19,"product_rating": 4.3, "product_name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)", "product_price": "16.490.000", "product_image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg", "product_desciption": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell"},
-                        {"product_id:": 262, "category_id": 19,"product_rating": 4.3, "product_name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)", "product_price": "16.490.000", "product_image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg", "product_desciption": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell"},
-                        {"product_id:": 262, "category_id": 19,"product_rating": 4.3, "product_name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)", "product_price": "16.490.000", "product_image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg", "product_desciption": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell"},
+                        {"product_id:": 262, "category_id": 19,"product_rating": 2.3, "product_name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)", "product_price": "16.490.000", "product_image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg", "product_desciption": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell"},
+                        {"product_id:": 262, "category_id": 19,"product_rating": 4.3, "product_name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)", "product_price": "16.490.000", "product_image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg", "product_desciption": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell"},                        
                         {"product_id:": 262, "category_id": 19,"product_rating": 4.3, "product_name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)", "product_price": "16.490.000", "product_image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg", "product_desciption": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell"}];
         
         let rates = [{"user_id": 1, "rate_id": 1, "rate_time": "18/11/2019", "rate_score": 4, "rate_comment": "Cái này kết cấu vừa xấu, xài nhanh hao pin, lại còn đắt, chán !!, cơ mà thích đánh giá 4 sao :D"},
@@ -34,6 +34,7 @@ class ProductDetailsPage extends Component {
                         h3FontSize = "25px"
                         spanFontSize = "15px"
                         marginElement = "5px"
+                        showInfo = "true"
                     />
                 </div>
 
@@ -59,6 +60,7 @@ class ProductDetailsPage extends Component {
                                 spanFontSize = "14px"
                                 buttonFontSize = "14px"
                                 marginElement = "2px"
+                                showInfo = "false"
                             />
                         )
                     }

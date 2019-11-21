@@ -28,7 +28,6 @@ var appReducer = (state = initialState, action) => {
             state[index] = product;
             return [...state];
         default: return state;
-
     }
 };
 export default appReducer;

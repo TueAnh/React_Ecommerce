@@ -12,14 +12,13 @@
     font-size: 30px
 } */
 
+
+
 .ProductDetailsContent h3 {
     /* font-size: 25px; */
     color : red
 }
 
-.checked {
-    color: orange;
-}
 
 
 .ProductDetailsContent img {
@@ -50,6 +49,7 @@ hr{
 }
 
 .ProductDetailsContent button:hover {
+    color: white;
     background: #34A853  ;
     transition: 0.5s;
 }

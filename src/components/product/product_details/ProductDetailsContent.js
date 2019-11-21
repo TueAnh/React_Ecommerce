@@ -65,21 +65,28 @@ class ProductDetailsContent extends Component {
             fontSize : this.props.buttonFontSize,
         }
 
+        let styleImgDiv = {
+            height : "200px"
+        }
+
         let hr = <hr style = {styleHr}/>
         let {product} = this.props
-        let description = product.product_desciption.split('/');
+        //console.log(product);
+        let description = product.description.split('/');
         return (
             <div className = "ProductDetailsContent" style = {styleProductDetailsContent}>
-                <img style = {styleProductDetailsContentImg} src={product.product_image} alt=""/ >
+                <div style = {styleImgDiv} >
+                    <img style = {styleProductDetailsContentImg} src={product.image} alt=""/ >
+                </div>
                 <div className = "Info" >
-                    <h1 style = {styleH1} >{product.product_name}</h1>
-                    {this.setStar(product.product_rating)}
+                    <h1 style = {styleH1} >{product.name}</h1>
+                    {this.setStar(5)}
                     {hr}
-                    <h3 style = {styleH3} >{product.product_price}đ</h3>
+                    <h3 style = {styleH3} >{product.price}đ</h3>
                     {hr}
                     {
                         description.map((item, key) =>{
-                                if(item != "")
+                                if(item != "" && this.props.showInfo == "true")
                                     return  <span style = {styleSpan} key = {key}>{item}{hr}</span>
                                 return ""
                             }

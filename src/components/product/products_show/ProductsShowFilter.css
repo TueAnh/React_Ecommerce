@@ -1,4 +1,31 @@
-#ProductsShowFilter{
-    height: 100px;
+#ProductsShowFilter {
     width: 20%;
+    height: auto;
+    margin: 0px 10px;
+
+}
+
+#ProductsShowFilterUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ProductsShowFilterLi {
+    background-color: #f8f8f8;
+    border: #e7e7e7 solid 0.3px;
+    padding: 10px;
+}
+
+.ProductsShowFilterLi:hover {
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+
+.ProductsShowFilterLi:active {
+    background-color: #777;
+}
+
+.ProductsShowFilterLi:visited {
+    background-color: #777;
 }
