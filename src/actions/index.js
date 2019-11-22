@@ -45,6 +45,14 @@ export const actFetchTrendingLaptops = (trendinglaptop) => {
     }
 }
 
+export const actFetchTrendingPhones = (trendingphone) => {
+    console.log(trendingphone);
+    return {
+        type: types.FETCH_TRENDING_PHONES,
+        trendingphone
+    }
+}
+
 
 
 //3. Product Admin
@@ -405,7 +413,7 @@ export const actDeleteOrder = (id) => {
 }
 
 
-//trending laptop
+//trending laptop + phone
 export const actFetchTrendingLaptopsRequest = () => {
 
     return (dispatch) => {
@@ -421,7 +429,19 @@ export const actFetchTrendingLaptopsRequest = () => {
 
     }
 }
+export const actFetchTrendingPhonesRequest = () => {
 
+    return (dispatch) => {
+        var result = [];
+        callApi('type/1/category?_embed=products', 'GET', null).then(res => {
+            var phone = [];
+            result = res.data;
+            result.forEach(item => item.products.forEach((product) => { if (product.trending == 1) phone.push(product) }));
+            return dispatch(actFetchTrendingPhones(phone));
+        });
+
+    }
+}
 export const actFetchTrendingProductsRequest = () => {
     return (dispatch) => {
         return callApi('products/?trending=1', 'GET', null).then(res => {
