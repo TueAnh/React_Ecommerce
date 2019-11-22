@@ -51,6 +51,7 @@ class ProductDetailsContent extends Component {
             display: this.props.contentDisplay,
             width: this.props.contentWidth,
             margin: this.props.contentMargin,
+            padding: this.props.contentPadding,
         };
 
         let styleProductDetailsContentImg = {

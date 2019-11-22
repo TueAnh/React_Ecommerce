@@ -21,10 +21,14 @@ import userEditting from './userEditting'
 import searchUser from './searchUser'
 import selectedCategory from './product/selectedCategory'
 import orderAdmin from './orderAdmin'
+import laptops from './product/laptops'
+import phones from './product/phones'
 const appReducer = combineReducers({
     selectedCategory,
     productsPhonesOrLaptops,
     categories,
+    laptops,
+    phones,
     products,
     carousel,
     trendingcarousel,

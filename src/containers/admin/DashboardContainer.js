@@ -16,7 +16,6 @@ class DashboardContainer extends React.Component {
             lengthUsers={users.length}
             lengthOrders = {order.length}
             >
-
             </Dashboard>
         );
     }
@@ -42,4 +41,5 @@ const mapDispatchToProps = (dispatch) => {
         }
     }
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(DashboardContainer);

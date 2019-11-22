@@ -6,6 +6,7 @@ class Dashboard extends React.Component {
         var { lengthProducts,lengthUsers,lengthOrders } = this.props;
         return (
             <div className="col-sm-9">
+                {console.log("dashboard")};
                 <div className="well">
                     <h4>Dashboard</h4>
                     <p>Some text..</p>

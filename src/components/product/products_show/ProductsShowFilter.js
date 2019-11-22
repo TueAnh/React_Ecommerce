@@ -5,35 +5,32 @@ class ProductsShowFilter extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            style: []
+            style: {}
         }
     }
 
     onClickEvent = (e) => {
         let id = e.target.id;
-        let lov = e.target.lov;
-        let _style = [];
-        console.log(lov);
+        let _style = {};
         if(id == 0)
             this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
         else    
             this.props.fetchProductWithIdRequest(id);
         
-        // for (let i = 0; i <= this.props.categories.length; i++) {
-        //     _style[i] = "";
-        //     // if (i == key)
-        //     //     _style[i] = {
-        //     //         backgroundColor: "#777"
-        //     //     }
-        // }
-        // //console.log(key);
-        // this.setState({
-        //     style: _style
-        // })
+        this.props.categories.map((category, key) => {
+            _style[category.name] = {};
+            if(category.id == id)
+                _style[category.name] = {
+                    backgroundColor: "#e7e7e7",
+                }
+        })
+        this.setState({
+            style: _style
+        })
     }
 
     render() {
-        let {categories} = this.props
+        let {categories} = this.props;
         return (
             <div id="ProductsShowFilter">
                 <ul id="ProductsShowFilterUl">
@@ -45,12 +42,12 @@ class ProductsShowFilter extends Component {
                     {
                         categories.map((category, key) => {
                             return (
-                                <li style={this.state.style[key + 1]}
+                                <li style={this.state.style[category.name]}
                                     key={key+1}
                                     className="ProductsShowFilterLi"
                                     onClick={this.onClickEvent}
                                     id={category.id}
-                                >{category.name}</li>
+                                >{category.name}</li>        
                             )
 
                         })

@@ -23,15 +23,15 @@ class ProductsShowListProducts extends Component {
                 cols[j % 3] = <ProductDetailsContent
                     product={products[j]}
                     contentDisplay="block"
-                    contentMargin="10px"
-                    contentWidth="30%"
+                    contentWidth="33%"
                     contentHeight="100px"
+                    contentPadding="20px"
                     imgWidth="100%"
                     imgDivWidth="auto"
                     imgDivHeight={styleHeight}
                     imgDivMargin=""
                     h1FontSize="15px"
-                    h1Height="30px"
+                    h1Height="45px"
                     h3FontSize="14px"
                     spanFontSize="14px"
                     buttonFontSize="14px"
@@ -48,10 +48,6 @@ class ProductsShowListProducts extends Component {
         return (
             rows.map((row, key) => <>{row}</>)
         )
-    }
-
-    componentDidUpdate(){
-        
     }
 
     render() {

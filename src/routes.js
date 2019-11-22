@@ -54,11 +54,7 @@ const routes = [
         exact : true,
         main :()=><AdminPage/>
     },
-    {
-        path : '',
-        exact : true,
-        main :()=><NotFoundPage/>
-    },
+   
 ];
 
 export default routes;

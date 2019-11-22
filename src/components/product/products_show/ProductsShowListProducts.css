@@ -3,8 +3,27 @@
     height: auto;
     display: block;
     text-align: center;
+    animation: 6s fadeIn;
+    animation-fill-mode: forwards;
+  
+    visibility: hidden;
+    /* opacity: 0.5;
+    transition: visibility 0s, opacity 0.5s linear; */
 }
 
+#ProductsShowListProducts:hover {
+    /* opacity: 1; */
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+}
 
 h1 {
     margin: 0 20px;

@@ -486,6 +486,44 @@ export const actFetchProductPhoneOrLap = (products) => {
         products
     }
 }
+//////////////////////////
+export const actFetchPhonesRequest = () => {
+    return (dispatch) => {
+        return callApi(`type/1/category?_embed=products`, 'GET', null).then(res => {
+            let phones = [];
+            res.data.map((category, key) =>
+                category.products.map((phone, key) => phones.push(phone)));
+            dispatch(actFetchProductPhoneOrLap(phones));
+        });
+    }
+}
+
+export const actFetchPhones = (phones) => {
+    return {
+        type: types.LIST_PHONE,
+        phones
+    }
+}
+
+export const actFetchLapsRequest = () => {
+    return (dispatch) => {
+        return callApi(`type/2/category?_embed=products`, 'GET', null).then(res => {
+            let laptops = [];
+            res.data.map((category, key) =>
+                category.products.map((laptop, key) => laptops.push(laptop)));
+            dispatch(actFetchProductPhoneOrLap(laptops));
+        });
+    }
+}
+
+export const actFetchLaps = (laptops) => {
+    return {
+        type: types.LIST_LAPTOP,
+        laptops
+    }
+}
+
+//////////////////
 
 export const actFetchCategoriesRequest = (id) => {
     return (dispatch) => {

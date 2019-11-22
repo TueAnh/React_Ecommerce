@@ -25,8 +25,7 @@ class MenuBar extends React.Component {
             });
         }
         return <Switch>
-                    {result}
-                      
+                    {result}    
                 </Switch>;
     }
     render() {

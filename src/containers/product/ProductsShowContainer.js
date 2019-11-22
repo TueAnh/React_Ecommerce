@@ -5,7 +5,7 @@ import {
     actFetchProductWithIdRequest, 
     actFetchCategoriesRequest,
     actFetchProductPhoneOrLapRequest,
-    actSelectedCategory
+    actSelectedCategory,
 } from './../../actions/index'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -14,6 +14,7 @@ class ProductsShowContainer extends Component {
     componentDidMount() {
         this.props.fetchCategoriesRequest(this.props.type_id);
         this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
+        setTimeout(this.render(),2000);
     }
 
 
@@ -40,6 +41,8 @@ const mapStateToProps = (state) => {
     return {
         categories: state.categories,
         productsPhonesOrLaptops: state.productsPhonesOrLaptops,
+        // phones : state.phones,
+        // laptops : state.laptops,
         selectedCategory: state.selectedCategory,
     }
 }
@@ -48,7 +51,9 @@ const mapDispatchToProps = (dispatch) => ({
     fetchCategoriesRequest: bindActionCreators(actFetchCategoriesRequest, dispatch),
     fetchProductPhoneOrLapRequest: bindActionCreators(actFetchProductPhoneOrLapRequest, dispatch),
     selectedCategoryFunc: bindActionCreators(actSelectedCategory, dispatch),
-    fetchProductWithIdRequest: bindActionCreators(actFetchProductWithIdRequest, dispatch)
+    fetchProductWithIdRequest: bindActionCreators(actFetchProductWithIdRequest, dispatch),
+    // fetchPhonesRequest: bindActionCreators(actFetchPhonesRequest, dispatch),
+    // fetchLapsRequest: bindActionCreators(actFetchLapsRequest, dispatch)
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductsShowContainer);
