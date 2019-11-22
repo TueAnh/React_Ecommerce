@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom'
+import * as Message from './../../constants/Message'
 class CartResult extends React.Component {
     onCheckout = (user, _order) => {
         // console.log(user)
@@ -10,6 +11,7 @@ class CartResult extends React.Component {
         }
         // console.log(order)
         this.props.onAddOder(_order);
+        this.props.onChangeMessage(Message.MSG_CHECKOUT);
     }
     render() {
         var { cart, user } = this.props;

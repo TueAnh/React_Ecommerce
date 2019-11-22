@@ -1,16 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import CartResult from '../components/CartComponent/CartResult';
-import {actAddOrderRequest} from './../actions/index';
+import { actAddOrderRequest,actChangeMessage } from './../actions/index';
 class CartResultContainer extends React.Component {
     render() {
-        var { cart,user,onAddOder,order } = this.props;
+        var { cart, user, onAddOder, order ,onChangeMessage} = this.props;
         return (
             <CartResult
                 cart={cart}
-                user = {user}
-                order ={order}
-                onAddOder = {onAddOder}
+                user={user}
+                order={order}
+                onAddOder={onAddOder}
+                onChangeMessage = {onChangeMessage}
 
             />
         );
@@ -20,8 +21,8 @@ class CartResultContainer extends React.Component {
 const mapStateToProps = state => {
     return {
         cart: state.cart,
-        user : state.user,
-        order : state.order
+        user: state.user,
+        order: state.order
     }
 }
 const mapDispatchToProps = (dispatch, props) => {
@@ -29,6 +30,9 @@ const mapDispatchToProps = (dispatch, props) => {
         //checkout
         onAddOder: (order) => {
             dispatch(actAddOrderRequest(order))
+        },
+        onChangeMessage: (message) => {
+            dispatch(actChangeMessage(message));
         },
     }
 }
