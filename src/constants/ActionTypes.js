@@ -23,10 +23,6 @@ export const DELETE_USER = 'DELETE_USER';
 export const EDIT_USER = 'EDIT_USER';
 export const UPDATE_USER = 'UPDATE_USER';
 export const SEARCH_USER = 'SEARCH_USER';
-//admin-order
-export const FETCH_ORDERS = 'FETCH_ORDERS';
-export const DELETE_ORDER = 'DELETE_ORDER';
-export const FILTER_ORDERS = 'FILTER_ORDERS';
 
 //5 Login
 export const LOGIN_REQUEST = 'USERS_LOGIN_REQUEST';
@@ -43,12 +39,12 @@ export const ALERT_ERROR = 'ALERT_ERROR';
 export const ADD_TO_CART = 'ADD_TO_CART';
 export const CHANGE_MESSAGE = 'CHANGE_MESSAGE';
 export const DELETE_PRODUCT_IN_CART = 'DELETE_PRODUCT_IN_CART';
-export const UPDATE_PRODUCT_IN_CART = 'UPDATE_PRODUCT_IN_CART';
+export const UPDATE_PRODUCT_IN_CART = 'UPDATE_PRODUCT_IN_CART'; 
 export const CHECKOUT_CART = 'CHECKOUT_CART';
-// 9.Admin
-
-
-
+// 9.Order Admin
+export const FETCH_ORDERS = 'FETCH_ORDERS';
+export const DELETE_ORDER = 'DELETE_ORDER';
+export const FILTER_ORDERS = 'FILTER_ORDERS';
 
 
 export const LIST_PHONE_TRENDING = 'LIST_PHONE_TRENDING';
