@@ -12,7 +12,7 @@ class DashboardContainer extends React.Component {
         return (
             <Dashboard 
             lengthProducts={products.length}
-            lengthUser={users.length}
+            lengthUsers={users.length}
             >
 
             </Dashboard>
