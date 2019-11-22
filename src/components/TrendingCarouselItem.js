@@ -36,7 +36,7 @@ class TrendingCarouselItem extends React.Component {
                                     </div>
                                     <div className="thumb-content">
                                         <h4>{product.name}</h4>
-                                        <p className="item-price"><strike>${product.price/20000}</strike> <span>${(product.price*(1-sale/100)/20000).toFixed(1)}</span></p>
+                                        <p className="item-price"> <span>{this.insertDot(product.price)}₫</span></p>
                                         <div className="star-rating">
                                             <ul className="list-inline">
                                                 <li className="list-inline-item">
@@ -56,6 +56,20 @@ class TrendingCarouselItem extends React.Component {
                 </div>
             </div>
         );
+    }
+    insertDot = (p) => {
+        var price = p ;
+        price = parseInt(price);
+        let priceHaveDot = "";
+        while (price > 1000) {
+            let temp = (price % 1000);
+            if(temp == 0)
+                temp = "000";
+            priceHaveDot = temp + "." + priceHaveDot;
+            price /= 1000;
+        }
+        priceHaveDot = parseInt(price) + "." + priceHaveDot;
+        return priceHaveDot;
     }
     onAddToCart =(product) => {
         this.props.onAddToCart(product);

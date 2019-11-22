@@ -77,8 +77,6 @@ class CartItem extends React.Component {
         var number = a;
         number = number.toLocaleString('vi', { style: 'currency', currency: 'VND' });
         return number;
-        
-
     }
     onDelete = (product) => {
         // console.log(product);
@@ -97,6 +95,7 @@ class CartItem extends React.Component {
             });
             onUpdateProductInCart(product, quantity);
             onChangeMessage(Message.MSG_UPDATE_CART_SUCCESS);
+            console.log(quantity);
         }
     }
 }

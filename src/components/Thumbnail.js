@@ -25,7 +25,7 @@ class Thumbnail extends React.Component {
                             </div>
                             <div className="caption">
                                 <div className="price">
-                                    <strong>{trendingBig.price} </strong>
+                                    <strong>{this.insertDot(trendingBig.price)}₫ </strong>
                                 </div>
                             </div>
                             <a
@@ -42,6 +42,20 @@ class Thumbnail extends React.Component {
             </>
 
         );
+    }
+    insertDot = (p) => {
+        var price = p ;
+        price = parseInt(price);
+        let priceHaveDot = "";
+        while (price > 1000) {
+            let temp = (price % 1000);
+            if(temp == 0)
+                temp = "000";
+            priceHaveDot = temp + "." + priceHaveDot;
+            price /= 1000;
+        }
+        priceHaveDot = parseInt(price) + "." + priceHaveDot;
+        return priceHaveDot;
     }
     onAddToCart = (product) => {
         this.props.onAddToCart(product);
