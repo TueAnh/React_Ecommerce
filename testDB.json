@@ -1,0 +1,1395 @@
+{
+    "type": [
+      {
+        "id": 1,
+        "name": "laptop"
+      },
+      {
+        "id": 2,
+        "name": "phone"
+      }
+    ],
+    "products": [
+      {"id": 1, "categoryId": 1, "name": "iPhone 11 Pro Max 512GB", "price": "43990000", "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg", "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh", "trending": 1, "rating": 5},
+      {"id": 2, "categoryId": 3, "name": "Samsung Galaxy S10+ (512GB)", "price": "28990000", "image": "https://cdn.tgdd.vn/Products/Images/42/198986/sieu-pham-galaxy-s-moi-2-512gb-black-600x600.jpg", "description": "/Man hinh: 6.4 inch, Quad HD+ (2K+)/HDH: Android 9.0 (Pie)/CPU: Exynos 9820 8 nhan/RAM: 8 GB, ROM: 512 GB/Camera: Chinh 12 MP & Phu 12 MP, 16 MP, Selfie: Chinh 10 MP & Phu 8 MP/PIN: 4100 mAh", "trending": 0, "rating": 4},
+      {"id": 3, "categoryId": 1, "name": "iPhone 11 Pro Max 256GB", "price": "37990000", "image": "https://cdn.tgdd.vn/Products/Images/42/210653/iphone-11-pro-max-256gb-green-600x600.jpg", "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh", "trending": 1, "rating": 4},
+      {"id": 4, "categoryId": 1, "name": "iPhone 11 Pro 256GB", "price": "34990000", "image": "https://cdn.tgdd.vn/Products/Images/42/210655/iphone-11-pro-256gb-black-600x600.jpg", "description": "/Man hinh: 5.8 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3046 mAh", "trending": 0, "rating": 4},
+      {"id": 5, "categoryId": 1, "name": "iPhone 11 Pro Max 64GB", "price": "33990000", "image": "https://cdn.tgdd.vn/Products/Images/42/200533/iphone-11-pro-max-green-600x600.jpg", "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh", "trending": 0, "rating": 3},
+      {"id": 6, "categoryId": 3, "name": "Samsung Galaxy Note 10+", "price": "26990000", "image": "https://cdn.tgdd.vn/Products/Images/42/206176/samsung-galaxy-note-10-plus-silver-600x600.jpg", "description": "/Man hinh: 6.8 inch, Quad HD+ (2K+)/HDH: Android 9.0 (Pie)/CPU: Exynos 9825 8 nhan/RAM: 12 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, 16 MP, TOF 3D, Selfie: 10 MP/PIN: 4300 mAh", "trending": 0, "rating": 3},
+      {"id": 7, "categoryId": 3, "name": "Samsung Galaxy Note 10", "price": "22990000", "image": "https://cdn.tgdd.vn/Products/Images/42/191276/samsung-galaxy-note-10-silver-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Exynos 9825 8 nhan/RAM: 8 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, 16 MP, Selfie: 10 MP/PIN: 3500 mAh", "trending": 0, "rating": 4},
+      {"id": 8, "categoryId": 3, "name": "Samsung Galaxy Note 9", "price": "22990000", "image": "https://cdn.tgdd.vn/Products/Images/42/154897/samsung-galaxy-note-9-black-600x600.jpg", "description": "/Man hinh: 6.4 inch, Quad HD+ (2K+)/HDH: Android 8.1 (Oreo)/CPU: Exynos 9810 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 8 MP/PIN: 4000 mAh", "trending": 1, "rating": 1},
+      {"id": 9, "categoryId": 6, "name": "Realme XT", "price": "7990000", "image": "https://cdn.tgdd.vn/Products/Images/42/210241/realme-xt-white-1-600x600.jpg", "description": "/Man hinh: 6.4 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 712 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 64 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 0, "rating": 1},
+      {"id": 10, "categoryId": 4, "name": "Huawei P30 Pro", "price": "20690000", "image": "https://cdn.tgdd.vn/Products/Images/42/197228/huawei-p30-pro-1-600x600.jpg", "description": "/Man hinh: 6.47 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Kirin 980 8 nhan/RAM: 8 GB, ROM: 256 GB/Camera: Chinh 40 MP & Phu 20 MP, 8 MP, TOF 3D, Selfie: 32 MP/PIN: 4200 mAh", "trending": 1, "rating": 4},
+      {"id": 11, "categoryId": 4, "name": "Huawei P30 Lite", "price": "6020000", "image": "https://cdn.tgdd.vn/Products/Images/42/198985/huawei-p30-lite-1-600x600.jpg", "description": "/Man hinh: 6.15 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Kirin 710/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 24 MP & Phu 8 MP, 2 MP, Selfie: 32 MP/PIN: 3340 mAh", "trending": 0, "rating": 2},
+      {"id": 12, "categoryId": 4, "name": "Huawei Nova 3i", "price": "5390000", "image": "https://cdn.tgdd.vn/Products/Images/42/179673/huawei-nova-3i-600-600-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 8.1 (Oreo)/CPU: Kirin 710/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 16 MP & Phu 2 MP, Selfie: Chinh 24 MP & Phu 2 MP/PIN: 3340 mAh", "trending": 0, "rating": 1},
+      {"id": 13, "categoryId": 1, "name": "iPhone Xs Max 256GB", "price": "33990000", "image": "https://cdn.tgdd.vn/Products/Images/42/190322/iphone-xs-max-256gb-white-600x600.jpg", "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh", "trending": 0, "rating": 1},
+      {"id": 14, "categoryId": 1, "name": "iPhone 11 Pro 64GB", "price": "30990000", "image": "https://cdn.tgdd.vn/Products/Images/42/188705/iphone-11-pro-black-600x600.jpg", "description": "/Man hinh: 5.8 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3046 mAh", "trending": 1, "rating": 2},
+      {"id": 15, "categoryId": 3, "name": "Samsung Galaxy S10+", "price": "22990000", "image": "https://cdn.tgdd.vn/Products/Images/42/179530/samsung-galaxy-s10-plus-black-600x600.jpg", "description": "/Man hinh: 6.4 inch, Quad HD+ (2K+)/HDH: Android 9.0 (Pie)/CPU: Exynos 9820 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, 16 MP, Selfie: Chinh 10 MP & Phu 8 MP/PIN: 4100 mAh", "trending": 1, "rating": 1},
+      {"id": 16, "categoryId": 3, "name": "Samsung Galaxy S10", "price": "20990000", "image": "https://cdn.tgdd.vn/Products/Images/42/161554/samsung-galaxy-s10-white-600x600.jpg", "description": "/HDH: Android 9.0 (Pie)/CPU: Exynos 9820 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, 16 MP, Selfie: 10 MP/PIN: 3400 mAh", "trending": 1, "rating": 4},
+      {"id": 17, "categoryId": 5, "name": "Vsmart Live (6GB/64GB)", "price": "3790000", "image": "https://cdn.tgdd.vn/Products/Images/42/209553/vsmart-live-6gb-white-18thangbh-600x600.jpg", "description": "/Man hinh: 6.2 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 675 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 5 MP, Selfie: 20 MP/PIN: 4000 mAh", "trending": 0, "rating": 5},
+      {"id": 18, "categoryId": 5, "name": "Vsmart Live (4GB/64GB)", "price": "3490000", "image": "https://cdn.tgdd.vn/Products/Images/42/208847/vsmart-live-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 6.2 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 675 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 5 MP, Selfie: 20 MP/PIN: 4000 mAh", "trending": 0, "rating": 4},
+      {"id": 19, "categoryId": 8, "name": "Xiaomi Mi 9 SE", "price": "7490000", "image": "https://cdn.tgdd.vn/Products/Images/42/198394/xiaomi-mi-9-se-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 5.97 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 712 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 13 MP, 8 MP, Selfie: 20 MP/PIN: 3070 mAh", "trending": 1, "rating": 2},
+      {"id": 20, "categoryId": 9, "name": "Vivo V17 Pro", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/42/210243/vivo-v17-pro-blue-noo-600x600.jpg", "description": "/Man hinh: 6.44 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 675 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: Chinh 32 MP & Phu 8 MP/PIN: 4100 mAh", "trending": 0, "rating": 5},
+      {"id": 21, "categoryId": 6, "name": "Realme 5 Pro (8GB/128GB)", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/211163/realme-5-pro-8gb-green-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 712 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 4035 mAh", "trending": 0, "rating": 4},
+      {"id": 22, "categoryId": 6, "name": "Realme 5 Pro (4GB/128GB)", "price": "5990000", "image": "https://cdn.tgdd.vn/Products/Images/42/209564/realme-5-pro-purple-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 712 8 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 4035 mAh", "trending": 1, "rating": 3},
+      {"id": 23, "categoryId": 6, "name": "Realme 3 Pro (4GB/64GB)", "price": "4590000", "image": "https://cdn.tgdd.vn/Products/Images/42/194955/realme-3-pro-blue-2nambh-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 710 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 16 MP & Phu 5 MP, Selfie: 25 MP/PIN: 4045 mAh", "trending": 1, "rating": 1},
+      {"id": 24, "categoryId": 4, "name": "Huawei Y9 Prime (2019)", "price": "5490000", "image": "https://cdn.tgdd.vn/Products/Images/42/202268/huawei-y9-prime-2019-blue-2-600x600.jpg", "description": "/Man hinh: 6.59 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Kirin 710F 8 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 16 MP & Phu 8 MP, 2 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 0, "rating": 1},
+      {"id": 25, "categoryId": 4, "name": "Huawei Y7 Pro (2019)", "price": "3140000", "image": "https://cdn.tgdd.vn/Products/Images/42/197205/huawei-y7-pro-2019-1-600x600.jpg", "description": "/Man hinh: 6.26 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: Snapdragon 450 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 1, "rating": 3},
+      {"id": 26, "categoryId": 1, "name": "iPhone Xs 256GB", "price": "29990000", "image": "https://cdn.tgdd.vn/Products/Images/42/190324/iphone-xs-256gb-white-600x600.jpg", "description": "/Man hinh: 5.8 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 2658 mAh", "trending": 1, "rating": 4},
+      {"id": 27, "categoryId": 1, "name": "iPhone Xs Max 64GB", "price": "27990000", "image": "https://cdn.tgdd.vn/Products/Images/42/190321/iphone-xs-max-gold-600x600.jpg", "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh", "trending": 1, "rating": 2},
+      {"id": 28, "categoryId": 1, "name": "iPhone Xs 64GB", "price": "24990000", "image": "https://cdn.tgdd.vn/Products/Images/42/190323/iphone-xs-gold-600x600.jpg", "description": "/Man hinh: 5.8 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 2658 mAh", "trending": 1, "rating": 2},
+      {"id": 29, "categoryId": 10, "name": "OPPO Reno 10x Zoom Edition", "price": "16990000", "image": "https://cdn.tgdd.vn/Products/Images/42/201235/oppo-reno-10x-zoom-edition-black-600x600.jpg", "description": "/HDH: Android 9.0 (Pie)/CPU: Snapdragon 855 8 nhan/RAM: 8 GB, ROM: 256 GB/Camera: Chinh 48 MP & Phu 13 MP, 8 MP, Selfie: 16 MP/PIN: 4065 mAh", "trending": 0, "rating": 3},
+      {"id": 30, "categoryId": 3, "name": "Samsung Galaxy A80", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/42/201228/samsung-galaxy-a80-gold-600x600.jpg", "description": "/Man hinh: 6.7 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 730 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, TOF 3D, Selfie: Chinh 48 MP & Phu 8 MP, TOF 3D/PIN: 3700 mAh", "trending": 1, "rating": 5},
+      {"id": 31, "categoryId": 3, "name": "Samsung Galaxy A9 (2018)", "price": "10990000", "image": "https://cdn.tgdd.vn/Products/Images/42/192003/samsung-galaxy-a9-2018-blue-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 8.0 (Oreo)/CPU: Snapdragon 660 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 24 MP & Phu 10 MP, 8 MP, 5 MP, Selfie: 24 MP/PIN: 3800 mAh", "trending": 0, "rating": 2},
+      {"id": 32, "categoryId": 3, "name": "Samsung Galaxy A70", "price": "8790000", "image": "https://cdn.tgdd.vn/Products/Images/42/195012/samsung-galaxy-a70-white-600x600.jpg", "description": "/Man hinh: 6.7 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 675 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 32 MP & Phu 8 MP, 5 MP, Selfie: 32 MP/PIN: 4500 mAh", "trending": 1, "rating": 4},
+      {"id": 33, "categoryId": 5, "name": "Vsmart Joy 2+ (2GB/32GB)", "price": "2590000", "image": "https://cdn.tgdd.vn/Products/Images/42/209555/vsmart-joy-2-plus-2gb-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 6.2 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 450 8 nhan/RAM: 2 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 5 MP, Selfie: 8 MP/PIN: 4500 mAh", "trending": 1, "rating": 1},
+      {"id": 34, "categoryId": 5, "name": "Vsmart Star", "price": "1790000", "image": "https://cdn.tgdd.vn/Products/Images/42/209133/vsmart-star-coral-600x600.jpg", "description": "/Man hinh: 5.7 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 215 4 nhan/RAM: 2 GB, ROM: 16 GB/Camera: Chinh 8 MP & Phu 2 MP, Selfie: 5 MP/PIN: 3000 mAh", "trending": 1, "rating": 5},
+      {"id": 35, "categoryId": 5, "name": "Vsmart Bee", "price": "1190000", "image": "https://cdn.tgdd.vn/Products/Images/42/207847/vsmart-bee-blue-600x600.jpg", "description": "/Man hinh: 5.45 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: MediaTek MT6739 4 nhan/RAM: 1 GB, ROM: 16 GB/Camera: 8 MP, Selfie: 5 MP/PIN: 2500 mAh", "trending": 1, "rating": 3},
+      {"id": 36, "categoryId": 8, "name": "Xiaomi Mi 9T", "price": "7990000", "image": "https://cdn.tgdd.vn/Products/Images/42/203053/xiaomi-mi-9t-red-18thangbh-600x600.jpg", "description": "/Man hinh: 6.39 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 730 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 13 MP, 8 MP, Selfie: 20 MP/PIN: 4000 mAh", "trending": 1, "rating": 3},
+      {"id": 37, "categoryId": 8, "name": "Xiaomi Redmi Note 8 Pro (6GB/128GB)", "price": "6490000", "image": "https://cdn.tgdd.vn/Products/Images/42/214418/xiaomi-redmi-note-8-pro-6gb-128gb-black-18thangbh-600x600.jpg", "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Mediatek Helio G90T 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 64 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 20 MP/PIN: 4500 mAh", "trending": 0, "rating": 2},
+      {"id": 38, "categoryId": 8, "name": "Xiaomi Redmi Note 8 Pro (6GB/128GB) Xanh D\u01b0\u01a1ng", "price": "6490000", "image": "https://cdn.tgdd.vn/Products/Images/42/214816/xiaomi-redmi-note-8-pro-6gb-128gb-xanh-duong-docquyen-600x600.jpg", "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Mediatek Helio G90T 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 64 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 20 MP/PIN: 4500 mAh", "trending": 0, "rating": 4},
+      {"id": 39, "categoryId": 9, "name": "Vivo V15 128GB", "price": "5990000", "image": "https://cdn.tgdd.vn/Products/Images/42/199041/vivo-v15-quanghai-600x600.jpg", "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P70 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 8 MP, 5 MP, Selfie: 32 MP/PIN: 4000 mAh", "trending": 0, "rating": 5},
+      {"id": 40, "categoryId": 9, "name": "Vivo S1", "price": "5990000", "image": "https://cdn.tgdd.vn/Products/Images/42/202861/vivo-s1-blue-600x600.jpg", "description": "/Man hinh: 6.38 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6768 8 nhan (Helio P65)/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 16 MP & Phu 8 MP, 2 MP, Selfie: 32 MP/PIN: 4500 mAh", "trending": 0, "rating": 5},
+      {"id": 41, "categoryId": 9, "name": "Vivo V15 64GB", "price": "5490000", "image": "https://cdn.tgdd.vn/Products/Images/42/202033/vivo-v15-64gb-red-600x600.jpg", "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P70 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 8 MP, 5 MP, Selfie: 32 MP/PIN: 4000 mAh", "trending": 0, "rating": 5},
+      {"id": 42, "categoryId": 2, "name": "Nokia 8.1", "price": "6590000", "image": "https://cdn.tgdd.vn/Products/Images/42/194917/nokia-81-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 6.18 inch, Full HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 710 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 13 MP, Selfie: 20 MP/PIN: 3500 mAh", "trending": 0, "rating": 1},
+      {"id": 43, "categoryId": 6, "name": "Realme 5 (4GB/128GB)", "price": "4690000", "image": "https://cdn.tgdd.vn/Products/Images/42/211161/realme-5-4gb-purple-docquyen-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 5000 mAh", "trending": 1, "rating": 5},
+      {"id": 44, "categoryId": 6, "name": "Realme 3 (4GB/64GB)", "price": "3390000", "image": "https://cdn.tgdd.vn/Products/Images/42/201764/realme-3-64gb-black-isaac-600x600.jpg", "description": "/Man hinh: 6.22 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P60 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 13 MP/PIN: 4230 mAh", "trending": 0, "rating": 1},
+      {"id": 45, "categoryId": 6, "name": "Realme 5 (3GB/64GB)", "price": "3990000", "image": "https://cdn.tgdd.vn/Products/Images/42/207649/realme-5-blue-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 3 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 5000 mAh", "trending": 0, "rating": 2},
+      {"id": 46, "categoryId": 12, "name": "Coolpad N5", "price": "2190000", "image": "https://cdn.tgdd.vn/Products/Images/42/200521/coolpad-n5-black-600x600.jpg", "description": "/Man hinh: 6.2 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: MediaTek MT6739 4 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 0.3 MP, Selfie: 5 MP/PIN: 3050 mAh", "trending": 0, "rating": 2},
+      {"id": 47, "categoryId": 1, "name": "iPhone 11 128GB", "price": "23990000", "image": "https://cdn.tgdd.vn/Products/Images/42/210644/iphone-11-128gb-black-600x600.jpg", "description": "/Man hinh: 6.1 inch, Liquid Retina/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 12 MP/PIN: 3110 mAh", "trending": 0, "rating": 1},
+      {"id": 48, "categoryId": 1, "name": "iPhone 11 64GB", "price": "21990000", "image": "https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-red-600x600.jpg", "description": "/Man hinh: 6.1 inch, Liquid Retina/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 12 MP/PIN: 3110 mAh", "trending": 1, "rating": 1},
+      {"id": 49, "categoryId": 1, "name": "iPhone Xr 128GB", "price": "18990000", "image": "https://cdn.tgdd.vn/Products/Images/42/191483/iphone-xr-128gb-600x600.jpg", "description": "/Man hinh: 6.1 inch, Liquid Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 3 GB, ROM: 128 GB/Camera: 12 MP, Selfie: 7 MP/PIN: 2942 mAh", "trending": 0, "rating": 4},
+      {"id": 50, "categoryId": 10, "name": "OPPO Reno2", "price": "14990000", "image": "https://cdn.tgdd.vn/Products/Images/42/209798/oppo-reno2-600x600.jpg", "description": "/Man hinh: 6.55 inch, Full HD+/CPU: Snapdragon 730G 8 nhan/RAM: 8 GB, ROM: 256 GB/Camera: Chinh 48 MP & Phu 13 MP, 8 MP, 2 MP/Selfie: 16 MP/PIN: 4000 mAh, co sac nhanh", "trending": 1, "rating": 2},
+      {"id": 51, "categoryId": 10, "name": "OPPO Reno", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-pink-600x600.jpg", "description": "/Man hinh: 6.4 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 710 8 nhan/RAM: 6 GB, ROM: 256 GB/Camera: Chinh 48 MP & Phu 5 MP, Selfie: 16 MP/PIN: 3765 mAh", "trending": 0, "rating": 3},
+      {"id": 52, "categoryId": 10, "name": "OPPO Reno2 F", "price": "8990000", "image": "https://cdn.tgdd.vn/Products/Images/42/209800/oppo-reno2-f-green-mtp-600x600.jpg", "description": "/Man hinh: 6.5 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P70 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 1, "rating": 5},
+      {"id": 53, "categoryId": 3, "name": "Samsung Galaxy A50 128GB", "price": "6490000", "image": "https://cdn.tgdd.vn/Products/Images/42/200294/samsung-galaxy-a50-128gb-blue-600x600.jpg", "description": "/Man hinh: 6.4 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Exynos 9610 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 25 MP & Phu 8 MP, 5 MP, Selfie: 25 MP/PIN: 4000 mAh", "trending": 0, "rating": 5},
+      {"id": 54, "categoryId": 3, "name": "Samsung Galaxy A7 (2018) 128GB", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/194327/samsung-galaxy-a7-2018-128gb-black-600x600.jpg", "description": "/Man hinh: 6.0 inch, Full HD+/HDH: Android 8.0 (Oreo)/CPU: Exynos 7885 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 24 MP & Phu 8 MP, 5 MP, Selfie: 24 MP/PIN: 3300 mAh", "trending": 1, "rating": 5},
+      {"id": 55, "categoryId": 14, "name": "BlackBerry KEY2", "price": "15990000", "image": "https://cdn.tgdd.vn/Products/Images/42/171028/blackberry-key2-4-600x600.jpg", "description": "/Man hinh: 4.5 inch, Full HD/HDH: Android 8.1 (Oreo)/CPU: Snapdragon 660 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 8 MP/PIN: 3500 mAh", "trending": 1, "rating": 4},
+      {"id": 56, "categoryId": 14, "name": "BlackBerry KEY2 LE", "price": "10990000", "image": "https://cdn.tgdd.vn/Products/Images/42/189005/blackberry-key2-le-1-600x600.jpg", "description": "/Man hinh: 4.5 inch, Full HD/HDH: Android 8.1 (Oreo)/CPU: Snapdragon 636 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 5 MP, Selfie: 8 MP/PIN: 3000 mAh", "trending": 1, "rating": 2},
+      {"id": 57, "categoryId": 14, "name": "BlackBerry KEYone 4GB/64GB", "price": "7990000", "image": "https://cdn.tgdd.vn/Products/Images/42/112433/blackberry-keyone-9-600x600.jpg", "description": "/Man hinh: 4.5 inch, Full HD/HDH: Android 7.1 (Nougat)/CPU: Snapdragon 625 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: 12 MP, Selfie: 8 MP/PIN: 3505 mAh", "trending": 1, "rating": 2},
+      {"id": 58, "categoryId": 8, "name": "Xiaomi Redmi Note 8 Pro (6GB/64GB)", "price": "5990000", "image": "https://cdn.tgdd.vn/Products/Images/42/209797/xiaomi-redmi-note-8-pro-white-18thangbh-600x600.jpg", "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Mediatek Helio G90T 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 64 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 20 MP/PIN: 4500 mAh", "trending": 1, "rating": 1},
+      {"id": 59, "categoryId": 8, "name": "Xiaomi Redmi Note 8 Pro (6GB/64GB) Xanh D\u01b0\u01a1ng", "price": "5990000", "image": "https://cdn.tgdd.vn/Products/Images/42/214815/xiaomi-redmi-note-8-pro-6gb-64gb-xanh-duong-docquyen-600x600.jpg", "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Mediatek Helio G90T 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 64 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 20 MP/PIN: 4500 mAh", "trending": 0, "rating": 5},
+      {"id": 60, "categoryId": 8, "name": "Xiaomi Redmi Note 8 (4GB/128GB)", "price": "5490000", "image": "https://cdn.tgdd.vn/Products/Images/42/212374/xiaomi-redmi-note-8-128gb-black-18thangbh-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 4000 mAh", "trending": 0, "rating": 4},
+      {"id": 61, "categoryId": 9, "name": "Vivo Y19", "price": "4990000", "image": "https://cdn.tgdd.vn/Products/Images/42/204651/vivo-y19-white-quanghai-600x600.jpg", "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6768 8 nhan (Helio P65)/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 16 MP & Phu 8 MP, 2 MP, Selfie: 16 MP/PIN: 5000 mAh", "trending": 1, "rating": 4},
+      {"id": 62, "categoryId": 9, "name": "Vivo Y17", "price": "4390000", "image": "https://cdn.tgdd.vn/Products/Images/42/201404/vivo-y17-purple-600x600.jpg", "description": "/Man hinh: 6.35 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P35 8 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 13 MP & Phu 8 MP, 2 MP, Selfie: 20 MP/PIN: 5000 mAh", "trending": 0, "rating": 5},
+      {"id": 63, "categoryId": 9, "name": "Vivo V11i", "price": "3990000", "image": "https://cdn.tgdd.vn/Products/Images/42/187554/vivo-v11i-blue-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 8.1 (Oreo)/CPU: MediaTek Helio P60 8 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 16 MP & Phu 5 MP, Selfie: 25 MP/PIN: 3315 mAh", "trending": 0, "rating": 4},
+      {"id": 64, "categoryId": 2, "name": "Nokia 7.2", "price": "5990000", "image": "https://cdn.tgdd.vn/Products/Images/42/207650/nokia-72-black-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 660 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 5 MP, Selfie: 20 MP/PIN: 3500 mAh", "trending": 1, "rating": 4},
+      {"id": 65, "categoryId": 2, "name": "Nokia 6.1 Plus", "price": "3990000", "image": "https://cdn.tgdd.vn/Products/Images/42/167150/nokia-61-plus-2-600x600.jpg", "description": "/Man hinh: 5.8 inch, Full HD+/HDH: Android 8 Oreo (Android One)/CPU: Snapdragon 636 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 16 MP & Phu 5 MP, Selfie: 16 MP/PIN: 3060 mAh", "trending": 1, "rating": 3},
+      {"id": 66, "categoryId": 2, "name": "Nokia 5.1 Plus", "price": "3290000", "image": "https://cdn.tgdd.vn/Products/Images/42/179472/nokia-51-plus-black-18thangbh-600x600.jpg", "description": "/Man hinh: 5.8 inch, HD+/HDH: Android 8 Oreo (Android One)/CPU: MediaTek Helio P60 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 5 MP, Selfie: 8 MP/PIN: 3060 mAh", "trending": 1, "rating": 3},
+      {"id": 67, "categoryId": 2, "name": "Nokia 3.2 32GB", "price": "3290000", "image": "https://cdn.tgdd.vn/Products/Images/42/199977/nokia-32-1-600x600.jpg", "description": "/Man hinh: 6.2 inch, HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 429 4 nhan/RAM: 3 GB, ROM: 32 GB/Camera: 13 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 0, "rating": 5},
+      {"id": 68, "categoryId": 7, "name": "Mobell S61", "price": "1650000", "image": "https://cdn.tgdd.vn/Products/Images/42/197925/mobell-s61-blue-2-600x600.jpg", "description": "/Man hinh: 5.5 inch, HD+/HDH: Android 8 Oreo (Go Edition)/CPU: Spreadtrum SC7731E 4 nhan/RAM: 1 GB, ROM: 16 GB/Camera: Chinh 8 MP & Phu 0.3 MP, Selfie: 5 MP/PIN: 2500 mAh", "trending": 1, "rating": 5},
+      {"id": 69, "categoryId": 7, "name": "Mobell Nova P3", "price": "1650000", "image": "https://cdn.tgdd.vn/Products/Images/42/139909/mobell-nova-p3-300-300x300.jpg", "description": "/Man hinh: 5.5 inch, HD/HDH: Android 7.0 (Nougat)/CPU: MediaTek MT6580 4 nhan/RAM: 2 GB, ROM: 16 GB/Camera: 8 MP, Selfie: 8 MP/PIN: 3250 mAh", "trending": 0, "rating": 2},
+      {"id": 70, "categoryId": 6, "name": "Realme 3 (3GB/32GB)", "price": "3290000", "image": "https://cdn.tgdd.vn/Products/Images/42/194952/realme-3-green-isaac-600x600.jpg", "description": "/Man hinh: 6.22 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P60 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 13 MP/PIN: 4230 mAh", "trending": 1, "rating": 4},
+      {"id": 71, "categoryId": 6, "name": "Realme C2 (3GB/32GB)", "price": "2990000", "image": "https://cdn.tgdd.vn/Products/Images/42/201385/realme-c2-new-blue-600x600.jpg", "description": "/Man hinh: 6.1 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6762 8 nhan (Helio P22)/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 0, "rating": 1},
+      {"id": 72, "categoryId": 6, "name": "Realme C2 (2GB/16GB)", "price": "2590000", "image": "https://cdn.tgdd.vn/Products/Images/42/203347/realme-c2-16gb-new-blue-600x600.jpg", "description": "/Man hinh: 6.1 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6762 8 nhan (Helio P22)/RAM: 2 GB, ROM: 16 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 1, "rating": 5},
+      {"id": 73, "categoryId": 6, "name": "Realme C2 (2GB/32GB)", "price": "2590000", "image": "https://cdn.tgdd.vn/Products/Images/42/209557/realme-c2-2g-32gb-black-600x600.jpg", "description": "/Man hinh: 6.1 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6762 8 nhan (Helio P22)/RAM: 2 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 1, "rating": 3},
+      {"id": 74, "categoryId": 12, "name": "Coolpad Mega 5", "price": "1890000", "image": "https://cdn.tgdd.vn/Products/Images/42/194435/coolpad-mega-5-blue-600x600.jpg", "description": "/Man hinh: 5.7 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: MediaTek MT6739 4 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 0.3 MP, Selfie: 5 MP/PIN: 3000 mAh", "trending": 0, "rating": 5},
+      {"id": 75, "categoryId": 12, "name": "Coolpad N3D", "price": "1590000", "image": "https://cdn.tgdd.vn/Products/Images/42/193504/coolpad-n3d-blue-600x600.jpg", "description": "/Man hinh: 5.45 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: Spreadtrum SC9850K 4 nhan/RAM: 2 GB, ROM: 16 GB/Camera: Chinh 8 MP & Phu 0.3 MP, Selfie: 5 MP/PIN: 2500 mAh", "trending": 0, "rating": 2},
+      {"id": 76, "categoryId": 12, "name": "Coolpad N3C", "price": "1290000", "image": "https://cdn.tgdd.vn/Products/Images/42/197806/coolpad-n3c-gray-600x600.jpg", "description": "/Man hinh: 5.45 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: Spreadtrum SC9850K 4 nhan/RAM: 1 GB, ROM: 16 GB/Camera: 5 MP, Selfie: 5 MP/PIN: 2300 mAh", "trending": 1, "rating": 1},
+      {"id": 77, "categoryId": 12, "name": "Coolpad F129", "price": "320000", "image": "https://cdn.tgdd.vn/Products/Images/42/193501/coolpad-f129-black-600x600.jpg", "description": "/Man hinh: 2.4 inch, LCD/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 2700 mAh", "trending": 1, "rating": 2},
+      {"id": 78, "categoryId": 12, "name": "Coolpad F210", "price": "280000", "image": "https://cdn.tgdd.vn/Products/Images/42/206676/coolpad-f210-blue-600x600.jpg", "description": "/Man hinh: 1.77 inch, QQVGA/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 1 Micro & 1 sim thuong/PIN: 800 mAh", "trending": 0, "rating": 2},
+      {"id": 79, "categoryId": 12, "name": "Coolpad F126", "price": "250000", "image": "https://cdn.tgdd.vn/Products/Images/42/193500/coolpad-f126-black-600x600.jpg", "description": "/Man hinh: 2.4 inch, LCD/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 SIM thuong/PIN: 1700 mAh", "trending": 1, "rating": 5},
+      {"id": 80, "categoryId": 1, "name": "iPhone 8 Plus 64GB", "price": "15990000", "image": "https://cdn.tgdd.vn/Products/Images/42/114110/iphone-8-plus-hh-600x600.jpg", "description": "/Man hinh: 5.5 inch, Retina HD/HDH: iOS 12/CPU: Apple A11 Bionic 6 nhan/RAM: 3 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 2691 mAh", "trending": 1, "rating": 1},
+      {"id": 81, "categoryId": 1, "name": "iPhone 7 Plus 32GB", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/42/78124/iphone-7-plus-black-600x600.jpg", "description": "/Man hinh: 5.5 inch, Retina HD/HDH: iOS 12/CPU: Apple A10 Fusion 4 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 2900 mAh", "trending": 1, "rating": 2},
+      {"id": 82, "categoryId": 1, "name": "iPhone 7 32GB", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/42/74110/iphone-7-gold-600x600.jpg", "description": "/Man hinh: 4.7 inch, Retina HD/HDH: iOS 12/CPU: Apple A10 Fusion 4 nhan/RAM: 2 GB, ROM: 32 GB/Camera: 12 MP, Selfie: 7 MP/PIN: 1960 mAh", "trending": 1, "rating": 2},
+      {"id": 83, "categoryId": 10, "name": "OPPO Reno2 F Xanh Tinh V\u00e2n", "price": "8990000", "image": "https://cdn.tgdd.vn/Products/Images/42/213848/oppo-reno2-f-xanh-tinh-van-docquyen-600x600.jpg", "description": "/Man hinh: 6.5 inch, FullHD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P70 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 0, "rating": 1},
+      {"id": 84, "categoryId": 10, "name": "OPPO F11 Pro 128GB", "price": "7490000", "image": "https://cdn.tgdd.vn/Products/Images/42/202703/oppo-f11-pro-128gb-600x600.jpg", "description": "/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P70 8 nhan/RAM: 6 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 5 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 0, "rating": 4},
+      {"id": 85, "categoryId": 3, "name": "Samsung Galaxy A50s", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/207641/samsung-galaxy-a50s-green-600x600.jpg", "description": "/Man hinh: 6.4 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Exynos 9610 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 5 MP, Selfie: 32 MP/PIN: 4000 mAh", "trending": 1, "rating": 3},
+      {"id": 86, "categoryId": 3, "name": "Samsung Galaxy A7 (2018)", "price": "4090000", "image": "https://cdn.tgdd.vn/Products/Images/42/111107/samsung-galaxy-a7-2018-blue-600x600.jpg", "description": "/Man hinh: 6.0 inch, Full HD+/HDH: Android 8.0 (Oreo)/CPU: Exynos 7885 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 24 MP & Phu 8 MP, 5 MP, Selfie: 24 MP/PIN: 3300 mAh", "trending": 0, "rating": 2},
+      {"id": 87, "categoryId": 14, "name": "BlackBerry KEYone 3GB/32GB", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/194834/blackberry-keyone-3gb-600x600.jpg", "description": "/Man hinh: 4.5 inch, Full HD/HDH: Android 7.1 (Nougat)/CPU: Snapdragon 625 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: 12 MP, Selfie: 8 MP/PIN: 3505 mAh", "trending": 0, "rating": 4},
+      {"id": 88, "categoryId": 14, "name": "BlackBerry Evolve", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/199756/blackberry-evolve-black-600x600.jpg", "description": "/Man hinh: 5.99 inch, Full HD+/HDH: Android 8.1 (Oreo)/CPU: Snapdragon 450 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 13 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 0, "rating": 3},
+      {"id": 89, "categoryId": 22, "name": "Asus VivoBook X507MA N4000 (BR318T)", "price": "6490000", "image": "https://cdn.tgdd.vn/Products/Images/44/200505/asus-x507ma-n4000-4gb-256gb-win10-br318t-10-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Celeron, 1.10 GHz/RAM: 4 GB, SSD: 256 GB M2/Do hoa: Intel UHD Graphics 600/HDH: Windows 10 Home SL/Nang: 1.75 kg, Pin: 3 cell", "trending": 1, "rating": 1},
+      {"id": 90, "categoryId": 17, "name": "Dell Vostro 3468 i3 7020U (70161069)", "price": "11390000", "image": "https://cdn.tgdd.vn/Products/Images/44/186375/dell-vostro-3468-i3-7020u-70161069-15-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.76 kg, Pin: 4 cell", "trending": 1, "rating": 2},
+      {"id": 91, "categoryId": 11, "name": "Itel S15 Pro", "price": "1990000", "image": "https://cdn.tgdd.vn/Products/Images/42/210476/itel-s15-pro-green-600x600.jpg", "description": "/Man hinh: 6.1 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Spreadtrum SC9863A 8 nhan/RAM: 2 GB, ROM: 32 GB/Camera: Chinh 8 MP & Phu VGA, VGA, Selfie: 16 MP/PIN: 3000 mAh", "trending": 0, "rating": 3},
+      {"id": 92, "categoryId": 21, "name": "HP 15 da0359TU N4417 (6KD00PA)", "price": "7490000", "image": "https://cdn.tgdd.vn/Products/Images/44/204064/hp-15-da0359tu-n4417-4gb-500gb-win10-6kd00pa-15-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Pentium, 2.30 GHz/RAM: 4 GB, HDD: 500 GB/Do hoa: Intel HD Graphics/HDH: Windows 10 Home SL/Nang: 1.77 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 93, "categoryId": 8, "name": "Xiaomi Redmi Note 8 (4GB/64GB)", "price": "4990000", "image": "https://cdn.tgdd.vn/Products/Images/42/209535/xiaomi-redmi-note-8-white-18thangbh-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 4000 mAh", "trending": 0, "rating": 3},
+      {"id": 94, "categoryId": 8, "name": "Xiaomi Redmi Note 7 (4GB/64GB)", "price": "4490000", "image": "https://cdn.tgdd.vn/Products/Images/42/167535/xiaomi-redmi-note-7-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 660 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 5 MP, Selfie: 13 MP/PIN: 4000 mAh", "trending": 1, "rating": 1},
+      {"id": 95, "categoryId": 15, "name": "Masstel X5 Fami", "price": "1300000", "image": "https://cdn.tgdd.vn/Products/Images/42/212228/masstel-x5-fami-gold-600x600.jpg", "description": "/Man hinh: 5.45 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: Spreadtrum SC7731E 4 nhan/RAM: 1 GB, ROM: 8 GB/Camera: 8 MP, Selfie: 5 MP/PIN: 3200 mAh", "trending": 0, "rating": 5},
+      {"id": 96, "categoryId": 9, "name": "Vivo Y15", "price": "3990000", "image": "https://cdn.tgdd.vn/Products/Images/42/202865/vivo-y15-blue-quanghai-600x600.jpg", "description": "/Man hinh: 6.35 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6762 8 nhan (Helio P22)/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 8 MP, 2 MP, Selfie: 16 MP/PIN: 5000 mAh", "trending": 0, "rating": 5},
+      {"id": 97, "categoryId": 9, "name": "Vivo Y12", "price": "3590000", "image": "https://cdn.tgdd.vn/Products/Images/42/203619/vivo-y12-red-600x600.jpg", "description": "/Man hinh: 6.35 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6762 8 nhan (Helio P22)/RAM: 3 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 8 MP, 2 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 1, "rating": 5},
+      {"id": 98, "categoryId": 9, "name": "Vivo Y91", "price": "3490000", "image": "https://cdn.tgdd.vn/Products/Images/42/196142/vivo-y91-black-600x600.jpg", "description": "/Man hinh: 6.22 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: MediaTek MT6762R 8 nhan/RAM: 3 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 8 MP/PIN: 4030 mAh", "trending": 0, "rating": 4},
+      {"id": 99, "categoryId": 9, "name": "Vivo Y11", "price": "2990000", "image": "https://cdn.tgdd.vn/Products/Images/42/212357/vivo-y11-blue-600x600.jpg", "description": "/Man hinh: 6.35 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 439 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 0, "rating": 5},
+      {"id": 100, "categoryId": 2, "name": "Nokia 800 Tough", "price": "2490000", "image": "https://cdn.tgdd.vn/Products/Images/42/210437/nokia-800-tough-black-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 2 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/SIM: 2 Nano SIM/PIN: 2100 mAh", "trending": 1, "rating": 3},
+      {"id": 101, "categoryId": 2, "name": "Nokia 3.2 16GB", "price": "2490000", "image": "https://cdn.tgdd.vn/Products/Images/42/202919/nokia-32-16gb-2-600x600.jpg", "description": "/Man hinh: 6.2 inch, HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 429 4 nhan/RAM: 2 GB, ROM: 16 GB/Camera: 13 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 0, "rating": 3},
+      {"id": 102, "categoryId": 2, "name": "Nokia 2.2", "price": "1990000", "image": "https://cdn.tgdd.vn/Products/Images/42/204089/nokia-22-black-600x600.jpg", "description": "/Man hinh: 5.71 inch, HD+/HDH: Android 9 Pie (Android One)/CPU: Mediatek MT6761 4 nhan (Helio A22)/RAM: 2 GB, ROM: 16 GB/Camera: 13 MP, Selfie: 5 MP/PIN: 3000 mAh", "trending": 1, "rating": 4},
+      {"id": 103, "categoryId": 7, "name": "Mobell S60", "price": "1390000", "image": "https://cdn.tgdd.vn/Products/Images/42/193271/mobell-s60-red-1-600x600.jpg", "description": "/Man hinh: 5.5 inch, FWVGA/HDH: Android 8.1 (Oreo)/CPU: MediaTek MT6580 4 nhan/RAM: 1 GB, ROM: 16 GB/Camera: Chinh 8 MP & Phu 2 MP, Selfie: 5 MP/PIN: 2900 mAh", "trending": 0, "rating": 1},
+      {"id": 104, "categoryId": 7, "name": "Mobell S51", "price": "1290000", "image": "https://cdn.tgdd.vn/Products/Images/42/195140/mobell-s51-gold-2-600x600.jpg", "description": "/Man hinh: 5.5 inch, HD+/HDH: Android 8 Oreo (Go Edition)/CPU: Spreadtrum SC7731 4 nhan/RAM: 1 GB, ROM: 8 GB/Camera: Chinh 5 MP & Phu 0.3 MP, Selfie: 5 MP/PIN: 2500 mAh", "trending": 0, "rating": 5},
+      {"id": 105, "categoryId": 7, "name": "Mobell S41", "price": "990000", "image": "https://cdn.tgdd.vn/Products/Images/42/195136/mobell-s41-gold-1-600x600.jpg", "description": "/Man hinh: 5 inch, FWVGA/HDH: Android 8 Oreo (Go Edition)/CPU: MediaTek MT6580M 4 nhan/RAM: 1 GB, ROM: 8 GB/Camera: 5 MP, Selfie: 2 MP/PIN: 2200 mAh", "trending": 0, "rating": 5},
+      {"id": 106, "categoryId": 12, "name": "Coolpad F116", "price": "200000", "image": "https://cdn.tgdd.vn/Products/Images/42/193499/coolpad-f116-8-600x600.jpg", "description": "/Man hinh: 1.77 inch, LCD/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 SIM thuong/PIN: 1700 mAh", "trending": 0, "rating": 5},
+      {"id": 107, "categoryId": 12, "name": "Coolpad F110", "price": "190000", "image": "https://cdn.tgdd.vn/Products/Images/42/203513/coolpad-f110-blue-1-600x600.jpg", "description": "/Man hinh: 1.77 inch, QQVGA/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 1, "rating": 5},
+      {"id": 108, "categoryId": 10, "name": "OPPO F11", "price": "6290000", "image": "https://cdn.tgdd.vn/Products/Images/42/199801/oppo-f11-mtp-600x600.jpg", "description": "/Man hinh: 6.5 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek Helio P70 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 5 MP, Selfie: 16 MP/PIN: 4020 mAh", "trending": 0, "rating": 2},
+      {"id": 109, "categoryId": 10, "name": "OPPO A9 (2020)", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/202028/oppo-a9-white-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 5000 mAh", "trending": 0, "rating": 4},
+      {"id": 110, "categoryId": 10, "name": "OPPO K3", "price": "5990000", "image": "https://cdn.tgdd.vn/Products/Images/42/202863/oppo-k3-black-docquyen-600x600.jpg", "description": "/Man hinh: 6.5 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 710 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 16 MP & Phu 2 MP, Selfie: 16 MP/PIN: 3765 mAh", "trending": 0, "rating": 5},
+      {"id": 111, "categoryId": 3, "name": "Samsung Galaxy A50 64GB", "price": "5490000", "image": "https://cdn.tgdd.vn/Products/Images/42/196963/samsung-galaxy-a50-black-600x600.jpg", "description": "/Man hinh: 6.4 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Exynos 9610 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 25 MP & Phu 8 MP, 5 MP, Selfie: 25 MP/PIN: 4000 mAh", "trending": 0, "rating": 5},
+      {"id": 112, "categoryId": 3, "name": "Samsung Galaxy A30s", "price": "6290000", "image": "https://cdn.tgdd.vn/Products/Images/42/204403/samsung-galaxy-a30s-green-600x600.jpg", "description": "/Man hinh: 6.4 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Exynos 7904 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 25 MP & Phu 8 MP, 5 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 1, "rating": 3},
+      {"id": 113, "categoryId": 3, "name": "Samsung Galaxy A30", "price": "4790000", "image": "https://cdn.tgdd.vn/Products/Images/42/198413/samsung-galaxy-a30-blue-600x600.jpg", "description": "/Man hinh: 6.4 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Exynos 7904 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 16 MP & Phu 5 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 0, "rating": 3},
+      {"id": 114, "categoryId": 22, "name": "Asus VivoBook X441MA N5000 (GA024T)", "price": "7290000", "image": "https://cdn.tgdd.vn/Products/Images/44/191993/asus-x441ma-ga024t-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Pentium, 1.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel HD Graphics/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 3 cell", "trending": 1, "rating": 5},
+      {"id": 115, "categoryId": 22, "name": "Asus VivoBook X407UA i3 7020U (BV351T)", "price": "9690000", "image": "https://cdn.tgdd.vn/Products/Images/44/190014/asus-x407ua-bv351t-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB, Ho tro khe cam SSD M.2/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.5 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 116, "categoryId": 17, "name": "Dell Vostro 3568 i3 7020U (VTI32072W)", "price": "11590000", "image": "https://cdn.tgdd.vn/Products/Images/44/189366/dell-vostro-3568-vti32072w-vv-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.18 kg, Pin: 4 cell", "trending": 0, "rating": 4},
+      {"id": 117, "categoryId": 17, "name": "Dell Inspiron 3476 i3 8130U (8J61P11)", "price": "11690000", "image": "https://cdn.tgdd.vn/Products/Images/44/189385/dell-inspiron-3476-8j61p11-16-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake Refresh, 2.20 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.97 Kg, Pin: 4 cell", "trending": 1, "rating": 5},
+      {"id": 118, "categoryId": 17, "name": "Dell Inspiron 3576 i3 8130U (P63F002N76B)", "price": "11690000", "image": "https://cdn.tgdd.vn/Products/Images/44/166858/dell-inspiron-3576-p63f002n76b-15-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i3 Kabylake Refresh, 2.20 GHz/RAM: 4 GB, HDD: 1 TB/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.3 Kg, Pin: 4 cell", "trending": 1, "rating": 2},
+      {"id": 119, "categoryId": 11, "name": "Itel P15", "price": "1550000", "image": "https://cdn.tgdd.vn/Products/Images/42/212912/itel-p15-blue-600x600.jpg", "description": "/Man hinh: 5 inch, FWVGA/HDH: Android 9.0 (Go Edition)/CPU: Spreadtrum SC7731E 4 nhan/RAM: 2 GB, ROM: 16 GB/Camera: 5 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 0, "rating": 5},
+      {"id": 120, "categoryId": 11, "name": "Itel P33", "price": "1390000", "image": "https://cdn.tgdd.vn/Products/Images/42/201373/itel-p33-gold-600x600.jpg", "description": "/Man hinh: 5.5 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: Spreadtrum SC7731E 4 nhan/RAM: 1 GB, ROM: 16 GB/Camera: Chinh 8 MP & Phu VGA, Selfie: 5 MP/PIN: 4000 mAh", "trending": 1, "rating": 4},
+      {"id": 121, "categoryId": 11, "name": "Itel S33", "price": "1390000", "image": "https://cdn.tgdd.vn/Products/Images/42/213641/itel-s33-gold-600x600.jpg", "description": "/Man hinh: 6.0 inch, HD+/HDH: Android 9.0 (Go Edition)/CPU: MediaTek MT6580 4 nhan 32-bit/RAM: 1 GB, ROM: 16 GB/Camera: Chinh 8 MP & Phu VGA, Selfie: 13 MP/PIN: 3000 mAh", "trending": 0, "rating": 1},
+      {"id": 122, "categoryId": 21, "name": "HP 14s dk0097au R3 3200U (7VH92PA)", "price": "8990000", "image": "https://cdn.tgdd.vn/Products/Images/44/210256/hp-14s-amd-ryzen-3-3200u-4gb-1tb-win10-7vh92pa-15-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: AMD Ryzen 3, 2.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: AMD Radeontm  Vega 3 Graphics/HDH: Windows 10 Home SL/Nang: 1,47 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 123, "categoryId": 21, "name": "HP 14 ck0068TU i3 7020U (4ME90PA)", "price": "10390000", "image": "https://cdn.tgdd.vn/Products/Images/44/204634/hp-14-ck0068tu-i3-7020u-4gb-500gb-14-win10-4me90p-16-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 500 GB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.56 kg, Pin: 3 cell", "trending": 1, "rating": 1},
+      {"id": 124, "categoryId": 8, "name": "Xiaomi Mi A3", "price": "4490000", "image": "https://cdn.tgdd.vn/Products/Images/42/197845/xiaomi-mi-a3-white-18thangbh-600x600.jpg", "description": "/Man hinh: 6.01 inch, HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, Selfie: 32 MP/PIN: 4030 mAh", "trending": 0, "rating": 1},
+      {"id": 125, "categoryId": 8, "name": "Xiaomi Redmi Note 8 (3GB/32GB)", "price": "3990000", "image": "https://cdn.tgdd.vn/Products/Images/42/212247/xiaomi-redmi-note-8-32gb-white-18thangbh-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 13 MP/PIN: 4000 mAh", "trending": 0, "rating": 4},
+      {"id": 126, "categoryId": 8, "name": "Xiaomi Redmi 7 (3GB/32GB)", "price": "3290000", "image": "https://cdn.tgdd.vn/Products/Images/42/198167/xiaomi-redmi-7-black-18thangbh-600x600.jpg", "description": "/Man hinh: 6.26 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 632 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 12 MP & Phu 2 MP, Selfie: 8 MP/PIN: 4000 mAh", "trending": 1, "rating": 4},
+      {"id": 127, "categoryId": 15, "name": "Masstel Fami 12", "price": "490000", "image": "https://cdn.tgdd.vn/Products/Images/42/212188/masstel-fami-12-black-600x600.jpg", "description": "/Man hinh: 1.7 inch, QQVGA/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 8 GB/SIM: 2 SIM thuong/PIN: 1000 mAh", "trending": 0, "rating": 1},
+      {"id": 128, "categoryId": 15, "name": "Masstel IZI 300", "price": "400000", "image": "https://cdn.tgdd.vn/Products/Images/42/212227/masstel-izi-300-gold-600x600.jpg", "description": "/Man hinh: 2.4 inch, QQVGA/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 16 GB/Danh ba: 300 so/SIM: 1 Micro & 1 sim thuong/PIN: 2500 mAh", "trending": 0, "rating": 1},
+      {"id": 129, "categoryId": 15, "name": "Masstel IZI 280", "price": "350000", "image": "https://cdn.tgdd.vn/Products/Images/42/212191/masstel-izi-280-blue-600x600.jpg", "description": "/Man hinh: 2.8 inch, QQVGA/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 300 so/SIM: 2 SIM thuong/PIN: 1800 mAh", "trending": 0, "rating": 1},
+      {"id": 130, "categoryId": 15, "name": "Masstel IZI 206", "price": "290000", "image": "https://cdn.tgdd.vn/Products/Images/42/212190/masstel-izi-206-blue-600x600.jpg", "description": "/Man hinh: 2.4 inch, QQVGA/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 300 so/SIM: 2 SIM thuong/PIN: 1450 mAh", "trending": 1, "rating": 2},
+      {"id": 131, "categoryId": 15, "name": "Masstel IZI 112", "price": "200000", "image": "https://cdn.tgdd.vn/Products/Images/42/212189/masstel-izi-112-black-600x600.jpg", "description": "/Man hinh: 1.77 inch, QQVGA/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 300 so/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 0, "rating": 1},
+      {"id": 132, "categoryId": 9, "name": "Vivo Y93", "price": "2990000", "image": "https://cdn.tgdd.vn/Products/Images/42/202284/vivo-y93-32gb-black-600x600.jpg", "description": "/Man hinh: 6.2 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: Snapdragon 439 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 8 MP/PIN: 4030 mAh", "trending": 1, "rating": 1},
+      {"id": 133, "categoryId": 9, "name": "Vivo Y91C", "price": "2590000", "image": "https://cdn.tgdd.vn/Products/Images/42/199083/vivo-y91c-600x600.jpg", "description": "/Man hinh: 6.22 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: MediaTek MT6762R 8 nhan/RAM: 2 GB, ROM: 32 GB/Camera: 13 MP, Selfie: 5 MP/PIN: 4030 mAh", "trending": 0, "rating": 2},
+      {"id": 134, "categoryId": 2, "name": "Nokia 2720 Flip (2019)", "price": "1990000", "image": "https://cdn.tgdd.vn/Products/Images/42/209789/nokia-2720-2019-black-2-600x600.jpg", "description": "/Man hinh: Chinh 2.8 inch & Phu 1.3 inch, QVGA/Camera: 2 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 Nano SIM/PIN: 1500 mAh", "trending": 1, "rating": 4},
+      {"id": 135, "categoryId": 2, "name": "Nokia 230 (kh\u00f4ng t\u1eb7ng th\u1ebb nh\u1edb)", "price": "1250000", "image": "https://cdn.tgdd.vn/Products/Images/42/101850/nokia-230-khong-the-blue-600x600.jpg", "description": "/Man hinh: 2.8 inch, QVGA/Camera: 2 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 SIM thuong/PIN: 1200 mAh", "trending": 1, "rating": 2},
+      {"id": 136, "categoryId": 7, "name": "Mobell M729", "price": "590000", "image": "https://cdn.tgdd.vn/Products/Images/42/196890/mobell-m729-black-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 16 GB/Danh ba: 300 so/SIM: 2 SIM thuong/PIN: 1000 mAh", "trending": 1, "rating": 1},
+      {"id": 137, "categoryId": 7, "name": "Mobell Rock 3", "price": "550000", "image": "https://cdn.tgdd.vn/Products/Images/42/112837/mobell-rock-3-2-300x300.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 8 GB/Danh ba: 200 so/SIM: 1 Micro & 1 sim thuong/PIN: 5000 mAh", "trending": 1, "rating": 1},
+      {"id": 138, "categoryId": 7, "name": "Mobell M529", "price": "450000", "image": "https://cdn.tgdd.vn/Products/Images/42/142346/mobell-m529-gold-300-1-300x300.jpg", "description": "/Man hinh: 2.8 inch, QVGA/Camera: VGA (480 x 640 pixels)/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 200 so/SIM: 2 SIM thuong/PIN: 1800 mAh", "trending": 1, "rating": 4},
+      {"id": 139, "categoryId": 7, "name": "Mobell M889", "price": "390000", "image": "https://cdn.tgdd.vn/Products/Images/42/149318/mobell-m-889-600-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: VGA (480 x 640 pixels)/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 300 so/SIM: 2 SIM thuong/PIN: 1000 mAh", "trending": 0, "rating": 4},
+      {"id": 140, "categoryId": 10, "name": "OPPO A9 (2020) Tr\u1eafng Ng\u1ecdc Th\u1ea1ch", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/214829/oppo-a9-2020-trang-bac-ha-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 5000 mAh", "trending": 1, "rating": 4},
+      {"id": 141, "categoryId": 10, "name": "OPPO A5 (2020) 128GB", "price": "5290000", "image": "https://cdn.tgdd.vn/Products/Images/42/212116/oppo-a5-2020-128gb-black-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 0, "rating": 1},
+      {"id": 142, "categoryId": 10, "name": "OPPO A7", "price": "4390000", "image": "https://cdn.tgdd.vn/Products/Images/42/193212/oppo-a7-green-600x600.jpg", "description": "/Man hinh: 6.2 inch, HD+/HDH: ColorOS 5.2 (Android 8.1)/CPU: Snapdragon 450 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 16 MP/PIN: 4230 mAh", "trending": 0, "rating": 3},
+      {"id": 143, "categoryId": 10, "name": "OPPO F9", "price": "4490000", "image": "https://cdn.tgdd.vn/Products/Images/42/182153/oppo-f9-tim-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: ColorOS 5.2 (Android 8.1)/CPU: MediaTek Helio P60 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 16 MP & Phu 2 MP, Selfie: 25 MP/PIN: 3500 mAh", "trending": 1, "rating": 4},
+      {"id": 144, "categoryId": 3, "name": "Samsung Galaxy A20s 64GB", "price": "5390000", "image": "https://cdn.tgdd.vn/Products/Images/42/204404/samsung-galaxy-a20s-black-docquyen-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 450 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 13 MP & Phu 8 MP, 5 MP, Selfie: 8 MP/PIN: 4000 mAh", "trending": 1, "rating": 3},
+      {"id": 145, "categoryId": 3, "name": "Samsung Galaxy A30 3GB/32GB", "price": "4290000", "image": "https://cdn.tgdd.vn/Products/Images/42/200388/samsung-galaxy-a30-32gb-600x600.jpg", "description": "/Man hinh: 6.4 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Exynos 7904 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 16 MP & Phu 5 MP, Selfie: 16 MP/PIN: 4000 mAh", "trending": 0, "rating": 2},
+      {"id": 146, "categoryId": 3, "name": "Samsung Galaxy M20", "price": "3990000", "image": "https://cdn.tgdd.vn/Products/Images/42/195314/samsung-galaxy-m20-1-600x600.jpg", "description": "/Man hinh: 6.3 inch, Full HD+/HDH: Android 8.1 (Oreo)/CPU: Exynos 7904 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 5 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 1, "rating": 1},
+      {"id": 147, "categoryId": 20, "name": "Acer Aspire A315 34 C2H9 N4000 (NX.HE3SV.005)", "price": "6790000", "image": "https://cdn.tgdd.vn/Products/Images/44/210665/acer-aspire-a315-34-c2h9-n4000-4gb-256gb-win10-nx9-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Celeron, 1.10 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 0, "rating": 1},
+      {"id": 148, "categoryId": 22, "name": "Asus VivoBook 14 X407UA i3 7020U (BV309T)", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/44/203169/asus-x407ua-i3-7020u-4gb-1tb-win10-bv309t-15-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake Refresh, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.55 kg, Pin: 3 cell", "trending": 0, "rating": 1},
+      {"id": 149, "categoryId": 22, "name": "Asus Vivobook 14 X407UA i3 7020U (BV345T)", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/44/203170/asus-x407ua-i37020u-4gb-1tb-14-win1-0-bv345t-xam-2-2-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake Refresh, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.55 kg, Pin: 3 cell", "trending": 1, "rating": 4},
+      {"id": 150, "categoryId": 16, "name": "MacBook Air 2017 128GB (MQD32SA/A)", "price": "21490000", "image": "https://cdn.tgdd.vn/Products/Images/44/106875/apple-macbook-air-mqd32sa-a-i5-5350u-600x600.jpg", "description": "/CPU: Core i5 Broadwell, 1.80 GHz/RAM: 8 GB, SSD: 128 GB/Do hoa: HD Graphics 6000/HDH: Mac OS/Nang: 1.35 Kg, Pin: 12 gio", "trending": 1, "rating": 2},
+      {"id": 151, "categoryId": 17, "name": "Dell Vostro 14 3481 i3 7020U (70187645)", "price": "12290000", "image": "https://cdn.tgdd.vn/Products/Images/44/204127/dell-vostro-3481-core-i3-7020u-6-1-1-1-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.79 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 152, "categoryId": 17, "name": "Dell Inspiron 3480 i3 8145U (NT4X01)", "price": "12590000", "image": "https://cdn.tgdd.vn/Products/Images/44/203454/dell-inspiron-3480-i3-8145u-4gb-1tb-win10-nt4x01-1-3-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.72 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 153, "categoryId": 11, "name": "Itel Alpha Lite", "price": "990000", "image": "https://cdn.tgdd.vn/Products/Images/42/206083/itel-alpha-lite-black-600x600.jpg", "description": "/Man hinh: 5 inch, FWVGA/HDH: Android 8.1 (Oreo)/CPU: Spreadtrum SC7731E 4 nhan/RAM: 1 GB, ROM: 8 GB/Camera: 5 MP, Selfie: 2 MP/PIN: 2050 mAh", "trending": 0, "rating": 2},
+      {"id": 154, "categoryId": 11, "name": "Itel it5092", "price": "390000", "image": "https://cdn.tgdd.vn/Products/Images/42/210659/itel-it5092-gold-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.08 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 3000 mAh", "trending": 0, "rating": 5},
+      {"id": 155, "categoryId": 11, "name": "Itel it6120", "price": "330000", "image": "https://cdn.tgdd.vn/Products/Images/42/200045/itel-it6120-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh", "trending": 1, "rating": 3},
+      {"id": 156, "categoryId": 21, "name": "HP 348 G5 i3 7020U (7XJ62PA)", "price": "10690000", "image": "https://cdn.tgdd.vn/Products/Images/44/210172/hp-348-g5-i3-7020u-4gb-256gb-win10-7xj62pa-210172-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.42 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 157, "categoryId": 21, "name": "HP 15 da0054TU i3 7020U (4ME68PA)", "price": "10390000", "image": "https://cdn.tgdd.vn/Products/Images/44/177770/hp-15-da0054tu-4me68pa-15-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 500 GB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.77 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 158, "categoryId": 21, "name": "HP 15s du0054tu i3 7020U (6ZF60PA)", "price": "10890000", "image": "https://cdn.tgdd.vn/Products/Images/44/210081/hp-15s-du0054tu-i3-7020u-4gb-1tb-win10-6zf60pa-15-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.74 kg, Pin: 3 cell", "trending": 1, "rating": 1},
+      {"id": 159, "categoryId": 8, "name": "Xiaomi Redmi 8 (4GB/64GB)", "price": "3590000", "image": "https://cdn.tgdd.vn/Products/Images/42/212212/xiaomi-redmi-8-64gb-red-docquyen-600x600.jpg", "description": "/HDH: Android 9.0 (Pie)/CPU: Snapdragon 439 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 2 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 1, "rating": 3},
+      {"id": 160, "categoryId": 8, "name": "Xiaomi Redmi 8 (3GB/32GB)", "price": "2990000", "image": "https://cdn.tgdd.vn/Products/Images/42/209796/xiaomi-redmi-8-blue-docquyen-600x600.jpg", "description": "/HDH: Android 9.0 (Pie)/CPU: Snapdragon 439 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 12 MP & Phu 2 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 0, "rating": 1},
+      {"id": 161, "categoryId": 8, "name": "Xiaomi Redmi 7 (2GB/16GB)", "price": "2690000", "image": "https://cdn.tgdd.vn/Products/Images/42/200599/xiaomi-redmi-7-16gb-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 6.26 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 632 8 nhan/RAM: 2 GB, ROM: 16 GB/Camera: Chinh 12 MP & Phu 2 MP, Selfie: 8 MP/PIN: 4000 mAh", "trending": 0, "rating": 1},
+      {"id": 162, "categoryId": 2, "name": "Nokia 3310 2017", "price": "1060000", "image": "https://cdn.tgdd.vn/Products/Images/42/92062/nokia-3310-2017-black-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 2 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 2000 so/SIM: 2 Micro SIM/PIN: 1200 mAh", "trending": 1, "rating": 3},
+      {"id": 163, "categoryId": 2, "name": "Nokia 210", "price": "780000", "image": "https://cdn.tgdd.vn/Products/Images/42/200041/nokia-210-gray-1-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1020 mAh", "trending": 0, "rating": 5},
+      {"id": 164, "categoryId": 2, "name": "Nokia 150 (kh\u00f4ng t\u1eb7ng th\u1ebb nh\u1edb)", "price": "650000", "image": "https://cdn.tgdd.vn/Products/Images/42/97450/nokia-150-khong-the-nho-6-300x300.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: VGA (480 x 640 pixels)/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1020 mAh", "trending": 0, "rating": 3},
+      {"id": 165, "categoryId": 7, "name": "MOBELL M389", "price": "390000", "image": "https://cdn.tgdd.vn/Products/Images/42/77857/mobell-m389-1-1-300x300.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: VGA (480 x 640 pixels)/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 200 so/SIM: 2 SIM thuong/PIN: 1200 mAh", "trending": 1, "rating": 3},
+      {"id": 166, "categoryId": 7, "name": "Mobell M339", "price": "290000", "image": "https://cdn.tgdd.vn/Products/Images/42/139913/mobell-m339-1-300x300.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: VGA (480 x 640 pixels)/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 200 so/SIM: 2 SIM thuong/PIN: 1000 mAh", "trending": 1, "rating": 1},
+      {"id": 167, "categoryId": 10, "name": "OPPO A5 (2020) 64GB", "price": "4290000", "image": "https://cdn.tgdd.vn/Products/Images/42/210441/oppo-a5-2020-white-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 3 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 0, "rating": 1},
+      {"id": 168, "categoryId": 10, "name": "OPPO A5s", "price": "3690000", "image": "https://cdn.tgdd.vn/Products/Images/42/200330/oppo-a5s-red-600x600.jpg", "description": "/Man hinh: 6.2 inch, HD+/HDH: Android 8.1 (Oreo)/CPU: MediaTek Helio P35 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 2 MP, Selfie: 8 MP/PIN: 4230 mAh", "trending": 0, "rating": 5},
+      {"id": 169, "categoryId": 10, "name": "OPPO A1K", "price": "3190000", "image": "https://cdn.tgdd.vn/Products/Images/42/200485/oppo-a1k-red-600x600.jpg", "description": "/Man hinh: 6.1 inch, HD+/HDH: Android 9.0 (Pie)/CPU: MediaTek MT6762R 8 nhan/RAM: 2 GB, ROM: 32 GB/Camera: 8 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 0, "rating": 4},
+      {"id": 170, "categoryId": 3, "name": "Samsung Galaxy A20s 32GB", "price": "4390000", "image": "https://cdn.tgdd.vn/Products/Images/42/211644/samsung-galaxy-a20s-32gb-red-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 450 8 nhan/RAM: 3 GB, ROM: 32 GB/Camera: Chinh 13 MP & Phu 8 MP, 5 MP, Selfie: 8 MP/PIN: 4000 mAh", "trending": 1, "rating": 2},
+      {"id": 171, "categoryId": 20, "name": "Acer Aspire A315 34 P3LC N5000 (NX.HE3SV.004)", "price": "7790000", "image": "https://cdn.tgdd.vn/Products/Images/44/211632/acer-aspire-a315-34-p3lc-n5000-4gb-256gb-win10-nx-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD 720/CPU: Pentium, 1.10 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe, Ho tro khe cam HDD SATA/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 0, "rating": 2},
+      {"id": 172, "categoryId": 20, "name": "Acer Aspire 3 A315 54K 30FK i3 7020U (NX.HEESV.003)", "price": "9790000", "image": "https://cdn.tgdd.vn/Products/Images/44/207884/acer-aspire-3-a315-54-30fk-i3-7020u-4gb-1tb-win10-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD 720/CPU: Core i3 Kabylake Refresh, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 0, "rating": 4},
+      {"id": 173, "categoryId": 20, "name": "Acer Aspire 3 A315 42 R2NS R3 3200U (NX.HF9SV.005)", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/44/211996/acer-aspire-3-a315-42-r2ns-r3-3200u-4gb-256gb-win1-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: AMD Ryzen 3, 2.60 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe, Ho tro khe cam HDD SATA/Do hoa: AMD Radeontm  Vega 3 Graphics/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 1, "rating": 2},
+      {"id": 174, "categoryId": 22, "name": "Asus VivoBook X507UA i3 7020U (EJ727T)", "price": "10290000", "image": "https://cdn.tgdd.vn/Products/Images/44/195010/laptop-asus-x507ua-i3-7020u-4gb-1tb-win10-ej727t-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.68 kg, Pin: 3 cell", "trending": 1, "rating": 1},
+      {"id": 175, "categoryId": 22, "name": "Asus VivoBook X509U i3 7020U (EJ063T)", "price": "10690000", "image": "https://cdn.tgdd.vn/Products/Images/44/211800/asus-vivobook-x509u-i3-7020-4gb-1tb-chuot-win10-e-14-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.8 kg, Pin: 2 cell", "trending": 1, "rating": 1},
+      {"id": 176, "categoryId": 22, "name": "Asus VivoBook X507UF i3 8130U (EJ117T)", "price": "11990000", "image": "https://cdn.tgdd.vn/Products/Images/44/201930/asus-x507uf-i3-8130u-4gb-1tb-mx130-win10-ej117t-1-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.20 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: NVIDIA MX130, 2GB/HDH: Windows 10 Home SL/Nang: 1.68 kg, Pin: 3 cell", "trending": 1, "rating": 4},
+      {"id": 177, "categoryId": 16, "name": "Macbook Air 2019 1.6GHz 128GB (MVFM2SA/A)", "price": "27990000", "image": "https://cdn.tgdd.vn/Products/Images/44/207682/apple-macbook-air-2019-i5-16ghz-8gb-128gb-mvfm2sa-13-32-600x600.jpg", "description": "/Man hinh: 13.3 inch, Retina/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, SSD: 128 GB/Do hoa: UHD Graphics 617/HDH: Mac OS/Nang: 1.25 kg, Pin: 10 gio", "trending": 1, "rating": 4},
+      {"id": 178, "categoryId": 16, "name": "MacBook Air 2018 128GB (MRE82SA/A)", "price": "28990000", "image": "https://cdn.tgdd.vn/Products/Images/44/201560/apple-macbook-air-mre82sa-a-i5-8gb-128gb-2018-2-600x600.jpg", "description": "/Man hinh: 13.3 inch, Retina/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, SSD: 128 GB/Do hoa: UHD Graphics 617/HDH: Mac OS/Nang: 1.25 kg, Pin: 10 gio", "trending": 1, "rating": 5},
+      {"id": 179, "categoryId": 16, "name": "MacBook Air 2018 256GB (MREF2SA/A)", "price": "33990000", "image": "https://cdn.tgdd.vn/Products/Images/44/197201/apple-macbook-air-mref2sa-a-i5-8gb-256gb-content-manhinhdmx-1-1-600x600.jpg", "description": "/Man hinh: 13.3 inch, Retina/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, SSD: 256 GB/Do hoa: UHD Graphics 617/HDH: Mac OS/Nang: 1.25 kg, Pin: 10 gio", "trending": 1, "rating": 3},
+      {"id": 180, "categoryId": 17, "name": "Dell Inspiron 3576 i3 7020U (C5I3133W)", "price": "12490000", "image": "https://cdn.tgdd.vn/Products/Images/44/198907/dell-inspiron-3576-i3-7020u-4gb-1tb-2gb-amd-520-wi-thumb-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: AMD 520, 2GB/HDH: Windows 10 Home SL/Nang: 2.3 kg, Pin: 4 cell", "trending": 1, "rating": 3},
+      {"id": 181, "categoryId": 17, "name": "Dell Inspiron 3581 i3 7020U (N5I3150W)", "price": "12890000", "image": "https://cdn.tgdd.vn/Products/Images/44/205979/dell-inspiron-3581-i3-7020u-4gb-1tb-amd-520-win10-1-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: AMD 520, 2GB/HDH: Windows 10 Home SL/Nang: 2.18 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 182, "categoryId": 11, "name": "Itel it5025", "price": "260000", "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg", "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh", "trending": 0, "rating": 2},
+      {"id": 183, "categoryId": 11, "name": "Itel it2171", "price": "230000", "image": "https://cdn.tgdd.vn/Products/Images/42/204125/itel-it2171-red-600x600.jpg", "description": "/Man hinh: 1.77 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1000 mAh", "trending": 1, "rating": 5},
+      {"id": 184, "categoryId": 11, "name": "Itel Value 100", "price": "170000", "image": "https://cdn.tgdd.vn/Products/Images/42/211009/itel-value-100-black-600x600.jpg", "description": "/Man hinh: 1.77 inch, WVGA/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 SIM thuong/PIN: 1000 mAh", "trending": 1, "rating": 3},
+      {"id": 185, "categoryId": 11, "name": "Itel It2161", "price": "170000", "image": "https://cdn.tgdd.vn/Products/Images/42/193989/itel-it2161-600x600.jpg", "description": "/Man hinh: 1.77 inch, WVGA/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 1000 so/SIM: 2 SIM thuong/PIN: 1000 mAh", "trending": 1, "rating": 5},
+      {"id": 186, "categoryId": 21, "name": "HP 15s du0056tu i3 7020U (6ZF53PA)", "price": "11390000", "image": "https://cdn.tgdd.vn/Products/Images/44/210080/hp-15s-du0056tu-i3-7020u-4gb-1tb-win10-6zf53pa-16-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.74 kg, Pin: 3 cell", "trending": 0, "rating": 1},
+      {"id": 187, "categoryId": 21, "name": "HP 15 da0443TX i3 7020U (5SL06PA)", "price": "11190000", "image": "https://cdn.tgdd.vn/Products/Images/44/195381/hp-15-da0443tx-i3-7020u-4gb-1tb-mx110-win10-5sl06-14-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB, Ho tro khe cam SSD M.2 SATA3/Do hoa: NVIDIA GeForce MX110, 2GB/HDH: Windows 10 Home SL/Nang: 1.77 kg, Pin: 3 cell", "trending": 1, "rating": 4},
+      {"id": 188, "categoryId": 18, "name": "MSI Prestige PS42 i5 8250U (476VN)", "price": "17990000", "image": "https://cdn.tgdd.vn/Products/Images/44/194260/msi-prestige-ps42-i5-8250u-4gb-256gb-14-win10-33397-thumb-123-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Kabylake Refresh, 1.60 GHz/RAM: 4 GB, O cung SSD 256GB NVMe PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang 1.18kg, PIN 4 cell", "trending": 1, "rating": 2},
+      {"id": 189, "categoryId": 18, "name": "MSI Gaming 15 GF63 9SC i7 9750H (070VN)", "price": "25990000", "image": "https://cdn.tgdd.vn/Products/Images/44/205916/msi-gaming-gf63-9sc-i7-9750h-8gb-256gb-gtx1650-win-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i7 Coffee Lake, 2.60 GHz/RAM: 8 GB, SSD 256GB NVMe PCIe, Ho tro khe cam HDD SATA/Do hoa: GeForce GTX 1650 Max-Q Design/HDH: Windows 10 Home SL/Nang: 1.86 kg, Pin: 3 cell", "trending": 1, "rating": 5},
+      {"id": 190, "categoryId": 8, "name": "Xiaomi Redmi 8A", "price": "2590000", "image": "https://cdn.tgdd.vn/Products/Images/42/210089/xiaomi-redmi-8a-red-18thangbh-600x600.jpg", "description": "/Man hinh: 6.22 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 439 8 nhan/RAM: 2 GB, ROM: 32 GB/Camera: 12 MP, Selfie: 8 MP/PIN: 5000 mAh", "trending": 0, "rating": 1},
+      {"id": 191, "categoryId": 8, "name": "Xiaomi Redmi 7A (2GB/32GB)", "price": "2190000", "image": "https://cdn.tgdd.vn/Products/Images/42/168553/xiaomi-redmi-7a-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 5.45 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 439 8 nhan/RAM: 2 GB, ROM: 32 GB/Camera: 12 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 0, "rating": 3},
+      {"id": 192, "categoryId": 8, "name": "Xiaomi Redmi 7A (2GB/16GB)", "price": "1990000", "image": "https://cdn.tgdd.vn/Products/Images/42/211642/xiaomi-redmi-7a-16gb-black-18thangbh-600x600.jpg", "description": "/Man hinh: 5.45 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 439 8 nhan/RAM: 2 GB, ROM: 16 GB/Camera: 12 MP, Selfie: 5 MP/PIN: 4000 mAh", "trending": 1, "rating": 4},
+      {"id": 193, "categoryId": 8, "name": "Xiaomi Redmi Go 16GB", "price": "1990000", "image": "https://cdn.tgdd.vn/Products/Images/42/200603/xiaomi-redmi-go-16gb-blue-18thangbh-600x600.jpg", "description": "/Man hinh: 5 inch, HD/HDH: Android 8 Oreo (Go Edition)/CPU: Snapdragon 425 4 nhan/RAM: 1 GB, ROM: 16 GB/Camera: 8 MP, Selfie: 5 MP/PIN: 3000 mAh", "trending": 1, "rating": 4},
+      {"id": 194, "categoryId": 2, "name": "Nokia 130 (2017)", "price": "520000", "image": "https://cdn.tgdd.vn/Products/Images/42/109608/nokia-130-2017-mo-ta-den-300x300.jpg", "description": "/Man hinh: 1.8 inch, QQVGA/Camera: VGA (480 x 640 pixels)/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 2000 so/SIM: 2 SIM thuong/PIN: 1020 mAh", "trending": 0, "rating": 4},
+      {"id": 195, "categoryId": 2, "name": "Nokia 110 (2019)", "price": "470000", "image": "https://cdn.tgdd.vn/Products/Images/42/209788/nokia-110-2019-green-600x600.jpg", "description": "/Man hinh: 1.77 inch, QQVGA/Camera: QVGA 320x240/Ho tro the nho: MicroSD, ho tro toi da 32 GB/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 0, "rating": 4},
+      {"id": 196, "categoryId": 7, "name": "Mobell M229 (2019)", "price": "210000", "image": "https://cdn.tgdd.vn/Products/Images/42/203509/mobell-m229-2019-blue-600x600.jpg", "description": "/Man hinh: 1.77 inch, TFT/Camera: 0.8 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 1, "rating": 4},
+      {"id": 197, "categoryId": 7, "name": "MOBELL M228", "price": "190000", "image": "https://cdn.tgdd.vn/Products/Images/42/85984/mobell-m228-9-600x600.jpg", "description": "/Man hinh: 1.77 inch, QVGA/Camera: VGA (480 x 640 pixels)/Ho tro the nho: MicroSD, ho tro toi da 8 GB/Danh ba: 200 so/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 0, "rating": 1},
+      {"id": 198, "categoryId": 7, "name": "Mobell M217", "price": "190000", "image": "https://cdn.tgdd.vn/Products/Images/42/204344/mobell-m217-black-600x600.jpg", "description": "/Camera: 0.8 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 0, "rating": 1},
+      {"id": 199, "categoryId": 20, "name": "Acer Swift 1 SF114 32 C7U5 N4000 (NX.GZJSV.003)", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/44/202319/acer-swift-sf114-32-c7u5-n4000-4gb-64gb-14f-win10-17-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Celeron, 1.10 GHz/RAM: 4 GB, eMMC: 64 GB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 600/HDH: Windows 10 Home SL/Nang: 1.3 kg, Pin: 3 cell", "trending": 0, "rating": 1},
+      {"id": 200, "categoryId": 20, "name": "Acer Aspire A315 54 3501 i3 8145U (NX.HEFSV.003)", "price": "10690000", "image": "https://cdn.tgdd.vn/Products/Images/44/207882/acer-aspire-a315-54-3501-i3-8145u-4gb-256gb-win10-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 1, "rating": 5},
+      {"id": 201, "categoryId": 22, "name": "Asus VivoBook X509FJ i3 8145U (EJ227T)", "price": "12890000", "image": "https://cdn.tgdd.vn/Products/Images/44/212360/asus-vivobook-x509fj-i3-8145u-4gb-1tb-2gb-mx230-wi-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: NVIDIA GeForce MX230 2GB/HDH: Windows 10 Home SL/Nang: 1.9 kg, Pin: 2 cell", "trending": 1, "rating": 5},
+      {"id": 202, "categoryId": 22, "name": "Asus VivoBook A412FA i3 8145U (EK342T)", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/44/203670/asus-vivobook-s412f-i3-8145u-4gb-512gb-ek342t3-1-1-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, SSD: 512 GB M.2 PCIe, Ho tro khe cam HDD SATA/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.5 kg, Pin: 2 cell", "trending": 0, "rating": 2},
+      {"id": 203, "categoryId": 22, "name": "Asus VivoBook A412FA i3 8145U (EK661T)", "price": "13490000", "image": "https://cdn.tgdd.vn/Products/Images/44/212373/asus-vivobook-a412f-i3-8145u-4gb-32gb-512gb-win10-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, Optane 32GB (H10), SSD 512 GB M.2 PCIe, Ho tro khe cam HDD SATA/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.5 kg, Pin: 2 cell", "trending": 1, "rating": 5},
+      {"id": 204, "categoryId": 16, "name": "Macbook Pro Touch 2019 128GB (MUHN2SA/A)", "price": "33990000", "image": "https://cdn.tgdd.vn/Products/Images/44/207683/apple-macbook-pro-touch-2019-i5-14ghz-8gb-128gb-m-2-2-600x600.jpg", "description": "/Man hinh: 13.3 inch, Retina/CPU: Core i5 Coffee Lake, 1.40 GHz/RAM: 8 GB, SSD: 128 GB/Do hoa: Iris Plus Graphics 645/HDH: Mac OS/Nang: 1.37 kg, Pin: 10 gio", "trending": 0, "rating": 5},
+      {"id": 205, "categoryId": 16, "name": "Macbook Pro Touch 2019 256GB (MUHP2SA/A)", "price": "39990000", "image": "https://cdn.tgdd.vn/Products/Images/44/213870/apple-macbook-pro-touch-2019-i5-14ghz-8gb-256gb-m-600x600.jpg", "description": "/Man hinh: 13.3 inch, Retina/CPU: Core i5 Coffee Lake, 1.40 GHz/RAM: 8 GB, SSD 256GB NVMe PCIe/Do hoa: Iris Plus Graphics 645/HDH: Mac OS/Nang: 1.37 kg, Pin: 10 gio", "trending": 0, "rating": 1},
+      {"id": 206, "categoryId": 16, "name": "MacBook Pro Touch 2018 256GB (MR9Q2SA/A)", "price": "41990000", "image": "https://cdn.tgdd.vn/Products/Images/44/184384/apple-macbook-pro-touch-mr9q2sa-a-2018-17-600x600.jpg", "description": "/Man hinh: 13.3 inch, Retina/CPU: Core i5 Kabylake Refresh, 2.30 GHz/RAM: 8 GB, SSD: 256 GB/Do hoa: Iris Plus Graphics 655/HDH: Mac OS/Nang: 1.37 kg, Pin: 10 gio", "trending": 0, "rating": 1},
+      {"id": 207, "categoryId": 17, "name": "Dell Vostro 3480 i3 8145U (70187706)", "price": "12890000", "image": "https://cdn.tgdd.vn/Products/Images/44/204128/dell-vostro-3480-i3-8145u-4gb-1tb-14-win10-701837-6-1-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.79 kg, Pin: 3 cell", "trending": 1, "rating": 4},
+      {"id": 208, "categoryId": 17, "name": "Dell Vostro 3580 i3 8145U (V5I3058W)", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/44/209134/dell-vostro-3580-i3-8145u-4gb-1tb-156fwin10-v5i30-15-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.16 kg, Pin: 2 cell", "trending": 1, "rating": 5},
+      {"id": 209, "categoryId": 21, "name": "HP 15s du0042TX i3 7020U (6ZF75PA)", "price": "12390000", "image": "https://cdn.tgdd.vn/Products/Images/44/210083/hp-15s-du0042tx-i3-7020u-4gb-1tb-win10-6zf75pa-16-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: NVIDIA GeForce MX110, 2GB/HDH: Windows 10 Home SL/Nang: 1.74 kg, Pin: 4 cell", "trending": 1, "rating": 4},
+      {"id": 210, "categoryId": 21, "name": "HP Pavilion X360 ad104TU i3 8130U (4MF13PA)", "price": "12690000", "image": "https://cdn.tgdd.vn/Products/Images/44/177640/hp-pavilion-x360-ad104tu-4mf13pa-600x600.jpg", "description": "/Man hinh: 11.6 inch, HD/CPU: Core i3 Kabylake Refresh, 2.20 GHz/RAM: 4 GB, HDD: 500 GB SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.39 kg, Pin: 2 cell", "trending": 1, "rating": 2},
+      {"id": 211, "categoryId": 21, "name": "HP Pavilion 14 ce1011TU i3 8145U (5JN17PA)", "price": "12690000", "image": "https://cdn.tgdd.vn/Products/Images/44/197626/hp-pavilion-14-ce1011tu-i3-8145u-4gb-1tb-win10-5j-1-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.53 kg, Pin: 3 cell", "trending": 1, "rating": 1},
+      {"id": 212, "categoryId": 2, "name": "Nokia 106 (2018) Dual Sim", "price": "390000", "image": "https://cdn.tgdd.vn/Products/Images/42/195063/nokia-106-2018-600x600.jpg", "description": "/Man hinh: 1.8 inch, QQVGA/Danh ba: 2000 so/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 0, "rating": 2},
+      {"id": 213, "categoryId": 2, "name": "Nokia 105 Dual (2019)", "price": "360000", "image": "https://cdn.tgdd.vn/Products/Images/42/207957/nokia-105-2019-blue-600x600.jpg", "description": "/Man hinh: 1.77 inch, QQVGA/Danh ba: 2000 so/SIM: 2 SIM thuong/PIN: 800 mAh", "trending": 0, "rating": 4},
+      {"id": 214, "categoryId": 2, "name": "Nokia 105 Single SIM (2019)", "price": "350000", "image": "https://cdn.tgdd.vn/Products/Images/42/211934/nokia-105-single-sim-2019-black-600x600.jpg", "description": "/Man hinh: 1.77 inch, QQVGA/Danh ba: 2000 so/SIM: 1 SIM binh thuong/PIN: 800 mAh", "trending": 1, "rating": 5},
+      {"id": 215, "categoryId": 7, "name": "Mobell M218", "price": "190000", "image": "https://cdn.tgdd.vn/Products/Images/42/22447/mobell-m218-green-600x600.jpg", "description": "/Man hinh: 1.77 inch/Camera: VGA (480 x 640 pixels)/SIM: /The nho MicroSD, ho tro toi da 32 GB/Pin: 800 mAh/Danh ba: 500 so/The nho toi da: MicroSD, ho tro toi da 32 GB/FM radio: Co", "trending": 0, "rating": 4},
+      {"id": 216, "categoryId": 20, "name": "Acer Swift 1 SF114 32 P2SG N5000 (NX.GZJSV.001)", "price": "10990000", "image": "https://cdn.tgdd.vn/Products/Images/44/200201/acer-swift-sf114-32-p2sg-n5000-4gb-64gb-win10-nxg-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Pentium, 1.10 GHz/RAM: 4 GB, eMMC: 64 GB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 605/HDH: Windows 10 Home SL/Nang: 1.3 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 217, "categoryId": 20, "name": "Acer Aspire A315 42 R8PX R3 3200U (NX.HF9SV.00A)", "price": "10990000", "image": "https://cdn.tgdd.vn/Products/Images/44/212658/acer-aspire-a315-42-r8px-r3-3200u-8gb-256gb-win10-16-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: AMD Ryzen 3, 2.60 GHz/RAM: 8 GB, SSD 256GB NVMe PCIe, Ho tro khe cam HDD SATA/Do hoa: AMD Radeontm  Vega 3 Graphics/HDH: Windows 10 Home SL/Nang: 1.7kg, Pin: 2 cell", "trending": 1, "rating": 1},
+      {"id": 218, "categoryId": 22, "name": "Asus VivoBook X409F i5 8265U (EK138T)", "price": "14190000", "image": "https://cdn.tgdd.vn/Products/Images/44/206562/asus-vivobook-x409f-i5-8265u-8gb-1tb-win10-ek138t2-1-thumb-1-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.6 kg, Pin: 2 cell", "trending": 0, "rating": 2},
+      {"id": 219, "categoryId": 22, "name": "Asus VivoBook S530FA i3 8145U (BQ185T)", "price": "14190000", "image": "https://cdn.tgdd.vn/Products/Images/44/203671/asus-530f-i3-8145u-4gb-1tb-bq185t-24-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.8 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 220, "categoryId": 17, "name": "Dell Vostro 3590 i3 10110U (V5I3505W)", "price": "13290000", "image": "https://cdn.tgdd.vn/Products/Images/44/213568/dell-vostro-3590-i3-10110u-4gb-1tb-win10-v5i3505w-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i3 Comet Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: UHD Graphics/HDH: Windows 10 Home SL/Nang: 2.17 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 221, "categoryId": 17, "name": "Dell Inspiron 5593 i3 1005G1 (70196703)", "price": "13990000", "image": "https://cdn.tgdd.vn/Products/Images/44/213536/dell-inspiron-5593-i3-1005g1-4gb-128gb-win10-7019-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Ice Lake, 1.20 GHz/RAM: 4 GB, SSD 128GB M2 PCIe, Ho tro khe cam HDD SATA/Do hoa: UHD Graphics/HDH: Windows 10 Home SL/Nang: 2.05 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 222, "categoryId": 21, "name": "HP Pavilon 14 ce2035tu i3 8145U (6YZ18PA)", "price": "13290000", "image": "https://cdn.tgdd.vn/Products/Images/44/207533/hp-pavilon-14-ce2035tu-i3-8145u-4gb-1gb-win10-6yz-17-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.6 kg, Pin: 3 cell", "trending": 1, "rating": 1},
+      {"id": 223, "categoryId": 21, "name": "HP Palivion 15 cs2032TU i3 8145U (6YZ04PA)", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/44/204635/hp-pavilion-15-cs2032tu-i3-8145u-4gb-1tb-156f-win1-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.75 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 224, "categoryId": 2, "name": "Nokia 105 Single Sim (2017)", "price": "350000", "image": "https://cdn.tgdd.vn/Products/Images/42/112269/nokia-105-single-sim-2017-den-300x300.jpg", "description": "/Man hinh: 1.8 inch, QQVGA/Danh ba: 2000 so/SIM: 1 SIM binh thuong/PIN: 800 mAh", "trending": 0, "rating": 3},
+      {"id": 225, "categoryId": 20, "name": "Acer Swift 1 SF114 32 P8TS N5000 (NX.GXQSV.001)", "price": "10990000", "image": "https://cdn.tgdd.vn/Products/Images/44/208862/acer-swift-sf114-32-p8ts-n5000-4gb-64gb-14f-win10-16-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Pentium, 1.10 GHz/RAM: 4 GB, eMMC: 64 GB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 605/HDH: Windows 10 Home SL/Nang: 1.3 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 226, "categoryId": 20, "name": "Acer Aspire A315 54 36QY i3 10110U (NX.HM2SV.001)", "price": "11290000", "image": "https://cdn.tgdd.vn/Products/Images/44/212625/acer-aspire-a315-54-36qy-i3-10110u-4gb-256gb-win10-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Comet Lake, 2.10 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe, Ho tro khe cam HDD SATA/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 0, "rating": 1},
+      {"id": 227, "categoryId": 20, "name": "Acer Aspire A514 51 37ZD i3 8145 (NX.H6USV.003)", "price": "11790000", "image": "https://cdn.tgdd.vn/Products/Images/44/201767/acer-a514-51-37zd-14hd-8145-4gb-500gb-win10-silver-16-1-600x600.jpg", "description": "/Man hinh: 14 inch, HD 720/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 500 GB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.9 kg, Pin: 2 cell", "trending": 1, "rating": 2},
+      {"id": 228, "categoryId": 22, "name": "Asus Vivobook X409FA i5 8265U (EK201T)", "price": "14390000", "image": "https://cdn.tgdd.vn/Products/Images/44/211873/asus-x409fa-i5-8265u-4gb-512gb-14f-win10-ek201t-15-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, SSD 512 GB M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.5 kg, Pin: 2 cell", "trending": 1, "rating": 3},
+      {"id": 229, "categoryId": 22, "name": "Asus VivoBook S430FA i3 8145U (EB459T)", "price": "14490000", "image": "https://cdn.tgdd.vn/Products/Images/44/211874/asus-s430fa-i3-8145u-4gb-256gb-14f-win10-eb459t-18-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.54 kg, Pin: 3 cell", "trending": 0, "rating": 1},
+      {"id": 230, "categoryId": 22, "name": "Asus VivoBook X507UF i5 8250U 4GB 1TB (EJ121T)", "price": "14590000", "image": "https://cdn.tgdd.vn/Products/Images/44/193516/asus-x507uf-i5-8250u-4gb-1tb-2gb-mx130-ej121t-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Kabylake Refresh, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: NVIDIA MX130, 2GB/HDH: Windows 10 Home SL/Nang: 1.8 kg, Pin: 3 cell", "trending": 0, "rating": 4},
+      {"id": 231, "categoryId": 17, "name": "Dell Inspiron 5584 i3 8145U (70186849)", "price": "13890000", "image": "https://cdn.tgdd.vn/Products/Images/44/205975/dell-inspiron-5584-i3-8145u-4gb-1tb-win10-7018684-16-2-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.05 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 232, "categoryId": 17, "name": "Dell Inspiron 14 3480 i5 8265U (N4I5107W)", "price": "14490000", "image": "https://cdn.tgdd.vn/Products/Images/44/204653/dell-inspiron-3480-i5-8265u-4gb-1tb-14-win10-n4i5-2-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.66 kg, Pin: 3 cell", "trending": 1, "rating": 5},
+      {"id": 233, "categoryId": 17, "name": "Dell Inspiron 3493 i5 1035G1 (N4I5136W)", "price": "14490000", "image": "https://cdn.tgdd.vn/Products/Images/44/214721/dell-inspiron-3493-i5-1035g1-4gb-1tb-win10-n4i513-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Ice Lake, 1.00 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: UHD Graphics/HDH: Windows 10 Home SL/Nang: 1.79 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 234, "categoryId": 21, "name": "HP Palivion 15 cs2031TU i3 8145U (6YZ03PA)", "price": "13290000", "image": "https://cdn.tgdd.vn/Products/Images/44/204636/hp-pavilion-15-cs2031tu-i3-8145u-4gb-1tb-156-win10-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.75 kg, Pin: 3 cell", "trending": 1, "rating": 3},
+      {"id": 235, "categoryId": 21, "name": "HP Pavilion x360 cd1018TU i3 8145U (5HV88PA)", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/44/200322/hp-pavilion-x360-cd1018tu-i3-8145u-4gb-1tb-14-touc-19-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.66 kg, Pin: 3 cell", "trending": 0, "rating": 1},
+      {"id": 236, "categoryId": 20, "name": "Acer Aspire A514 52 33AB i3 10110U (NX.HMHSV.001)", "price": "11990000", "image": "https://cdn.tgdd.vn/Products/Images/44/212622/acer-aspire-a514-52-33ab-i3-10110u-4gb-256gb-win10-1-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Comet Lake, 2.10 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe, Ho tro khe cam HDD SATA/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.5 kg, Pin: 3 cell", "trending": 1, "rating": 2},
+      {"id": 237, "categoryId": 20, "name": "Acer Spin 3 SP314 51 39WK i3 7130U (NX.GUWSV.001)", "price": "11490000", "image": "https://cdn.tgdd.vn/Products/Images/44/145919/acer-spin-3-sp314-51-39wk-i3-7130u-nxguwsv001-cava-1-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Kabylake, 2.70 GHz/RAM: 4 GB, HDD: 500 GB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 3 cell", "trending": 1, "rating": 5},
+      {"id": 238, "categoryId": 22, "name": "Asus VivoBook X509FJ i5 8265U (EJ155T)", "price": "15890000", "image": "https://cdn.tgdd.vn/Products/Images/44/211875/asus-x509fj-i5-8265u-4gb-512gb-2gb-mx230-156f-win1-16-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, SSD: 512 GB M.2 PCIe, Ho tro khe cam HDD SATA/Do hoa: NVIDIA GeForce MX230 2GB/HDH: Windows 10 Home SL/Nang: 1.8 kg, Pin: 2 cell", "trending": 0, "rating": 3},
+      {"id": 239, "categoryId": 22, "name": "Asus VivoBook S530UA i5 8250U (BQ278T)", "price": "15690000", "image": "https://cdn.tgdd.vn/Products/Images/44/204132/asus-s530ua-bq278t-1-2-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.8 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 240, "categoryId": 17, "name": "Dell Inspiron N3580 i5 8265U (P75F106N80I)", "price": "14990000", "image": "https://cdn.tgdd.vn/Products/Images/44/209561/dell-inspire-n3580-i5-8265u-4gb-1tb-win10-p75f106-16-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.28 kg, Pin: 3 cell", "trending": 1, "rating": 4},
+      {"id": 241, "categoryId": 17, "name": "Dell Vostro 14 3480 i5 8265U (70187647)", "price": "14990000", "image": "https://cdn.tgdd.vn/Products/Images/44/204129/dell-vostro-3480-i5-8265u-4gb-1tb-14-win10-7018377-6-1-1-1-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.79 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 242, "categoryId": 21, "name": "HP Pavilion x360 dh0103TU i3 8145U (6ZF24PA)", "price": "13890000", "image": "https://cdn.tgdd.vn/Products/Images/44/204049/hp-pavilion-x360-dh0103tu-i3-8145u-4gb-1tb-touch-w-19-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.65 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 243, "categoryId": 21, "name": "HP 15s du0063TU i5 8265U (6ZF63PA)", "price": "14690000", "image": "https://cdn.tgdd.vn/Products/Images/44/204053/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-20-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.74 kg, Pin: 3 cell", "trending": 1, "rating": 3},
+      {"id": 244, "categoryId": 21, "name": "HP 15 da1023TU i5 8265U (5NK81PA)", "price": "14390000", "image": "https://cdn.tgdd.vn/Products/Images/44/195384/hp-15-da1023tu-i5-8265u-4gb-1tb-win10-5nk81pa-16-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.07 kg, Pin: 3 cell", "trending": 1, "rating": 3},
+      {"id": 245, "categoryId": 20, "name": "Acer Aspire A515 53 3153 i3 8145U (NX.H6BSV.005)", "price": "11490000", "image": "https://cdn.tgdd.vn/Products/Images/44/198789/acer-aspire-a515-53-3153-i3-8145u-4gb-1gb-win10-n-33397-thumb-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.0 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 246, "categoryId": 20, "name": "Acer Swift 3 SF314 41 R4J1 R3 3200U (NX.HFDSV.001)", "price": "12490000", "image": "https://cdn.tgdd.vn/Products/Images/44/210661/acer-swift-3-sf314-41-r4j1-amd-r3-3200u-4gb-256gb-2-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: AMD Ryzen 3, 2.60 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe, Ho tro khe cam HDD SATA/Do hoa: AMD Radeontm  Vega 3 Graphics/HDH: Windows 10 Home SL/Nang: 1.5 kg, Pin: 4 cell", "trending": 0, "rating": 1},
+      {"id": 247, "categoryId": 22, "name": "Asus VivoBook X407UB i7 8550U (BV147T)", "price": "16190000", "image": "https://cdn.tgdd.vn/Products/Images/44/201784/asus-x407ub-bv147t-2-3-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 SATA3/Do hoa: NVIDIA GeForce MX110, 2GB/HDH: Windows 10 Home SL/Nang: 1.54 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 248, "categoryId": 22, "name": "Asus VivoBook A512FA i5 8265U (EJ552T)", "price": "16290000", "image": "https://cdn.tgdd.vn/Products/Images/44/202559/asus-a512fa-i5-8265u-8gb-1tb-win10-ej552t-16-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, HDD: 1 TB SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.75 kg, Pin: 2 cell", "trending": 1, "rating": 5},
+      {"id": 249, "categoryId": 17, "name": "Dell Vostro 3590 i5 10210U (GRMGK1)", "price": "15290000", "image": "https://cdn.tgdd.vn/Products/Images/44/213534/dell-vostro-3590-i5-10210u-4gb-1tb-win10-grmgk1001122-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Comet Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: UHD Graphics/HDH: Windows 10 Home SL/Nang: 1.99 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 250, "categoryId": 17, "name": "Dell Vostro 3580 i5 8265U (T3RMD1)", "price": "15290000", "image": "https://cdn.tgdd.vn/Products/Images/44/209743/dell-vostro-3580-i5-8265u-4gb-1tb-156f-win10-t3rm-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.1 kg, Pin: 3 cell", "trending": 1, "rating": 1},
+      {"id": 251, "categoryId": 21, "name": "HP Pavilion 15 cs1009TU i5 8265U (5JL43PA)", "price": "13390000", "image": "https://cdn.tgdd.vn/Products/Images/44/195383/hp-pavilion-15-cs1009tu-i5-8265u-4gb-1tb-win10-5j-15-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.8 kg, Pin: 40mAh)", "trending": 0, "rating": 1},
+      {"id": 252, "categoryId": 21, "name": "HP 15 da1031TX i5 8265U (5NK55PA)", "price": "15390000", "image": "https://cdn.tgdd.vn/Products/Images/44/202324/hp-15-da1031tx-i5-8265u-4gb-1tb-2gb-mx110-156-win1-15-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: NVIDIA GeForce MX110, 2GB/HDH: Windows 10 Home SL/Nang: 1.77 kg, Pin: 3 cell", "trending": 1, "rating": 5},
+      {"id": 253, "categoryId": 20, "name": "Acer Aspire 3 A315 54 57PJ i5 8265U (NX.HEFSV.004)", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/44/207883/acer-aspire-3-a315-54-57pj-i5-8265u-4gb-256gb-win1-3-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 1, "rating": 3},
+      {"id": 254, "categoryId": 20, "name": "Acer Aspire A315 54 558R i5 8265U (NX.HEFSV.005)", "price": "12990000", "image": "https://cdn.tgdd.vn/Products/Images/44/209143/acer-aspire-a315-54-558r-i5-8265u-4gb-1tb-win10-n-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 Kg, Pin: 2 cell", "trending": 1, "rating": 5},
+      {"id": 255, "categoryId": 17, "name": "Dell Inspiron 3576 i5 8250U (70157552)", "price": "15290000", "image": "https://cdn.tgdd.vn/Products/Images/44/175159/dell-inspiron-3576-i5-8250u-70157552-16-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Kabylake Refresh, 1.60 GHz/RAM: 4 GB, HDD: 1 TB/Do hoa: AMD 520, 2GB/HDH: Windows 10 Home SL/Nang: 2.3 Kg, Pin: 4 cell", "trending": 1, "rating": 2},
+      {"id": 256, "categoryId": 20, "name": "Acer Aspire E5 476 50SZ i5 8250U (NX.H33SV.001)", "price": "12490000", "image": "https://cdn.tgdd.vn/Products/Images/44/175844/acer-aspire-e5-476-50sz-nxh33sv001-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Kabylake Refresh, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Optane 16GB/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.85 kg, Pin: 4 cell", "trending": 1, "rating": 4},
+      {"id": 257, "categoryId": 20, "name": "Acer Swift 3 SF315 52 38YQ i3 8130U (NX.GZBSV.003)", "price": "11490000", "image": "https://cdn.tgdd.vn/Products/Images/44/208863/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.20 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 4 cell", "trending": 1, "rating": 3},
+      {"id": 258, "categoryId": 20, "name": "Acer Aspire A515 54 59KT i5 8265U (NX.HFNSV.009)", "price": "13990000", "image": "https://cdn.tgdd.vn/Products/Images/44/208869/acer-aspire-a515-54-59kt-i5-8265u-4gb-1tb-win10-n-19-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 Kg, Pin: 4 cell", "trending": 1, "rating": 1},
+      {"id": 259, "categoryId": 19, "name": "Lenovo Ideapad 330 15IKBR i3 7020U (81DE00LDVN)", "price": "9690000", "image": "https://cdn.tgdd.vn/Products/Images/44/193433/lenovo-ideapad-330-15ikbr-i3-7020u-4gb-1tb-156-win-hinhchitiet-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 2kg, Pin: 2 cell", "trending": 1, "rating": 1},
+      {"id": 260, "categoryId": 19, "name": "Lenovo IdeaPad S145 15IKB i3 7020U (81VD0035VN)", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/44/211882/lenovo-ideapad-15ikb-i3-7020u-4gb-256gb-win10-81v-1-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Kabylake Refresh, 2.30 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.1 Kg, Pin: 2 cell", "trending": 1, "rating": 2},
+      {"id": 261, "categoryId": 19, "name": "Lenovo IdeaPad 330 14IKB i3 7020U (81G20079VN)", "price": "9990000", "image": "https://cdn.tgdd.vn/Products/Images/44/201812/lenovo-ideapad-330-i3-7020u-4g-1tb-win10-19-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Kabylake, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 1, "rating": 2},
+      {"id": 262, "categoryId": 19, "name": "Lenovo Yoga 520 14IKB i3 7130U (80X80106VN)", "price": "10390000", "image": "https://cdn.tgdd.vn/Products/Images/44/139279/lenovo-yoga-520-14ikb-i3-7130u-8080106vn-11-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.70 GHz/RAM: 4 GB, HDD: 500 GB/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell", "trending": 1, "rating": 5},
+      {"id": 263, "categoryId": 19, "name": "Lenovo Ideapad S145 15IWL i3 8145U (81MV00SXVN)", "price": "11490000", "image": "https://cdn.tgdd.vn/Products/Images/44/207798/lenovo-ideapad-s145-15iwl-i3-8145u-4gb-256gb-mx110-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, SSD 256GB NVMe PCIe/Do hoa: NVIDIA GeForce MX110, 2GB/HDH: Windows 10 Home SL/Nang: 1.73 kg, Pin: 2 cell", "trending": 0, "rating": 3},
+      {"id": 264, "categoryId": 19, "name": "Lenovo Ideapad 330 15IKBR i5 8250U (81DE01KWVN)", "price": "11490000", "image": "https://cdn.tgdd.vn/Products/Images/44/191992/lenovo-ideapad-330-15ikbr-81de01kwvn-450-600x600.jpg", "description": "/Man hinh: 15.6 inch, HD/CPU: Core i5 Kabylake Refresh, 1.60 GHz/RAM: 4 GB, HDD: 1 TB/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.2 Kg, Pin: 2 cell", "trending": 1, "rating": 3},
+      {"id": 265, "categoryId": 19, "name": "Lenovo Ideapad 330S 14IKBR i5 8250U (81F400NLVN)", "price": "11990000", "image": "https://cdn.tgdd.vn/Products/Images/44/195078/lenovo-ideapad-330s-14ikbr-i5-8250u-4gb-1tb-win10-33397-thumb-1-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.67 kg, Pin: 2 cell", "trending": 0, "rating": 3},
+      {"id": 266, "categoryId": 19, "name": "Lenovo IdeaPad 330 15IKB i5 8250U (81DE024CVN)", "price": "11990000", "image": "https://cdn.tgdd.vn/Products/Images/44/201546/lenovo-ideapad-330-15ikb-i5-8250u-4gb-1tb-win10-8-7-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 4 GB, HDD: 1 TB SATA3/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.2 kg, Pin: 2 cell", "trending": 1, "rating": 4},
+      {"id": 267, "categoryId": 19, "name": "Lenovo Ideapad S340 14IWL i3 8145U (81N70064VN)", "price": "12690000", "image": "https://cdn.tgdd.vn/Products/Images/44/202561/laptop-lenovo-s340-81n70064vn-18-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 8 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.55 kg, Pin: 3 cell", "trending": 0, "rating": 4},
+      {"id": 268, "categoryId": 19, "name": "Lenovo Ideapad YOGA 530 14IKB i3 7130U (81EK00MDVN)", "price": "12190000", "image": "https://cdn.tgdd.vn/Products/Images/44/193392/lenovo-ideapad-yoga-530-14ikb-7130u-600x600.jpg", "description": "/Man hinh: 14 inch, HD/CPU: Core i3 Kabylake, 2.70 GHz/RAM: 4 GB, SSD: 128 GB/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.3kg, Pin: 4 cell", "trending": 0, "rating": 3},
+      {"id": 269, "categoryId": 19, "name": "Lenovo IdeaPad S340 14IIL i3 1005G1 (81VV003VVN)", "price": "13990000", "image": "https://cdn.tgdd.vn/Products/Images/44/214710/lenovo-ideapad-s340-14iil-i3-1005g1-8gb-512gb-win1-18-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Ice Lake, 1.20 GHz/RAM: 8 GB, SSD 512 GB M.2 PCIe, Ho tro khe cam HDD SATA/Do hoa: UHD Graphics/HDH: Windows 10 Home SL/Nang: 1.6 kg, Pin: 3 cell", "trending": 0, "rating": 2},
+      {"id": 270, "categoryId": 19, "name": "Lenovo IdeaPad S340 15IIL i3 1005G1 (81VW0042VN)", "price": "14290000", "image": "https://cdn.tgdd.vn/Products/Images/44/213528/lenovo-ideapad-s340-15iil-i3-1005g1-8gb-512gb-win1123-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Ice Lake, 1.20 GHz/RAM: 8 GB, SSD 512 GB M.2 PCIe, Ho tro khe cam HDD SATA/Do hoa: UHD Graphics/HDH: Windows 10 Home SL/Nang: 1.79 kg, Pin: 3 cell", "trending": 1, "rating": 2},
+      {"id": 271, "categoryId": 19, "name": "Lenovo ideapad S145 15IWL i5 8265U (81MV00T9VN)", "price": "14790000", "image": "https://cdn.tgdd.vn/Products/Images/44/207744/lenovo-ideapad-s145-15iwl-i5-8265u-8gb-256gb-mx110-19-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, SSD: 256 GB M.2 SATA3/Do hoa: NVIDIA GeForce MX110, 2GB/HDH: Windows 10 Home SL/Nang: 1.73 kg, Pin: 2 cell", "trending": 1, "rating": 1},
+      {"id": 272, "categoryId": 19, "name": "Lenovo ideapad C340 14IWL i3 8145U (81N4003SVN)", "price": "15190000", "image": "https://cdn.tgdd.vn/Products/Images/44/203456/lenovo-ideapad-c340-14iwl-i3-8145u-8gb-256gb-touch-22-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 8 GB, SSD 256GB NVMe PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.6 kg, Pin: 4 cell", "trending": 1, "rating": 4},
+      {"id": 273, "categoryId": 19, "name": "Lenovo Ideapad S340 14IWL i5 8265U (81N7006HVN)", "price": "15490000", "image": "https://cdn.tgdd.vn/Products/Images/44/203457/lenovo-ideapad-s340-14iwl-i5-8265u-8gb-1tb-mx230-w-17-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: NVIDIA GeForce MX230 2GB/HDH: Windows 10 Home SL/Nang: 1.55 kg, Pin: 3 cell", "trending": 0, "rating": 5},
+      {"id": 274, "categoryId": 19, "name": "Lenovo IdeaPad S340 14IIL i5 1035G1 (81VV003SVN)", "price": "16290000", "image": "https://cdn.tgdd.vn/Products/Images/44/214708/lenovo-ideapad-s340-14iil-i5-1035g1-8gb-512gb-win1-18-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Ice Lake, 1.00 GHz/RAM: 8 GB, SSD 512 GB M.2 PCIe, Ho tro khe cam HDD SATA/Do hoa: UHD Graphics/HDH: Windows 10 Home SL/Nang: 1.6 kg, Pin: 3 cell", "trending": 0, "rating": 3},
+      {"id": 275, "categoryId": 19, "name": "Lenovo ideapad C340 14IWL i5 8265U (81N4003TVN)", "price": "16990000", "image": "https://cdn.tgdd.vn/Products/Images/44/203455/lenovo-ideapad-c340-14iwl-i5-8265u-8gb-256gb-touch-21-600x600.jpg", "description": "/Man hinh: 14 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, SSD 256GB NVMe PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.6 kg, Pin: 4 cell", "trending": 0, "rating": 1},
+      {"id": 276, "categoryId": 19, "name": "Lenovo Ideapad S540 15IWL i5 8265U (81NE009FVN)", "price": "17490000", "image": "https://cdn.tgdd.vn/Products/Images/44/210054/lenovo-ideapad-s540-15iwl-i5-8265u-8gb-128gb-1tb-w-18-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 1.60 GHz/RAM: 8 GB, HDD: 1TB + SSD: 128GB M2/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.8 kg, Pin: 3 cell", "trending": 1, "rating": 5},
+      {"id": 277, "categoryId": 19, "name": "Lenovo Ideapad S145 15IWL i7 8565U (81MV00TAVN)", "price": "17790000", "image": "https://cdn.tgdd.vn/Products/Images/44/207797/lenovo-ideapad-s145-15iwl-i7-8565u-8gb-512gb-mx110-19-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 8 GB, SSD: 512 GB M.2 PCIe/Do hoa: NVIDIA GeForce MX110, 2GB/HDH: Windows 10 Home SL/Nang: 1.73 kg, Pin: 2 cell", "trending": 0, "rating": 1},
+      {"id": 278, "categoryId": 19, "name": "Lenovo Ideapad L340 15IRH i5 9300H (81LK00FAVN)", "price": "18490000", "image": "https://cdn.tgdd.vn/Products/Images/44/208859/lenovo-ideapad-l340-15irh-i5-9300h-8gb-1tb-3gb-gtx-2-2-600x600.jpg", "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i5 Coffee Lake, 2.40 GHz/RAM: 8 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: NVIDIA GeForce GTX 1050, 3GB/HDH: Windows 10 Home SL/Nang: 2.15 kg, Pin: 3 cell", "trending": 1, "rating": 5}
+      ],
+    "category": [
+      {
+        "id": 1,
+        "typeId": 1,
+        "name": "iPhone (Apple)",
+        "image": "https://cdn.tgdd.vn/Brand/1/iPhone-(Apple)42-b_16.jpg"
+      },
+      {
+        "id": 2,
+        "typeId": 1,
+        "name": "Nokia",
+        "image": "https://cdn.tgdd.vn/Brand/1/Nokia42-b_21.jpg"
+      },
+      {
+        "id": 3,
+        "typeId": 1,
+        "name": "Samsung",
+        "image": "https://cdn.tgdd.vn/Brand/1/Samsung42-b_25.jpg"
+      },
+      {
+        "id": 4,
+        "typeId": 1,
+        "name": "Huawei",
+        "image": "https://cdn.tgdd.vn/Brand/1/Huawei42-b_30.jpg"
+      },
+      {
+        "id": 5,
+        "typeId": 1,
+        "name": "Vsmart",
+        "image": "https://cdn.tgdd.vn/Brand/1/Vsmart42-b_40.png"
+      },
+      {
+        "id": 6,
+        "typeId": 1,
+        "name": "Realme",
+        "image": "https://cdn.tgdd.vn/Brand/1/Realme42-b_37.png"
+      },
+      {
+        "id": 7,
+        "typeId": 1,
+        "name": "Mobell",
+        "image": "https://cdn.tgdd.vn/Brand/1/Mobell42-b_19.jpg"
+      },
+      {
+        "id": 8,
+        "typeId": 1,
+        "name": "Xiaomi",
+        "image": "https://cdn.tgdd.vn/Brand/1/Xiaomi42-b_31.png"
+      },
+      {
+        "id": 9,
+        "typeId": 1,
+        "name": "Vivo",
+        "image": "https://cdn.tgdd.vn/Brand/1/Vivo42-b_50.jpg"
+      },
+      {
+        "id": 10,
+        "typeId": 1,
+        "name": "OPPO",
+        "image": "https://cdn.tgdd.vn/Brand/1/OPPO42-b_57.jpg"
+      },
+      {
+        "id": 11,
+        "typeId": 1,
+        "name": "Itel",
+        "image": "https://cdn.tgdd.vn/Brand/1/Itel42-b_54.jpg"
+      },
+      {
+        "id": 12,
+        "typeId": 1,
+        "name": "Coolpad",
+        "image": "https://cdn.tgdd.vn/Brand/1/Coolpad42-b_33.png"
+      },
+      {
+        "id": 14,
+        "typeId": 1,
+        "name": "BlackBerry",
+        "image": "https://cdn.tgdd.vn/Brand/1/BlackBerry42-b_38.png"
+      },
+      {
+        "id": 15,
+        "typeId": 1,
+        "name": "Masstel",
+        "image": "https://cdn.tgdd.vn/Brand/1/Masstel42-b_0.png"
+      },
+      {
+        "id": 16,
+        "typeId": 2,
+        "name": "Macbook",
+        "image": "https://cdn.tgdd.vn/Brand/1/Macbook44-b_34.png"
+      },
+      {
+        "id": 17,
+        "typeId": 2,
+        "name": "Dell",
+        "image": "https://cdn.tgdd.vn/Brand/1/Dell44-b_34.jpg"
+      },
+      {
+        "id": 22,
+        "typeId": 2,
+        "name": "Asus",
+        "image": "https://cdn.tgdd.vn/Brand/1/Asus44-b_35.jpg"
+      },
+      {
+        "id": 19,
+        "typeId": 2,
+        "name": "Lenovo",
+        "image": "https://cdn.tgdd.vn/Brand/1/Lenovo44-b_36.jpg"
+      },
+      {
+        "id": 20,
+        "typeId": 2,
+        "name": "Acer",
+        "image": "https://cdn.tgdd.vn/Brand/1/Acer44-b_37.jpg"
+      },
+      {
+        "id": 21,
+        "typeId": 2,
+        "name": "HP",
+        "image": "https://cdn.tgdd.vn/Brand/1/HP-Compaq44-b_36.jpg"
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "email": "admin@gmail.com",
+        "password": "1234",
+        "isAdmin": 1
+      },
+      {
+        "id": 2,
+        "email": "bubu@gmail.com",
+        "password": "12345",
+        "isAdmin": 0
+      },
+      {
+        "id": 3,
+        "email": "bubu123@gmail.com",
+        "password": "123453",
+        "isAdmin": 0
+      },
+      {
+        "email": "bubuabc@gmail.com",
+        "password": "abc",
+        "isAdmin": 0,
+        "id": 4
+      },
+      {
+        "email": "bubu111@gmail.com",
+        "password": "111",
+        "isAdmin": 0,
+        "id": 5
+      },
+      {
+        "email": "bubu11@gmail.com",
+        "password": "11",
+        "isAdmin": 0,
+        "id": 6
+      },
+      {
+        "email": "bubu1133@gmail.com",
+        "password": "1133",
+        "isAdmin": 0,
+        "id": 7
+      },
+      {
+        "email": "bubuabcd@gmail.com",
+        "password": "aaa",
+        "isAdmin": 0,
+        "id": 8
+      },
+      {
+        "email": "bubu7@gmail.com",
+        "password": "7",
+        "isAdmin": 0,
+        "id": 9
+      },
+      {
+        "email": "bubu77@gmail.com",
+        "password": "77",
+        "isAdmin": 0,
+        "id": 10
+      },
+      {
+        "email": "bubu9@gmail.com",
+        "password": "9",
+        "isAdmin": 0,
+        "id": 11
+      },
+      {
+        "email": "bubunew23@gmail.com",
+        "password": "23",
+        "isAdmin": 0,
+        "id": 12
+      },
+      {
+        "email": "bubune1w@gmail.com",
+        "password": "11",
+        "isAdmin": 0,
+        "id": 13
+      },
+      {
+        "email": "admin@gmail.com",
+        "password": "1",
+        "isAdmin": 0,
+        "id": 14
+      },
+      {
+        "email": "asdd",
+        "password": "12",
+        "isAdmin": 0,
+        "id": 15
+      },
+      {
+        "email": "admin34@gmail.com",
+        "password": "23",
+        "isAdmin": 0,
+        "id": 16
+      },
+      {
+        "email": "bubune1111w@gmail.com",
+        "password": "1",
+        "isAdmin": 0,
+        "id": 17
+      },
+      {
+        "email": "admin12www@gmail.com",
+        "password": "www",
+        "isAdmin": 0,
+        "id": 18
+      },
+      {
+        "email": "admi1n@gmail.com",
+        "password": "12",
+        "isAdmin": 0,
+        "id": 19
+      },
+      {
+        "email": "a12dmin@gmail.com",
+        "password": "a12",
+        "isAdmin": 0,
+        "id": 20
+      }
+    ],
+    "orders": [
+      {
+        "id": 1,
+        "user_order": {
+          "id": 2,
+          "email": "bubu@gmail.com",
+          "password": "12345",
+          "isAdmin": 0
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 147,
+              "categoryId": 11,
+              "name": "Itel it5025",
+              "price": "260000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg",
+              "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh",
+              "trending": 1,
+              "rating": 3,
+              "quantity": 150
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 5,
+              "quantity": 7
+            },
+            "quantity": 1
+          }
+        ],
+        "total": "44250000",
+        "status": "accept"
+      },
+      {
+        "id": 2,
+        "user_order": {
+          "id": 3,
+          "email": "bubu123@gmail.com",
+          "password": "123453",
+          "isAdmin": 0
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 10,
+              "categoryId": 1,
+              "name": "iPhone Xs 64GB",
+              "price": "24990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190323/TimerThumb/iphone-xs-halloween.jpg",
+              "description": "/Man hinh: 5.8 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 2658 mAh",
+              "trending": 0,
+              "rating": 2,
+              "quantity": 160
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 11,
+              "categoryId": 1,
+              "name": "iPhone 11 128GB",
+              "price": "23990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210644/iphone-11-128gb-purple-600x600.jpg",
+              "description": "/Man hinh: 6.1 inch, Liquid Retina/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 12 MP/PIN: 3110 mAh",
+              "trending": 1,
+              "rating": 5,
+              "quantity": 160
+            },
+            "quantity": 1
+          }
+        ],
+        "total": "48980000",
+        "status": "denied"
+      },
+      {
+        "user_order": {
+          "id": 2,
+          "email": "bubu@gmail.com",
+          "password": "12345",
+          "isAdmin": 0
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 147,
+              "categoryId": 11,
+              "name": "Itel it5025",
+              "price": "260000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg",
+              "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh",
+              "trending": 1,
+              "rating": 3,
+              "quantity": 150
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 44250000,
+        "status": "accept",
+        "id": 37
+      },
+      {
+        "user_order": {
+          "id": 3,
+          "email": "bubu123@gmail.com",
+          "password": "123453",
+          "isAdmin": 0
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 237,
+              "categoryId": 20,
+              "name": "Acer Spin 3 SP314 51 ",
+              "price": "11990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/44/145919/acer-spin-3-sp314-51-39wk-i3-7130u-nxguwsv001-cava-1-600x600.jpg",
+              "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Kabylake, 2.70 GHz/RAM: 4 GB, HDD: 500 GB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 3 cell",
+              "trending": 1,
+              "rating": 5,
+              "quantity": 100
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 236,
+              "categoryId": 20,
+              "name": "Acer Aspire A515 ",
+              "price": "10990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/44/198789/acer-aspire-a515-53-3153-i3-8145u-4gb-1gb-win10-n-33397-thumb-1-600x600.jpg",
+              "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.0 kg, Pin: 3 cell",
+              "trending": 1,
+              "rating": 5,
+              "quantity": 100
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 22980000,
+        "status": "accept",
+        "id": 38
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 5,
+              "quantity": 7
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 147,
+              "categoryId": 11,
+              "name": "Itel it5025",
+              "price": "260000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg",
+              "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh",
+              "trending": 1,
+              "rating": 3,
+              "quantity": 150
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 44250000,
+        "status": "accept",
+        "id": 39
+      },
+      {
+        "user_order": {
+          "email": "bubu11@gmail.com",
+          "password": "11",
+          "isAdmin": 0,
+          "id": 6
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 5,
+              "quantity": 7
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 147,
+              "categoryId": 11,
+              "name": "Itel it5025",
+              "price": "260000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/204423/itel-it5025-blue-2-600x600.jpg",
+              "description": "/Man hinh: 2.4 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1200 mAh",
+              "trending": 1,
+              "rating": 3,
+              "quantity": 150
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 44250000,
+        "status": "accept",
+        "id": 40
+      },
+      {
+        "user_order": {},
+        "products_order": [
+          {
+            "product": {
+              "id": 26,
+              "categoryId": 8,
+              "name": "Xiaomi Redmi Note 8 Pro (6GB/64GB)",
+              "price": "5990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/209797/xiaomi-redmi-note-8-pro-white-18thangbh-600x600.jpg",
+              "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Mediatek Helio G90T 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 64 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 20 MP/PIN: 4500 mAh",
+              "trending": 1,
+              "rating": 7
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 24,
+              "categoryId": 2,
+              "name": "Nokia 8.1",
+              "price": "6590000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/194917/nokia-81-blue-18thangbh-600x600.jpg",
+              "description": "/Man hinh: 6.18 inch, Full HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 710 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 13 MP, Selfie: 20 MP/PIN: 3500 mAh",
+              "trending": 1,
+              "rating": 9
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 12580000,
+        "status": "accept",
+        "id": 42
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 24,
+              "categoryId": 2,
+              "name": "Nokia 8.1",
+              "price": "6590000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/194917/nokia-81-blue-18thangbh-600x600.jpg",
+              "description": "/Man hinh: 6.18 inch, Full HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 710 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 13 MP, Selfie: 20 MP/PIN: 3500 mAh",
+              "trending": 1,
+              "rating": 9
+            },
+            "quantity": 2
+          }
+        ],
+        "total": 13180000,
+        "status": "accept",
+        "id": 47
+      },
+      {
+        "user_order": {},
+        "products_order": [],
+        "total": 0,
+        "status": "accept",
+        "id": 48
+      },
+      {
+        "user_order": {},
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 49
+      },
+      {
+        "user_order": {},
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 50
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 51
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 52
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 53
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 54
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 55
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 103470000,
+        "status": "accept",
+        "id": 56
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 43990000,
+        "status": "accept",
+        "id": 57
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 43990000,
+        "status": "accept",
+        "id": 58
+      },
+      {
+        "user_order": {
+          "id": 1,
+          "email": "admin@gmail.com",
+          "password": "1234",
+          "isAdmin": 1
+        },
+        "products_order": [],
+        "total": 0,
+        "status": "accept",
+        "id": 59
+      },
+      {
+        "user_order": {},
+        "products_order": [
+          {
+            "product": {
+              "id": 1,
+              "categoryId": 1,
+              "name": "iPhone 11 Pro Max 512GB",
+              "price": "43990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina XDR/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 512 GB/Camera: 3 camera 12 MP, Selfie: 12 MP/PIN: 3969 mAh",
+              "trending": 1,
+              "rating": 1
+            },
+            "quantity": 5
+          }
+        ],
+        "total": 219950000,
+        "status": "accept",
+        "id": 60
+      },
+      {
+        "user_order": {},
+        "products_order": [],
+        "total": 0,
+        "status": "accept",
+        "id": 61
+      },
+      {
+        "user_order": {},
+        "products_order": [
+          {
+            "product": {
+              "id": 3,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 256GB",
+              "price": "32490000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190322/TimerThumb/iphone-xs-max-256gb-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 256 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 6
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 8,
+              "categoryId": 1,
+              "name": "iPhone Xs Max 64GB",
+              "price": "26990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/190321/TimerThumb/iphone-xs-max-halloween.jpg",
+              "description": "/Man hinh: 6.5 inch, Super Retina/HDH: iOS 12/CPU: Apple A12 Bionic 6 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 7 MP/PIN: 3174 mAh",
+              "trending": 1,
+              "rating": 8
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 11,
+              "categoryId": 1,
+              "name": "iPhone 11 128GB",
+              "price": "23990000",
+              "image": "https://cdn.tgdd.vn/Products/Images/42/210644/iphone-11-128gb-purple-600x600.jpg",
+              "description": "/Man hinh: 6.1 inch, Liquid Retina/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 12 MP/PIN: 3110 mAh",
+              "trending": 1,
+              "rating": 3
+            },
+            "quantity": 1
+          }
+        ],
+        "total": 83470000,
+        "status": "accept",
+        "id": 62
+      }
+    ]
+  }
