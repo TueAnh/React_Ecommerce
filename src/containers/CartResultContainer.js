@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import CartResult from '../components/CartComponent/CartResult';
-import { actAddOrderRequest,actChangeMessage } from './../actions/index';
+import { actAddOrderRequest,actChangeMessage,actUpdateProductRequest } from './../actions/index';
 class CartResultContainer extends React.Component {
     render() {
-        var { cart, user, onAddOder, order ,onChangeMessage} = this.props;
+        var { cart, user, onAddOder, order ,onChangeMessage,onChangeQuantityProductCheckout} = this.props;
         return (
             <CartResult
                 cart={cart}
@@ -12,7 +12,7 @@ class CartResultContainer extends React.Component {
                 order={order}
                 onAddOder={onAddOder}
                 onChangeMessage = {onChangeMessage}
-
+                onChangeQuantityProductCheckout = {onChangeQuantityProductCheckout}
             />
         );
     }
@@ -34,6 +34,9 @@ const mapDispatchToProps = (dispatch, props) => {
         onChangeMessage: (message) => {
             dispatch(actChangeMessage(message));
         },
+        onChangeQuantityProductCheckout :(product)=>{
+            dispatch(actUpdateProductRequest(product))
+        }
     }
 }
 
