@@ -436,11 +436,9 @@ export const listLatopTrending = () => {
 
 
 
+/// 10 Product
 
-/*
-    <TuanAnh>
-*/
-
+// 10.1 FetchProductPhone
 export const actFetchProductPhoneOrLapRequest = (id) => {
     return (dispatch) => {
         return callApi(`type/${id}/category?_embed=products`, 'GET', null).then(res => {
@@ -459,6 +457,8 @@ export const actFetchProductPhoneOrLap = (products) => {
     }
 }
 
+
+// 10.2 Fetch Category
 export const actFetchCategoriesRequest = (id) => {
     return (dispatch) => {
         return callApi(`category?typeId=${id}`, 'GET', null).then(res => {
@@ -474,12 +474,16 @@ export const actFetchCategories = (categories) => {
     }
 }
 
+// 10.3 Will Detele
 export const actSelectedCategory = (id) => {
     return {
         type: types.SELECTED_CATEGORY,
         id
     }
 }
+
+
+// 10.4 Fetch Product With ID
 
 export const actFetchProductWithIdRequest = (id) => {
     return (dispatch) => {
