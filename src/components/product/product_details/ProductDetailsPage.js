@@ -10,16 +10,7 @@ class ProductDetailsPage extends Component {
     }
 
     render() {
-        let product = {
-            "id": 262,
-            "categoryId": 19,
-            "name": "Lenovo IdeaPad 330 15 i7 8550U (81DE01JPVN)",
-            "price": "16490000",
-            "image": "https://cdn.tgdd.vn/Products/Images/44/201813/lenovo-ideapad-330-i7-8550u-4g-1tb-16gb-r53-4gb-wi-15-600x600.jpg",
-            "description": "/Man hinh: 15.6 inch, HD/CPU: Core i7 Coffee Lake, 1.80 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe, Optane 16GB/Do hoa: AMD 530, 4 GB/HDH: Windows 10 Home SL/Nang: 1.95 kg, Pin: 2 cell",
-            "trending": 0,
-            "rating": 7
-          }
+        let product = {"id": 35, "categoryId": 10, "name": "OPPO A9 (2020) Tr\u1eafng Ng\u1ecdc Th\u1ea1ch", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/214829/oppo-a9-2020-trang-bac-ha-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 5000 mAh", "trending": 1, "rating": 4};
         let productsSame = [product,product,product,product];
         
         let rates = [{"user_id": 1, "rate_id": 1, "rate_time": "18/11/2019", "rate_score": 4, "rate_comment": "Cái này kết cấu vừa xấu, xài nhanh hao pin, lại còn đắt, chán !!, cơ mà thích đánh giá 4 sao :D"},
