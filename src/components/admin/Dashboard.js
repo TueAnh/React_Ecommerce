@@ -30,9 +30,6 @@ class Dashboard extends React.Component {
                     <div className="col-sm-3">
                         <div className="well">
                             <h4>New Orders</h4>
-                            <p>12400 Orders</p>
-                            <a href="#">View Details:<span className="glyphicon">&#xe032;</span>
-                            </a>
                             <p>{lengthOrders} Orders</p>
                             <Link to="/admin/dashboard/Orders">View Details <span className="glyphicon">&#xe032;</span>
                             </Link>

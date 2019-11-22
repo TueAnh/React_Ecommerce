@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import OrdersManaItem from './../../../components/admin/order/OrdersManaItem'
-import { actDeleteOrderRequest } from '../../../actions';
+import { actDeleteOrderRequest } from './../../../actions/index';
 class OrdersManaItemContainer extends React.Component {
     render() {
         return (

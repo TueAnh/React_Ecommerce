@@ -1,6 +1,5 @@
 import * as types from './../constants/ActionTypes'
 import callApi from './../utils/apiCaller'
-import { history } from '../_helpers/history';
 //1. Carousel controll slide 
 export const increaseIndex = () => {
     return {
@@ -223,14 +222,6 @@ export const actSeachUser = (keyword) => {
     }
 }
 
-//4.6 Search User
-export const actSeachUser = (keyword) => {
-    return {
-        type: types.SEARCH_USER,
-        keyword
-    }
-}
-
 
 //5 Login
 // 5.1 Login Request
@@ -382,7 +373,36 @@ export const actChangeMessage = (message) => {
 
 
 //9 . Order Admin
+//9 . Order Admin
+// 9.1 All Orders
+export const actFetchOrdersRequest = () => {
+    return (dispatch) => {
+        return callApi('orders', 'GET', null).then(res => {
+            dispatch(actFetchOrders(res.data))
+        });
+    }
+}
+export const actFetchOrders = (orders) => {
+    return {
+        type: types.FETCH_ORDERS,
+        orders
+    }
+}
 
+//9.2 Delete Order
+export const actDeleteOrderRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`orders/${id}`, 'DELETE', null).then(res => {
+            dispatch(actDeleteOrder(res.data))
+        });
+    }
+}
+export const actDeleteOrder = (id) => {
+    return {
+        type: types.DELETE_ORDER,
+        id
+    }
+}
 
 
 //trending laptop

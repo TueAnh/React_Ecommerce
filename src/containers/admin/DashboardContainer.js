@@ -36,6 +36,9 @@ const mapDispatchToProps = (dispatch) => {
         },
         fectchAllUsers: () => {
             dispatch(actions.actFetchUsersRequest())
+        },
+        fectchAllOrders: ()=>{
+            dispatch(actions.actFetchOrdersRequest())
         }
     }
 }

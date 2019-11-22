@@ -27,6 +27,7 @@ class OrdersManaItem extends React.Component {
                     <tr key={index}>
                         <td>{index + 1}</td>
                         <td>{order.id}</td>
+                        <td>{order.user_order.email}</td>
                         <td></td>
                         <td>{order.total}</td>
                         <td className="text-center">
