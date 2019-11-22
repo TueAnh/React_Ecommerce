@@ -216,14 +216,6 @@ export const actUpdateUser = (user) => {
     }
 }
 
-export const actFetchTrendingProductsRequest = () => {
-    return (dispatch) => {
-        return callApi('products/?trending=1', 'GET', null).then(res => {
-            dispatch(actTrendingFetchProducts(res.data))
-        });
-    }
-}
-
 
 
 //5 Login
@@ -343,7 +335,7 @@ export const actDeleteProductInCart = (product) => {
         product
     }
 }
-// 8.3 Detete Product Cart
+// 8.3 Update Product Cart
 export const actUpdateProductInCart = (product,quantity) => {
     return{
         type : types.UPDATE_PRODUCT_IN_CART,
@@ -351,12 +343,33 @@ export const actUpdateProductInCart = (product,quantity) => {
         quantity
     }
 }
+// 8.4 Checkout 
+export const actAddOrderRequest = (order) => {
+    return (dispatch) => {
+        return callApi('orders/', 'POST', order).then(res => {
+            dispatch(actAddOrder(res.data))
+        });
+    }
+}
+export const actAddOrder= (order) => {
+    return {
+        type: types.CHECKOUT_CART,
+        order
+    }
+}
+// 8.5 Message for Cart
 export const actChangeMessage = (message) =>{
     return{
         type : types.CHANGE_MESSAGE,
         message
     }
 }
+
+
+
+//9 . Order Admin
+
+
 
 //trending laptop
 export const actFetchTrendingLaptopsRequest = () => {
@@ -375,6 +388,13 @@ export const actFetchTrendingLaptopsRequest = () => {
     }
 }
 
+export const actFetchTrendingProductsRequest = () => {
+    return (dispatch) => {
+        return callApi('products/?trending=1', 'GET', null).then(res => {
+            dispatch(actTrendingFetchProducts(res.data))
+        });
+    }
+}
 
 export const listPhoneTrending = () => {
     return {
@@ -455,16 +475,3 @@ export const actFetchProductWithId = (products) => {
     </TuanAnh>
 */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-export const actAddOrderRequest = (order) => {
-    return (dispatch) => {
-        return callApi('orders/', 'POST', order).then(res => {
-            dispatch(actAddOrder(res.data))
-        });
-    }
-}
-export const actAddOrder= (order) => {
-    return {
-        type: types.CHECKOUT_CART,
-        order
-    }
-}
