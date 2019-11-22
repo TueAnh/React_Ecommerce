@@ -40,6 +40,7 @@ class AddUser extends React.Component {
         }
         if (id) {//update
             this.props.onUpdateUser(user);
+            return 
 
         } else {
             this.props.onAddUser(user)

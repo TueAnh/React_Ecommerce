@@ -494,6 +494,12 @@
       "email": "ddoanquoctoan1998.lov@gmail.com",
       "password": "1234",
       "isAdmin": "1"
+    },
+    {
+      "id": 22,
+      "email": "aaadmin@gmail.com",
+      "password": "1234",
+      "isAdmin": "1"
     }
   ],
   "orders": [
