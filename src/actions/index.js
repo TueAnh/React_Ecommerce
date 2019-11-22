@@ -32,7 +32,7 @@ export const reductionTrendingIndex = () => {
 // 2.2 All Trending Products
 export const actTrendingFetchProducts = (trendingproducts) => {
     return {
-        
+
         type: types.FETCH_TRENDING_PRODUCTS,
         trendingproducts
     }
@@ -215,6 +215,13 @@ export const actUpdateUser = (user) => {
         user
     }
 }
+//4.6 Search User
+export const actSeachUser = (keyword) => {
+    return {
+        type: types.SEARCH_USER,
+        keyword
+    }
+}
 
 //4.6 Search User
 export const actSeachUser = (keyword) => {
@@ -290,14 +297,14 @@ export const registerRequest = (email, password) => {
     }
     return (dispatch) => {
         return callApi('users/', 'POST', user).then(res => {
-        if (res.data) {
-            dispatch(register(res.data))
-            dispatch(success())
-            dispatch(alertSuccess('Registration successful'))
-        } else {
-            dispatch(failure())
-            dispatch(alertFailure('Registration is failed'))
-        }
+            if (res.data) {
+                dispatch(register(res.data))
+                dispatch(success())
+                dispatch(alertSuccess('Registration successful'))
+            } else {
+                dispatch(failure())
+                dispatch(alertFailure('Registration is failed'))
+            }
         });
     }
 }
@@ -328,24 +335,24 @@ export const alertFailure = (message) => {
 
 // 8 .Cart 
 // 8.1 Add Product to Cart
-export const actAddToCart = (product,quantity) =>{
-    return{
-        type : types.ADD_TO_CART,
+export const actAddToCart = (product, quantity) => {
+    return {
+        type: types.ADD_TO_CART,
         product,
         quantity
     }
 }
 // 8.2 Detete Product Cart
 export const actDeleteProductInCart = (product) => {
-    return{
-        type : types.DELETE_PRODUCT_IN_CART,
+    return {
+        type: types.DELETE_PRODUCT_IN_CART,
         product
     }
 }
 // 8.3 Update Product Cart
-export const actUpdateProductInCart = (product,quantity) => {
-    return{
-        type : types.UPDATE_PRODUCT_IN_CART,
+export const actUpdateProductInCart = (product, quantity) => {
+    return {
+        type: types.UPDATE_PRODUCT_IN_CART,
         product,
         quantity
     }
@@ -358,16 +365,16 @@ export const actAddOrderRequest = (order) => {
         });
     }
 }
-export const actAddOrder= (order) => {
+export const actAddOrder = (order) => {
     return {
         type: types.CHECKOUT_CART,
         order
     }
 }
 // 8.5 Message for Cart
-export const actChangeMessage = (message) =>{
-    return{
-        type : types.CHANGE_MESSAGE,
+export const actChangeMessage = (message) => {
+    return {
+        type: types.CHANGE_MESSAGE,
         message
     }
 }
@@ -381,17 +388,17 @@ export const actChangeMessage = (message) =>{
 //trending laptop
 export const actFetchTrendingLaptopsRequest = () => {
 
-    return (dispatch) => {  
+    return (dispatch) => {
         var result = [];
         var phones = [];
-        
-         callApi('type/2/category?_embed=products', 'GET', null).then(res =>{ 
-             var laptop = [];
-             result = res.data;
-             result.forEach( item=> item.products.forEach((product) => {if (product.trending==1) laptop.push(product)}));
-             return dispatch(actFetchTrendingLaptops(laptop));
-         });
-        
+
+        callApi('type/2/category?_embed=products', 'GET', null).then(res => {
+            var laptop = [];
+            result = res.data;
+            result.forEach(item => item.products.forEach((product) => { if (product.trending == 1) laptop.push(product) }));
+            return dispatch(actFetchTrendingLaptops(laptop));
+        });
+
     }
 }
 
@@ -426,7 +433,7 @@ export const actFetchProductPhoneOrLapRequest = (id) => {
     return (dispatch) => {
         return callApi(`type/${id}/category?_embed=products`, 'GET', null).then(res => {
             let products = [];
-            res.data.map((category,key) => 
+            res.data.map((category, key) =>
                 category.products.map((product, key) => products.push(product)));
             dispatch(actFetchProductPhoneOrLap(products));
         });
@@ -435,7 +442,7 @@ export const actFetchProductPhoneOrLapRequest = (id) => {
 
 export const actFetchProductPhoneOrLap = (products) => {
     return {
-        type : types.LIST_PRODUCT_PHONE_OR_LAPTOP,
+        type: types.LIST_PRODUCT_PHONE_OR_LAPTOP,
         products
     }
 }
@@ -450,14 +457,14 @@ export const actFetchCategoriesRequest = (id) => {
 
 export const actFetchCategories = (categories) => {
     return {
-        type : types.LIST_CATEGORY,
+        type: types.LIST_CATEGORY,
         categories
     }
 }
 
 export const actSelectedCategory = (id) => {
     return {
-        type : types.SELECTED_CATEGORY,
+        type: types.SELECTED_CATEGORY,
         id
     }
 }
@@ -472,7 +479,7 @@ export const actFetchProductWithIdRequest = (id) => {
 
 export const actFetchProductWithId = (products) => {
     return {
-        type : types.LIST_PRODUCT_WITH_CATEGORY_ID,
+        type: types.LIST_PRODUCT_WITH_CATEGORY_ID,
         products
     }
 }
@@ -480,5 +487,5 @@ export const actFetchProductWithId = (products) => {
 
 /*
     </TuanAnh>
-*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+*/
 

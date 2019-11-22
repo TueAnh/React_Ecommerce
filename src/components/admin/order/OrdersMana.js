@@ -33,8 +33,8 @@ class OrdersMana extends React.Component {
                         <tr>
                             <th className="text-center">STT</th>
                             <th className="text-center">Order_Id</th>
-                            <th className="text-center">Product</th>
-                            <th className="text-center">Quantity</th>
+                            <th className="text-center">Content</th>
+                            <th className="text-center">Total</th>
                             <th className="text-center">Status</th>
                             <th className="text-center">Action</th>
                         </tr>

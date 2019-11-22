@@ -27,7 +27,7 @@ class CartItem extends React.Component {
                         <strong>{item.product.name}</strong>
                     </h5>
                 </td>
-                <td><h4 className="center-text">{item.product.price}$</h4></td>
+                <td><h4 className="center-text">{this.showFomatNumber(this.showSubTotal(item.product.price,1))}</h4></td>
 
                 <td className="center-on-small-only">
                     <div className="center-text">
@@ -39,14 +39,14 @@ class CartItem extends React.Component {
                             >
                                 <a>—</a>
                             </label>
-                            <table
+                            <label
                                 className=" button2 btn btn-rounded waves-effect waves-light"
                             >
                                 {quantity}
-                            </table>
+                            </label>
                             <label
                                 onClick={() => this.onUpdateQuantity(item.product, item.quantity + 1)}
-                            // className=" button1 btn btn-primary btn-rounded waves-effect waves-light"
+                             className=" button1 btn btn-primary btn-rounded waves-effect waves-light"
                             >
                                 <a>+</a>
                             </label>
@@ -54,7 +54,7 @@ class CartItem extends React.Component {
                     </div>
 
                 </td>
-                <td> <h4 className="center-text">{this.showSubTotal(item.product.price, item.quantity)}$</h4></td>
+                <td> <h4 className="center-text">{this.showFomatNumber(this.showSubTotal(item.product.price, item.quantity))}</h4></td>
 
                 <td>
                     <div className="center-text-2">
@@ -72,6 +72,13 @@ class CartItem extends React.Component {
                 </td>
             </tr>
         );
+    }
+    showFomatNumber = (a) => {
+        var number = a;
+        number = number.toLocaleString('vi', { style: 'currency', currency: 'VND' });
+        return number;
+        
+
     }
     onDelete = (product) => {
         // console.log(product);

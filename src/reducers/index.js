@@ -21,6 +21,7 @@ import userEditting from './userEditting'
 import searchUser from './searchUser'
 import selectedCategory from './product/selectedCategory'
 import orderAdmin from './orderAdmin'
+import searchUser from './searchUser'
 const appReducer = combineReducers({
     selectedCategory,
     productsPhonesOrLaptops,

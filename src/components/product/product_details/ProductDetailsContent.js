@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ProductDetailsContent.css';
 import { BrowserRouter as Link } from 'react-router-dom'
+import { type } from 'os';
 
 class ProductDetailsContent extends Component {
     constructor(props) {
@@ -28,13 +29,23 @@ class ProductDetailsContent extends Component {
         );
     }
 
-    onClickEvent = () => {
-
+    insertDot = (price) => {
+        price = parseInt(price);
+        let priceHaveDot = "";
+        while (price > 1000) {
+            let temp = (price % 1000);
+            if(temp == 0)
+                temp = "000";
+            priceHaveDot = temp + "." + priceHaveDot;
+            price /= 1000;
+        }
+        priceHaveDot = parseInt(price) + "." + priceHaveDot;
+        return priceHaveDot;
     }
 
     render() {
         let styleProductDetailsContent = {
-            textAlign : this.props.textAlign,
+            textAlign: this.props.textAlign,
             display: this.props.contentDisplay,
             width: this.props.contentWidth,
             margin: this.props.contentMargin,
@@ -49,7 +60,7 @@ class ProductDetailsContent extends Component {
 
         let styleH1 = {
             fontSize: this.props.h1FontSize,
-            height : this.props.h1Height,
+            height: this.props.h1Height,
             margin: this.props.marginElement
         };
 
@@ -74,9 +85,9 @@ class ProductDetailsContent extends Component {
 
         let styleImgDiv = {
             height: this.props.imgDivHeight,
-            width : this.props.imgDivWidth,
-            margin : this.props.imgDivMargin,
-            
+            width: this.props.imgDivWidth,
+            margin: this.props.imgDivMargin,
+
         }
         let hr = <hr style={styleHr} />
         let { product } = this.props
@@ -84,14 +95,14 @@ class ProductDetailsContent extends Component {
         let description = product.description.split('/');
         return (
             <div className="ProductDetailsContent" style={styleProductDetailsContent}>
-                <div style = {styleImgDiv} >
+                <div style={styleImgDiv} >
                     <Link to="/product/1"><img style={styleProductDetailsContentImg} src={product.image} /></Link>
                 </div>
                 <div className="Info" >
                     <Link to="/product/1"><h1 style={styleH1}>{product.name}</h1></Link>
                     {this.setStar(product.rating)}
                     {hr}
-                    <h3 style={styleH3} >{product.price}đ</h3>
+                    <h3 style={styleH3} >{this.insertDot(product.price)}₫</h3>
                     {hr}
                     {
                         description.map((item, key) => {

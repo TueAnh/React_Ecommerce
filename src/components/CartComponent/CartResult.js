@@ -34,7 +34,7 @@ class CartResult extends React.Component {
                 </td>
                 <td>
                     <h4>
-                        <strong>{total}$</strong>
+                        <strong>{this.showFomatNumber(total)}</strong>
                     </h4>
                 </td>
                 <td colSpan="3">
@@ -56,6 +56,12 @@ class CartResult extends React.Component {
 
         }
         return total;
+    }
+    showFomatNumber = (a) => {
+        var number = a;
+        number = number.toLocaleString('vi', { style: 'currency', currency: 'VND' });
+        return number;
+
     }
 }
 export default CartResult;

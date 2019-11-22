@@ -3112,45 +3112,6 @@
       "id": 40
     },
     {
-      "user_order": {
-        "id": 1,
-        "email": "admin@gmail.com",
-        "password": "1234",
-        "isAdmin": 1
-      },
-      "products_order": [
-        {
-          "product": {
-            "id": 26,
-            "categoryId": 8,
-            "name": "Xiaomi Redmi Note 8 Pro (6GB/64GB)",
-            "price": "5990000",
-            "image": "https://cdn.tgdd.vn/Products/Images/42/209797/xiaomi-redmi-note-8-pro-white-18thangbh-600x600.jpg",
-            "description": "/Man hinh: 6.53 inch, Full HD+/HDH: Android 9.0 (Pie)/CPU: Mediatek Helio G90T 8 nhan/RAM: 6 GB, ROM: 64 GB/Camera: Chinh 64 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 20 MP/PIN: 4500 mAh",
-            "trending": 1,
-            "rating": 7
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 24,
-            "categoryId": 2,
-            "name": "Nokia 8.1",
-            "price": "6590000",
-            "image": "https://cdn.tgdd.vn/Products/Images/42/194917/nokia-81-blue-18thangbh-600x600.jpg",
-            "description": "/Man hinh: 6.18 inch, Full HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 710 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 13 MP, Selfie: 20 MP/PIN: 3500 mAh",
-            "trending": 1,
-            "rating": 9
-          },
-          "quantity": 1
-        }
-      ],
-      "total": 12580000,
-      "status": "accept",
-      "id": 41
-    },
-    {
       "user_order": {},
       "products_order": [
         {
@@ -3194,6 +3155,7 @@
       "products_order": [
         {
           "product": {
+<<<<<<< HEAD
             "id": 1,
             "categoryId": 1,
             "name": "iPhone 11 Pro Max 512GB",
@@ -3209,6 +3171,23 @@
       "total": 43990000,
       "status": "accept",
       "id": 43
+=======
+            "id": 24,
+            "categoryId": 2,
+            "name": "Nokia 8.1",
+            "price": "6590000",
+            "image": "https://cdn.tgdd.vn/Products/Images/42/194917/nokia-81-blue-18thangbh-600x600.jpg",
+            "description": "/Man hinh: 6.18 inch, Full HD+/HDH: Android 9 Pie (Android One)/CPU: Snapdragon 710 8 nhan/RAM: 4 GB, ROM: 64 GB/Camera: Chinh 12 MP & Phu 13 MP, Selfie: 20 MP/PIN: 3500 mAh",
+            "trending": 1,
+            "rating": 9
+          },
+          "quantity": 2
+        }
+      ],
+      "total": 13180000,
+      "status": "accept",
+      "id": 47
+>>>>>>> 1cca92ae0ea9c3565ba55d975c53a3db81f9fb63
     }
   ]
 }
