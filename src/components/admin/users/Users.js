@@ -19,7 +19,7 @@ class Users extends React.Component {
         })
     }
     onSearch = () => {
-        this.props.onSearchProduct(this.state.keyword)
+        this.props.onSearchUser(this.state.keyword)
     }
     render() {
         var { keyword } = this.state
