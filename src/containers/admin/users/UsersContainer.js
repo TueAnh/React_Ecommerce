@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import Users from '../../../components/admin/users/Users'
-import { actFilterProduct ,actSeachProduct} from '../../../actions';
+import {actSeachUser} from '../../../actions';
 class UsersContainer extends React.Component {
     render() {
-        var {onFilterProduct,onSearchProduct } = this.props;
+        var {onSearchUser } = this.props;
         return (
             <Users
-                onFilterProduct={onFilterProduct}
-                onSearchProduct ={onSearchProduct}
+                onSearchUser ={onSearchUser}
             />
         );
     }
@@ -16,11 +15,8 @@ class UsersContainer extends React.Component {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        onFilterProduct: (filter) => {
-            dispatch(actFilterProduct(filter));
-        },
-        onSearchProduct: (keyword) => {
-            dispatch(actSeachProduct(keyword));
+        onSearchUser: (keyword) => {
+            dispatch(actSeachUser(keyword));
         }
     }
 }
