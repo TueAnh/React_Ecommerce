@@ -5,9 +5,12 @@ import * as actions from '../actions/index'
 class ThumbnailContainer extends React.Component {
     componentDidMount() {
         this.props.fetchAllTrendingLaptops();
+        this.props.fetchAllTrendingPhones();
     }
     render() {
         var { trendingphone, trendinglaptop, onAddToCart, onChangeMessage } = this.props
+        console.log("props",this.props)
+        var { trendingphone, trendinglaptop } = this.props
         trendingphone = trendingphone.slice(0, 5)
         trendinglaptop = trendinglaptop.slice(0, 5)
 
@@ -24,6 +27,8 @@ class ThumbnailContainer extends React.Component {
                     onAddToCart={onAddToCart}
                     onChangeMessage={onChangeMessage}
                 ></Thumbnail>
+                <Thumbnail label='ĐIỆN THOẠI NỔI BẬT NHẤT' trending={trendingphone} paths='/phone'></Thumbnail>
+                <Thumbnail label='MÁY TÍNH NỔI BẬT NHẤT' trending={trendinglaptop} paths='/laptop'></Thumbnail>
             </>
         );
     }
@@ -43,7 +48,10 @@ const mapDistpatchtoProps = (dispatch) => {
             dispatch(actions.actAddToCart(product, 1))
         },
         onChangeMessage: (message) => {
-            dispatch(actions.actChangeMessage(message));
+            dispatch(actions.actChangeMessage(message))
+        },
+        fetchAllTrendingPhones : () =>{
+            dispatch(actions.actFetchTrendingPhonesRequest())
         }
     }
 }
