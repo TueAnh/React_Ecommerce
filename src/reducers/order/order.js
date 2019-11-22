@@ -1,5 +1,4 @@
 import * as types from '../../constants/ActionTypes'
-var initialState = {};
 var initialState = [];
 var findIndex = (orders,id)=>{
     var result =-1;
@@ -15,7 +14,6 @@ var appReducer = (state = initialState, action) => {
     var { id } = action
     switch (action.type) {
         case types.CHECKOUT_CART:
-            state = action.order;
             var order = action.order;
             state.push(order)
             return state;
