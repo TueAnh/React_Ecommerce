@@ -74,7 +74,6 @@ class CartItem extends React.Component {
         );
     }
     onDelete = (product) => {
-        // console.log(product);
         var { onDeleteProductInCart, onChangeMessage } = this.props;
         onDeleteProductInCart(product);
         onChangeMessage(Message.MSG_DELETE_PRODUCT_IN_CART_SUCCESS);

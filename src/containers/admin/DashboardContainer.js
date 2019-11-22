@@ -6,13 +6,14 @@ class DashboardContainer extends React.Component {
     componentDidMount() {
         this.props.fectchAllProducts();
         this.props.fectchAllUsers();
+        // this.props.fectchAllOrders();
     }
     render() {
         var { products,users } = this.props;
         return (
             <Dashboard 
             lengthProducts={products.length}
-            lengthUser={users.length}
+            lengthUsers={users.length}
             >
 
             </Dashboard>
@@ -24,6 +25,7 @@ const mapStateToProps = (state) => {
     return {
         products: state.products,
         users : state.users,
+
     }
 }
 const mapDispatchToProps = (dispatch) => {
@@ -33,6 +35,9 @@ const mapDispatchToProps = (dispatch) => {
         },
         fectchAllUsers: () => {
             dispatch(actions.actFetchUsersRequest())
+        },
+        fectchAllOrders:()=>{
+            dispatch(actions.actFetchOrdersRequest())
         }
     }
 }
