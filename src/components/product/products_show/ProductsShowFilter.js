@@ -13,7 +13,6 @@ class ProductsShowFilter extends Component {
         let id = e.target.id;
         let lov = e.target.lov;
         let _style = [];
-        console.log(lov);
         if(id == 0)
             this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
         else    

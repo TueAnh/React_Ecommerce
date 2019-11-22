@@ -23,7 +23,7 @@ class Dashboard extends React.Component {
                         <div className="well">
                             <h4>Catagories</h4>
                             <p><b>{lengthProducts}</b> Items</p>
-                            <Link to="/admin/dashboard/Orders">View Details <span className="glyphicon">&#xe032;</span>
+                            <Link to="/admin/dashboard/products">View Details <span className="glyphicon">&#xe032;</span>
                             </Link>
                         </div>
                     </div>
@@ -31,8 +31,8 @@ class Dashboard extends React.Component {
                         <div className="well">
                             <h4>New Orders</h4>
                             <p>12400 Orders</p>
-                            <a href="#">View Details:<span className="glyphicon">&#xe032;</span>
-                            </a>
+                            <Link to="/admin/dashboard/Orders">View Details <span className="glyphicon">&#xe032;</span>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-sm-3">

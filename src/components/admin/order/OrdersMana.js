@@ -14,15 +14,13 @@ class OrdersMana extends React.Component {
         var target = e.target;
         var name = target.name;
         var value = target.type === 'checkbox' ? target.checked : target.value;
-        var filter = {
-            status: name === 'filterStatus' ? value : this.state.filterStatus,
-        };
         // this.props.onFilterProduct(filter);
         this.setState({
             [name]: value
         })
     }
     render() {
+        var {filterStatus} = this.state
         return (
             <div>
                 <div className="text-center">
@@ -46,7 +44,7 @@ class OrdersMana extends React.Component {
                             <td />
                             <td />
                             <td>
-                                {/* <select
+                                <select
                                     className="form-control"
                                     name="filterStatus"
                                     value={filterStatus}
@@ -55,7 +53,7 @@ class OrdersMana extends React.Component {
                                     <option value={-1}>All</option>
                                     <option value={0}>Accept</option>
                                     <option value={1}>Denied</option>
-                                </select> */}
+                                </select>
                             </td>
                             <td />
                         </tr>

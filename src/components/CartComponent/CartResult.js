@@ -4,18 +4,16 @@ import * as Message from './../../constants/Message'
 class CartResult extends React.Component {
     onCheckout = (user, _order) => {
         // console.log(user)
-        if (!user.email) {
-            if (confirm('You must login to Checkout ? ')) {// eslint-disable-line
-                // return (<Redirect to='/login/' />); ??? wwhy not 
-            }
-        }
-        // console.log(order)
+        // if (!user.email) {
+        //     if (confirm('You must login to Checkout ? ')) {// eslint-disable-line
+        //         // return (<Redirect to='/login/' />); ??? wwhy not 
+        //     }
+        // }
         this.props.onAddOder(_order);
         this.props.onChangeMessage(Message.MSG_CHECKOUT);
     }
     render() {
         var { cart, user } = this.props;
-        console.log(this.props.order)
         var total = this.showTotalAmount(cart)
         var _order = {
             user_order: user,

@@ -39,7 +39,6 @@ export const actTrendingFetchProducts = (trendingproducts) => {
 }
 
 export const actFetchTrendingLaptops = (trendinglaptop) => {
-    console.log(trendinglaptop);
     return {
         type: types.FETCH_TRENDING_LAPTOPS,
         trendinglaptop
@@ -82,7 +81,6 @@ export const actDeleteProduct = (id) => {
 export const actAddProductRequest = (product) => {
     return (dispatch) => {
         return callApi('products/', 'POST', product).then(res => {
-            console.log(product)
             dispatch(actAddProduct(res.data))
         });
     }
@@ -274,7 +272,7 @@ export const failure = () => {
 
 
 
-// 6.1 Login Request
+// 6.1 Register Request
 export const registerRequest = (email, password) => {
     var user = {
         email: email,
@@ -368,7 +366,35 @@ export const actChangeMessage = (message) =>{
 
 
 //9 . Order Admin
+// 3.1 All Orders
+export const actFetchOrdersRequest = () => {
+    return (dispatch) => {
+        return callApi('orders', 'GET', null).then(res => {
+            dispatch(actFetchOrders(res.data))
+        });
+    }
+}
+export const actFetchOrders = (orders) => {
+    return {
+        type: types.FETCH_ORDERS,
+        orders
+    }
+}
 
+//3.2 Delete Order
+export const actDeleteOrderRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`orders/${id}`, 'DELETE', null).then(res => {
+            dispatch(actDeleteOrder(res.data))
+        });
+    }
+}
+export const actDeleteOrder = (id) => {
+    return {
+        type: types.DELETE_ORDER,
+        id
+    }
+}
 
 
 //trending laptop
