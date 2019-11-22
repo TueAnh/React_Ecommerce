@@ -1,19 +1,22 @@
-export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
+
+//1. Carousel 
 export const INCREASE_INDEX = 'INCREASE_INDEX_CAROUSEL';
 export const REDUCTION_INDEX = 'REDUCTION_INDEX_CAROUSEL';
+//2. Trending Carousel
 export const INCREASE_TRENDINGINDEX = 'INCREASE_INDEX_TRENDINGCAROUSEL';
 export const REDUCTION_ITRENDINGINDEX = 'REDUCTION_INDEX_TRENDINGCAROUSEL';
 export const FETCH_TRENDING_PRODUCTS = 'FETCH_TRENDING_PRODUCTS';
 export const FETCH_TRENDING_LAPTOPS = 'FETCH_TRENDING_LAPTOPS';
 export const FETCH_TRENDING_PHONES = 'FETCH_TRENDING_PHONES';
-//admin
+//3. Product Admin
+export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
 export const ADD_PRODUCT = 'ADD_PRODUCT';
 export const DELETE_PRODUCT = 'DELETE_PRODUCT';
 export const EDIT_PRODUCT = 'EDIT_PRODUCT';
 export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
 export const FILTER_PRODUCT = 'FILTER_PRODUCT';
 export const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
-//admin-user
+// 4.User Admin
 export const ADD_USER = 'ADD_USER';
 export const FETCH_USERS = 'FETCH_USERS';
 export const DELETE_USER = 'DELETE_USER';
@@ -25,26 +28,28 @@ export const FETCH_ORDERS = 'FETCH_ORDERS';
 export const DELETE_ORDER = 'DELETE_ORDER';
 export const FILTER_ORDERS = 'FILTER_ORDERS';
 
-//login
+//5 Login
 export const LOGIN_REQUEST = 'USERS_LOGIN_REQUEST';
 export const LOGOUT = 'LOGOUT';
-//authentication 
 export const LOGIN_SUCCESS = 'USERS_LOGIN_SUCCESS';
 export const LOGIN_FAILURE = 'USERS_LOGIN_FAILURE';
 export const LOGIN_CLEAR = 'LOGIN_CLEAR'
-//
+// 6.1 Register
 export const REGISTER_REQUEST = 'USERS_REGISTER_REQUEST';
-//Alert 
+//7. Alert for Login
 export const ALERT_SUCCESS = 'ALERT_SUCCESS';
 export const ALERT_ERROR = 'ALERT_ERROR';
-
-//Cart
+// 8 .Cart 
 export const ADD_TO_CART = 'ADD_TO_CART';
 export const CHANGE_MESSAGE = 'CHANGE_MESSAGE';
 export const DELETE_PRODUCT_IN_CART = 'DELETE_PRODUCT_IN_CART';
 export const UPDATE_PRODUCT_IN_CART = 'UPDATE_PRODUCT_IN_CART';
-// Cart checkout
 export const CHECKOUT_CART = 'CHECKOUT_CART';
+// 9.Admin
+
+
+
+
 
 export const LIST_PHONE_TRENDING = 'LIST_PHONE_TRENDING';
 export const LIST_LAPTOP_TRENDING = 'LIST_LAPTOP_TRENDING';
