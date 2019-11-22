@@ -2,20 +2,27 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom'
 import * as Message from './../../constants/Message'
 class CartResult extends React.Component {
-    onCheckout = (user, _order) => {
+    onCheckout = (user, _order, cart) => {
         // console.log(user)
         if (!user.email) {
-            if (confirm('You must login to Checkout ? ')) {// eslint-disable-line
-                // return (<Redirect to='/login/' />); ??? wwhy not 
-            }
+            // if (confirm('You must login to Checkout ? ')) {// eslint-disable-line
+            //     // return (<Redirect to='/login/' />); ??? wwhy not 
+            // }
         }
-        // console.log(order)
+        this.productQuantityCart(cart)
         this.props.onAddOder(_order);
         this.props.onChangeMessage(Message.MSG_CHECKOUT);
     }
+    productQuantityCart = (cart) => {
+        if (cart[0]) {
+            for(var i=0;i<cart.length;i++){
+                cart[i].product.quantity = cart[i].product.quantity - cart[i].quantity
+                this.props.onChangeQuantityProductCheckout(cart[i].product)
+            }
+        }
+    }
     render() {
         var { cart, user } = this.props;
-        console.log(this.props.order)
         var total = this.showTotalAmount(cart)
         var _order = {
             user_order: user,
@@ -39,7 +46,7 @@ class CartResult extends React.Component {
                 </td>
                 <td colSpan="3">
                     <button type="button" className="btn btn-primary waves-effect waves-light"
-                        onClick={() => this.onCheckout(user, _order)}
+                        onClick={() => this.onCheckout(user, _order,cart)}
                     >
                         Complete purchase
                     </button>

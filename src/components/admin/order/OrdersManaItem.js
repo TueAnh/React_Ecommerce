@@ -28,7 +28,11 @@ class OrdersManaItem extends React.Component {
                         <td>{index + 1}</td>
                         <td>{order.id}</td>
                         <td>{order.user_order.email}</td>
-                        <td></td>
+                        <td>{order.products_order.map((item, index) => {
+                            return (<li key={index}>
+                                {item.product.name} x {item.quantity}
+                            </li>)
+                        })}</td>
                         <td>{order.total}</td>
                         <td className="text-center">
                             {this.showStatus(order.status, index)}

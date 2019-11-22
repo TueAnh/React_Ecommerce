@@ -872,6 +872,42 @@
       "total": 19770000,
       "status": "accept",
       "id": 45
+    },
+    {
+      "user_order": {},
+      "products_order": [
+        {
+          "product": {
+            "id": 148,
+            "categoryId": 11,
+            "name": "Itel it2171",
+            "price": "230000",
+            "image": "https://cdn.tgdd.vn/Products/Images/42/204125/itel-it2171-red-600x600.jpg",
+            "description": "/Man hinh: 1.77 inch, QVGA/Camera: 0.3 MP/Ho tro the nho: MicroSD, ho tro toi da 32 GB/Danh ba: 500 so/SIM: 2 SIM thuong/PIN: 1000 mAh",
+            "trending": 1,
+            "rating": 3,
+            "quantity": 150
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 11,
+            "categoryId": 1,
+            "name": "iPhone 11 128GB",
+            "price": "23990000",
+            "image": "https://cdn.tgdd.vn/Products/Images/42/210644/iphone-11-128gb-purple-600x600.jpg",
+            "description": "/Man hinh: 6.1 inch, Liquid Retina/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 12 MP/PIN: 3110 mAh",
+            "trending": 1,
+            "rating": 5,
+            "quantity": 160
+          },
+          "quantity": 1
+        }
+      ],
+      "total": 24220000,
+      "status": "accept",
+      "id": 46
     }
   ]
 }

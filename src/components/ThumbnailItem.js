@@ -20,18 +20,32 @@ class ThumbnailItem extends React.Component {
                             <img src={item.image} alt="product.name" style={{ width: '100%' }} />
                             <label className="installment">Trả góp 0%</label>
                         </a>
-                        <div className="price ml-10 mt-10 mb-10  "><strong>{item.price}</strong></div>
-                        <div className="promo noimage">
-                            <p> Mua kèm Office 365 Personal giảm 600.000đ và <b>1 K.mãi</b> khác</p>
-                        </div>
+                        <div>
+                         <div className="price ml-10 mt-10 mb-10  "><strong>{this.insertDot(item.price)}₫</strong></div>
                         <a
                             className="btn btn-primary"
                             onClick={() => this.onAddToCart(item)}
-                        >Add to Cart</a>
+                        >Add to Cart
+                        </a>   
+                        </div>   
                     </div>
                 );
             })
         );
+    }
+    insertDot = (p) => {
+        var price = p ;
+        price = parseInt(price);
+        let priceHaveDot = "";
+        while (price > 1000) {
+            let temp = (price % 1000);
+            if(temp == 0)
+                temp = "000";
+            priceHaveDot = temp + "." + priceHaveDot;
+            price /= 1000;
+        }
+        priceHaveDot = parseInt(price) + "." + priceHaveDot;
+        return priceHaveDot;
     }
     onAddToCart = (product) => {
         this.props.onAddToCart(product);
