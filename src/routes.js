@@ -11,6 +11,7 @@ import LoginContainer from './containers/login_register/LoginContainer';
 import RegisterContainer from './containers/login_register/RegisterContainer';
 import ProductsShowPage from './components/product/products_show/ProductsShowPage';
 import ProductsShowContainer from './containers/product/ProductsShowContainer'
+import ProductDetailsContainer from './containers/product/ProductDetailsContainer'
 const routes = [
     {
         path : '/',
@@ -31,7 +32,7 @@ const routes = [
     {
         path : '/product/:id',
         exact : false,
-        main :()=><ProductDetailsPage/>
+        main :({match})=><ProductDetailsContainer match={match}/>
     },
     {
         path : '/login',

@@ -6,7 +6,7 @@ class ProductDetailsComment extends Component {
         super(props);
         this.state = {
             rating : 0,
-            commented : [],
+            clickedStar : [],
             star : [
                 "",
                 "fa fa-star-o",
@@ -22,6 +22,10 @@ class ProductDetailsComment extends Component {
         // this.onMouseOutEvent = this.onMouseOutEvent.bind(this);
     }
 
+    componentDidMount(){
+        this.props.fetchCommentsRequest()
+    }
+
     setStar = (rating) => {
         let star = [];
         for(let i = 1; i <= 5; i++){
@@ -29,7 +33,7 @@ class ProductDetailsComment extends Component {
                 star[i] = <span class="fa fa-star"></span>;
             }
             else{
-                if(rating !== i-1)
+                if(rating > i-1)
                     star[i] = <span class="fa fa-star-half-o"></span>
                 else
                 star[i] = <span class="fa fa-star-o"></span>
@@ -42,7 +46,7 @@ class ProductDetailsComment extends Component {
         );
     }
 
-    commentStars = () =>{
+    commentStars = (style) =>{
         let star = [];
         for(let i = 1; i <= 5; i++){
             star[i] = <span id = {i} class = {this.state.star[i]} 
@@ -52,7 +56,7 @@ class ProductDetailsComment extends Component {
                         ></span>
         }
         return(
-            <div>
+            <div style={style}>
                 {star[1]}{star[2]}{star[3]}{star[4]}{star[5]}
             </div>
         );
@@ -78,7 +82,7 @@ class ProductDetailsComment extends Component {
     }
 
     onMouseOutEvent = (e) => {
-        if(this.state.commented.length === 0){
+        if(this.state.clickedStar.length === 0){
             let starCheck = [
                 "",
                 "fa fa-star-o",
@@ -96,7 +100,7 @@ class ProductDetailsComment extends Component {
         else{
             this.setState(
                 {
-                    star : this.state.commented
+                    star : this.state.clickedStar
                 }
             )
         }
@@ -104,24 +108,39 @@ class ProductDetailsComment extends Component {
 
     onClickEvent = () => {
         this.setState({
-           commented : this.state.star
+           clickedStar : this.state.star
         })
     }
 
+    getDate = () => {
+        let d = new Date();
+        return d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+    }
+
     render() {
-        let {product, rates, users} = this.props
+        let {product} = this.props
         let styleTextArea = {
             width : "100%",
-
         }
         let styleHr = {
             border:"3px solid #f1f1f1",
         }
+        let styleComment = {
+            fontSize: "18px",
+            margin : "10px 0px"
+        }
+        let styleDate = {
+            opacity : 0.5,
+        }
+        let style = {
+            margin:"5px 10px"
+        }
         return (
             <div>
+                {console.log("comments"+this.props.comments)}
                 <span class="heading">Người dùng đánh giá</span>
                 {this.setStar(product.rating)}
-                <div>4.1 điểm trên 1 đống người dùng đã đánh giá sản phẩm.</div>
+                <div>{product.rating} điểm trên 1 đống người dùng đã đánh giá sản phẩm.</div>
                 <hr style={styleHr} />
 
                 <div class="row">
@@ -183,32 +202,27 @@ class ProductDetailsComment extends Component {
                 </div>
                 <div >
                     {
-                        rates.map((rate, key) => {
-                            let user;
-                            for (let i = 0; i < users.length; i++) {
-                                if (users[i].user_id === rate.user_id) {
-                                    user = users[i].user_name;
-                                }
-                            }
+                        this.props.comments.map((comment, key) => {
                             return (
                                 <div>
                                     <hr/>
-                                    <h4><b>{user}</b></h4>
-                                    {this.setStar(rate.rate_score)}
-                                    <div>{rate.rate_comment}</div>
-                                    <div>{rate.rate_time}</div>
+                                    <h4><b>Nặc danh</b></h4>
+                                    {this.setStar(comment.rating)}
+                                    <div style={styleComment}>{comment.comment?comment.comment:<i>No Comment</i>}</div>
+                                    <div style={styleDate}>{comment.date?comment.date:this.getDate()}</div>
                                 </div>
                             )
                         }
                         )
                     }
                 </div>
+                <button className = "buttonMore">Cũ hơn ...</button>
                 <hr/>
                 <p>Đánh giá của bạn</p>
                 <div id = "ProductDetailsComment">
-                    {this.commentStars()} 
+                    {this.commentStars(style)} 
                     <textarea name="helllo" style = {styleTextArea} cols="30" rows="6" placeholder = "Viết gì đó đi bạn ơi ..."></textarea>
-                    <button>Bình luận</button>
+                    <button className = "buttonMore" style = {style}>Bình luận</button>
                 </div>
             </div>
         )

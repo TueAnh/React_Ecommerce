@@ -524,7 +524,6 @@ export const actFetchLaps = (laptops) => {
         laptops
     }
 }
-
 //////////////////
 
 export const actFetchCategoriesRequest = (id) => {
@@ -561,6 +560,36 @@ export const actFetchProductWithId = (products) => {
     return {
         type: types.LIST_PRODUCT_WITH_CATEGORY_ID,
         products
+    }
+}
+
+export const actFetchProductWithProductIdRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`products/${id}`, 'GET', null).then(res => {
+            dispatch(actFetchProductWithProductId(res.data))
+        });
+    }
+}
+
+export const actFetchProductWithProductId = (product) => {
+    return {
+        type: types.SELECTED_PRODUCT,
+        product
+    }
+}
+
+export const actFetchCommentsRequest = () => {
+    return (dispatch) => {
+        return callApi(`comments?_sort=id&_order=desc`, 'GET', null).then(res => {
+            dispatch(actFetchComments(res.data));
+        });
+    }
+}
+
+export const actFetchComments = (comments) => {
+    return {
+        type: types.LIST_COMMENT,
+        comments
     }
 }
 

@@ -12,8 +12,13 @@ class ProductsShowFilter extends Component {
     onClickEvent = (e) => {
         let id = e.target.id;
         let _style = {};
-        if(id == 0)
+        _style[0] = {};
+        if(id == 0){
             this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
+            _style[0] = {
+                backgroundColor: "#e7e7e7",
+            }
+        }
         else    
             this.props.fetchProductWithIdRequest(id);
         

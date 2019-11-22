@@ -9,19 +9,24 @@ class ProductDetailsPage extends Component {
         super(props);
     }
 
+    componentWillMount(){
+        this.props.fetchProductWithProductIdRequest(this.props.id);
+    }
+
     render() {
+        console.log(this.props.id)
+        
+        console.log(this.props.product.id)
         let product = {"id": 35, "categoryId": 10, "name": "OPPO A9 (2020) Tr\u1eafng Ng\u1ecdc Th\u1ea1ch", "price": "6990000", "image": "https://cdn.tgdd.vn/Products/Images/42/214829/oppo-a9-2020-trang-bac-ha-600x600.jpg", "description": "/Man hinh: 6.5 inch, HD+/HDH: Android 9.0 (Pie)/CPU: Snapdragon 665 8 nhan/RAM: 8 GB, ROM: 128 GB/Camera: Chinh 48 MP & Phu 8 MP, 2 MP, 2 MP, Selfie: 16 MP/PIN: 5000 mAh", "trending": 1, "rating": 4};
         let productsSame = [product,product,product,product];
-        
-        let rates = [{"user_id": 1, "rate_id": 1, "rate_time": "18/11/2019", "rate_score": 4, "rate_comment": "Cái này kết cấu vừa xấu, xài nhanh hao pin, lại còn đắt, chán !!, cơ mà thích đánh giá 4 sao :D"},
-                {"user_id": 2, "rate_id": 2, "rate_time": "18/11/2019", "rate_score": 5, "rate_comment": "Cái này kết cấu vừa xấu, xài nhanh hao pin, lại còn đắt, chán !!, cơ mà thích đánh giá 5 sao :D"}]
-        let users = [{"user_id": 1, "user_name": "RonalMes"},{"user_id": 2, "user_name": "Phan Tank"}]
-        let hr = <hr/>       
+        let hr = <hr/>    
+        let d = new Date();   
         return (
             <div className = "ProductDetailsPage">
                 <div>
+                    {console.log(d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear())}
                     <ProductDetailsContent 
-                        product = {product} 
+                        product = {this.props.product?this.props.product:product} 
                         contentDisplay = "flex"
                         contentWidth = "100%"
                         contentMargin = "10px"
@@ -41,7 +46,10 @@ class ProductDetailsPage extends Component {
 
                 <hr/>
 
-                <ProductDetailsComment product = {product} rates = {rates} users = {users}/>
+                <ProductDetailsComment 
+                    product = {product} 
+                    comments = {this.props.comments}
+                    fetchCommentsRequest={this.props.fetchCommentsRequest}/>
 
                 <hr/>
                 

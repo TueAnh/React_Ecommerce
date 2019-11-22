@@ -94,15 +94,14 @@ class ProductDetailsContent extends Component {
         }
         let hr = <hr style={styleHr} />
         let { product } = this.props
-        let link = "/product/" + product.id;
         let description = product.description.split('/');
         return (
             <div className="ProductDetailsContent" style={styleProductDetailsContent}>
                 <div style={styleImgDiv} >
-                    <Link to="/product/:id"><img style={styleProductDetailsContentImg} src={product.image} /></Link>
+                    <Link to={`/product/${product.id}`}><img style={styleProductDetailsContentImg} src={product.image} /></Link>
                 </div>
                 <div className="Info" >
-                    <Link to='/product/:id'><h1 style={styleH1}>{product.name}</h1></Link>
+                    <Link to={`/product/${product.id}`}><h1 style={styleH1}>{product.name}</h1></Link>
                     {this.setStar(product.rating)}
                     {hr}
                     <h3 style={styleH3} >{this.insertDot(product.price)} ₫</h3>
@@ -115,7 +114,7 @@ class ProductDetailsContent extends Component {
                         }
                         )
                     }
-                    <button style={styleButton}><span class="glyphicon glyphicon-shopping-cart"></span> MUA NGAY</button>
+                    <button style={styleButton} onClick={() => this.props.onAddToCart({product})}><span class="glyphicon glyphicon-shopping-cart"></span> MUA NGAY</button>
                 </div>
             </div>
         )

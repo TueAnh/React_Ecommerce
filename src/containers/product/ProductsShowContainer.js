@@ -6,7 +6,9 @@ import {
     actFetchCategoriesRequest,
     actFetchProductPhoneOrLapRequest,
     actSelectedCategory,
+    actAddToCart
 } from './../../actions/index'
+
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 class ProductsShowContainer extends Component {
@@ -29,7 +31,8 @@ class ProductsShowContainer extends Component {
                     />
                 <ProductsShowListProducts
                     type_id={this.props.type_id}
-                    productsPhonesOrLaptops={this.props.productsPhonesOrLaptops} />    
+                    productsPhonesOrLaptops={this.props.productsPhonesOrLaptops}
+                    onAddToCart={this.props.onAddToCart} />    
 
                         
             </div>
@@ -52,6 +55,7 @@ const mapDispatchToProps = (dispatch) => ({
     fetchProductPhoneOrLapRequest: bindActionCreators(actFetchProductPhoneOrLapRequest, dispatch),
     selectedCategoryFunc: bindActionCreators(actSelectedCategory, dispatch),
     fetchProductWithIdRequest: bindActionCreators(actFetchProductWithIdRequest, dispatch),
+    onAddToCart: bindActionCreators(actAddToCart, dispatch),
     // fetchPhonesRequest: bindActionCreators(actFetchPhonesRequest, dispatch),
     // fetchLapsRequest: bindActionCreators(actFetchLapsRequest, dispatch)
 })

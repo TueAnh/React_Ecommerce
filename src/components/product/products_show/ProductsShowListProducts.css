@@ -3,7 +3,7 @@
     height: auto;
     display: block;
     text-align: center;
-    animation: 6s fadeIn;
+    animation: 5s fadeIn;
     animation-fill-mode: forwards;
   
     visibility: hidden;

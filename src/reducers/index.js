@@ -23,7 +23,12 @@ import selectedCategory from './product/selectedCategory'
 import orderAdmin from './orderAdmin'
 import laptops from './product/laptops'
 import phones from './product/phones'
+import product from './product/product'
+import comments from './product/comments'
+
 const appReducer = combineReducers({
+    comments,
+    product,
     selectedCategory,
     productsPhonesOrLaptops,
     categories,

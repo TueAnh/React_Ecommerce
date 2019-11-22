@@ -37,6 +37,7 @@ class ProductsShowListProducts extends Component {
                     buttonFontSize="14px"
                     marginElement="2px"
                     showInfo="false"
+                    onAddToCart={this.props.onAddToCart}
                 />
             }
             rows[i / 3] = <div style={styleRow}>
