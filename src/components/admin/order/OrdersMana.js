@@ -4,6 +4,24 @@ import './../../layout/admin.css'
 import OrdersManaItemContainer from '../../../containers/admin/orders/OrdersManaItemContainer'
 
 class OrdersMana extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            filterStatus: -1,
+        }
+    }
+    onChange = (e) => {
+        var target = e.target;
+        var name = target.name;
+        var value = target.type === 'checkbox' ? target.checked : target.value;
+        var filter = {
+            status: name === 'filterStatus' ? value : this.state.filterStatus,
+        };
+        // this.props.onFilterProduct(filter);
+        this.setState({
+            [name]: value
+        })
+    }
     render() {
         return (
             <div>

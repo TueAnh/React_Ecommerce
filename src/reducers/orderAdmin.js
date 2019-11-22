@@ -11,7 +11,7 @@ var findIndex = (orders,id)=>{
 }
 var appReducer = (state = initialState, action) => {
     var index = -1;
-    var { id, order } = action
+    var { id } = action
     switch (action.type) {
         case types.FETCH_ORDERS:
             state = action.products

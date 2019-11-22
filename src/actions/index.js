@@ -1,19 +1,22 @@
 import * as types from './../constants/ActionTypes'
 import callApi from './../utils/apiCaller'
 import { history } from '../_helpers/history';
-// Carousel 
+//1. Carousel controll slide 
 export const increaseIndex = () => {
     return {
         type: types.INCREASE_INDEX,
     }
 }
-
 export const reductionIndex = () => {
     return {
         type: types.REDUCTION_INDEX,
     }
 }
-// Trending Carousel
+
+
+
+//2. Trending Carousel
+// 2.1 Carousel Control
 export const increaseTrendingIndex = () => {
     return {
         type: types.INCREASE_TRENDINGINDEX,
@@ -25,7 +28,28 @@ export const reductionTrendingIndex = () => {
         type: types.REDUCTION_ITRENDINGINDEX,
     }
 }
-// get Data axios
+
+// 2.2 All Trending Products
+export const actTrendingFetchProducts = (trendingproducts) => {
+    return {
+        
+        type: types.FETCH_TRENDING_PRODUCTS,
+        trendingproducts
+    }
+}
+
+export const actFetchTrendingLaptops = (trendinglaptop) => {
+    console.log(trendinglaptop);
+    return {
+        type: types.FETCH_TRENDING_LAPTOPS,
+        trendinglaptop
+    }
+}
+
+
+
+//3. Product Admin
+// 3.1 All products
 export const actFetchProductsRequest = () => {
     return (dispatch) => {
         return callApi('products', 'GET', null).then(res => {
@@ -33,14 +57,91 @@ export const actFetchProductsRequest = () => {
         });
     }
 }
-// get all products
 export const actFetchProducts = (products) => {
     return {
         type: types.FETCH_PRODUCTS,
         products
     }
 }
-// get user-admin
+
+//3.2 Delete Product
+export const actDeleteProductRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`products/${id}`, 'DELETE', null).then(res => {
+            dispatch(actDeleteProduct(res.data))
+        });
+    }
+}
+export const actDeleteProduct = (id) => {
+    return {
+        type: types.DELETE_PRODUCT,
+        id
+    }
+}
+//3.3 Add Product
+export const actAddProductRequest = (product) => {
+    return (dispatch) => {
+        return callApi('products/', 'POST', product).then(res => {
+            console.log(product)
+            dispatch(actAddProduct(res.data))
+        });
+    }
+}
+export const actAddProduct = (product) => {
+    return {
+        type: types.ADD_PRODUCT,
+        product
+    }
+}
+//3.4 Product to Update
+export const actGetProductRequest = (id) => {
+    return (dispatch) => {
+        return callApi(`products/${id}`, 'GET', null).then(res => {
+            dispatch(actGetProduct(res.data))
+        });
+    }
+}
+export const actGetProduct = (product) => {
+    return {
+        type: types.EDIT_PRODUCT,
+        product
+    }
+}
+
+//3.5 Update Product
+export const actUpdateProductRequest = (product) => {
+    return (dispatch) => {
+        return callApi(`products/${product.id}`, 'PUT', product).then(res => {
+            dispatch(actUpdateProduct(res.data))
+        });
+    }
+}
+export const actUpdateProduct = (product) => {
+    return {
+        type: types.UPDATE_PRODUCT,
+        product
+    }
+}
+
+//3.6 Fillter Table Product 
+export const actFilterProduct = (filter) => {
+    return {
+        type: types.FILTER_PRODUCT,
+        filter
+    }
+}
+//3.7 Search Product
+export const actSeachProduct = (keyword) => {
+    return {
+        type: types.SEARCH_PRODUCT,
+        keyword
+    }
+}
+
+
+
+// 4.User Admin
+// 4.1 All Users
 export const actFetchUsersRequest = () => {
     return (dispatch) => {
         return callApi('users', 'GET', null).then(res => {
@@ -48,14 +149,14 @@ export const actFetchUsersRequest = () => {
         });
     }
 }
-//get all users
 export const actFetchUsers = (users) => {
     return {
         type: types.FETCH_USERS,
         users
     }
 }
-//Delete User
+
+// 4.2 Delete User
 export const actDeleteUserRequest = (id) => {
     return (dispatch) => {
         return callApi(`users/${id}`, 'DELETE', null).then(res => {
@@ -69,7 +170,8 @@ export const actDeleteUser = (id) => {
         id
     }
 }
-//add User
+
+//4.3 Add User
 export const actAddUserRequest = (user) => {
     return (dispatch) => {
         return callApi('users/', 'POST', user).then(res => {
@@ -83,7 +185,8 @@ export const actAddUser = (user) => {
         user
     }
 }
-//get User to Update User
+
+//4.4 User to Update
 export const actGetUserRequest = (id) => {
     return (dispatch) => {
         return callApi(`users/${id}`, 'GET', null).then(res => {
@@ -97,7 +200,8 @@ export const actGetUser = (user) => {
         user
     }
 }
-//Update User
+
+//4.5 Update User
 export const actUpdateUserRequest = (user) => {
     return (dispatch) => {
         return callApi(`users/${user.id}`, 'PUT', user).then(res => {
@@ -119,124 +223,12 @@ export const actFetchTrendingProductsRequest = () => {
         });
     }
 }
-//trending laptop
-export const actFetchTrendingLaptopsRequest = () => {
 
-    return (dispatch) => {  
-        var result = [];
-        var phones = [];
-        
-         callApi('type/2/category?_embed=products', 'GET', null).then(res =>{ 
-             var laptop = [];
-             result = res.data;
-             result.forEach( item=> item.products.forEach((product) => {if (product.trending==1) laptop.push(product)}));
-             return dispatch(actFetchTrendingLaptops(laptop));
-         });
-        
-    }
-}
-// get all products
-export const actTrendingFetchProducts = (trendingproducts) => {
-    return {
-        
-        type: types.FETCH_TRENDING_PRODUCTS,
-        trendingproducts
-    }
-}
 
-export const actFetchTrendingLaptops = (trendinglaptop) => {
-    console.log(trendinglaptop);
-    return {
-        type: types.FETCH_TRENDING_LAPTOPS,
-        trendinglaptop
-    }
-}
 
-export const listPhoneTrending = () => {
-    return {
-        type: types.LIST_PHONE_TRENDING
-    }
-}
-export const listLatopTrending = () => {
-    return {
-        type: types.LIST_LAPTOP_TRENDING
-    }
-}
-//Admin
-//Delete Product
-export const actDeleteProductRequest = (id) => {
-    return (dispatch) => {
-        return callApi(`products/${id}`, 'DELETE', null).then(res => {
-            dispatch(actDeleteProduct(res.data))
-        });
-    }
-}
-export const actDeleteProduct = (id) => {
-    return {
-        type: types.DELETE_PRODUCT,
-        id
-    }
-}
-//add Product
-export const actAddProductRequest = (product) => {
-    return (dispatch) => {
-        return callApi('products/', 'POST', product).then(res => {
-            console.log(product)
-            dispatch(actAddProduct(res.data))
-        });
-    }
-}
-export const actAddProduct = (product) => {
-    return {
-        type: types.ADD_PRODUCT,
-        product
-    }
-}
-//get Product to Update
-export const actGetProductRequest = (id) => {
-    return (dispatch) => {
-        return callApi(`products/${id}`, 'GET', null).then(res => {
-            dispatch(actGetProduct(res.data))
-        });
-    }
-}
-export const actGetProduct = (product) => {
-    return {
-        type: types.EDIT_PRODUCT,
-        product
-    }
-}
+//5 Login
+// 5.1 Login Request
 
-//Update Product
-export const actUpdateProductRequest = (product) => {
-    return (dispatch) => {
-        return callApi(`products/${product.id}`, 'PUT', product).then(res => {
-            dispatch(actUpdateProduct(res.data))
-        });
-    }
-}
-export const actUpdateProduct = (product) => {
-    return {
-        type: types.UPDATE_PRODUCT,
-        product
-    }
-}
-//Fillter table product admin
-export const actFilterProduct = (filter) => {
-    return {
-        type: types.FILTER_PRODUCT,
-        filter
-    }
-}
-//Fillter table product admin
-export const actSeachProduct = (keyword) => {
-    return {
-        type: types.SEARCH_PRODUCT,
-        keyword
-    }
-}
-
-// Login
 export const loginRequest = (email, password) => {
     return (dispatch) => {
         return callApi(`users/?email=${email}&&password=${password}`, 'GET', null).then(res => {
@@ -258,12 +250,24 @@ export const login = (user) => {
     }
 }
 
+// 5.2 Logout Request
+export const logoutRequest = () => {
+    return (dispatch) => {
+        dispatch(logout())
+        dispatch(loginClear())
+    }
+}
 export const logout = () => {
     return {
         type: types.LOGOUT,
     }
 }
-
+export const loginClear = () => {
+    return {
+        type: types.LOGIN_CLEAR,
+    }
+}
+// 5.3 Authentication
 export const success = () => {
     return {
         type: types.LOGIN_SUCCESS,
@@ -275,19 +279,10 @@ export const failure = () => {
         type: types.LOGIN_FAILURE,
     }
 }
-export const loginClear = () => {
-    return {
-        type: types.LOGIN_CLEAR,
-    }
-}
-// logout + loginClear
-export const logoutRequest = () => {
-    return (dispatch) => {
-        dispatch(logout())
-        dispatch(loginClear())
-    }
-}
-//Register 
+
+
+
+// 6.1 Login Request
 export const registerRequest = (email, password) => {
     var user = {
         email: email,
@@ -313,23 +308,45 @@ export const register = (user) => {
         user
     }
 }
-// alert logins
+
+
+
+//7. Alert for Login
+// 7.1 Login Sussess
 export const alertSuccess = (message) => {
     return {
         type: types.ALERT_SUCCESS,
         message
     }
 }
-
+// 7.2 Login Fail
 export const alertFailure = (message) => {
     return {
         type: types.ALERT_ERROR,
         message
     }
 }
+
+// 8 .Cart 
+// 8.1 Add Product to Cart
 export const actAddToCart = (product,quantity) =>{
     return{
         type : types.ADD_TO_CART,
+        product,
+        quantity
+    }
+}
+// 8.2 Detete Product Cart
+export const actDeleteProductInCart = (product) => {
+    return{
+        type : types.DELETE_PRODUCT_IN_CART,
+        product
+    }
+}
+// 8.3 Detete Product Cart
+export const actUpdateProductInCart = (product,quantity) => {
+    return{
+        type : types.UPDATE_PRODUCT_IN_CART,
         product,
         quantity
     }
@@ -340,19 +357,39 @@ export const actChangeMessage = (message) =>{
         message
     }
 }
-export const actDeleteProductInCart = (product) => {
-    return{
-        type : types.DELETE_PRODUCT_IN_CART,
-        product
+
+//trending laptop
+export const actFetchTrendingLaptopsRequest = () => {
+
+    return (dispatch) => {  
+        var result = [];
+        var phones = [];
+        
+         callApi('type/2/category?_embed=products', 'GET', null).then(res =>{ 
+             var laptop = [];
+             result = res.data;
+             result.forEach( item=> item.products.forEach((product) => {if (product.trending==1) laptop.push(product)}));
+             return dispatch(actFetchTrendingLaptops(laptop));
+         });
+        
     }
 }
-export const actUpdateProductInCart = (product,quantity) => {
-    return{
-        type : types.UPDATE_PRODUCT_IN_CART,
-        product,
-        quantity
+
+
+export const listPhoneTrending = () => {
+    return {
+        type: types.LIST_PHONE_TRENDING
     }
 }
+export const listLatopTrending = () => {
+    return {
+        type: types.LIST_LAPTOP_TRENDING
+    }
+}
+
+
+
+
 
 /*
     <TuanAnh>

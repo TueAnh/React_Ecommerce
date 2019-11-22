@@ -23,6 +23,7 @@ export const SEARCH_USER = 'SEARCH_USER';
 //admin-order
 export const FETCH_ORDERS = 'FETCH_ORDERS';
 export const DELETE_ORDER = 'DELETE_ORDER';
+export const FILTER_ORDERS = 'FILTER_ORDERS';
 
 //login
 export const LOGIN_REQUEST = 'USERS_LOGIN_REQUEST';
