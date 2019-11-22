@@ -54,7 +54,7 @@ class UserItem extends React.Component {
     }
     showIsAdmin = (isAdmin, index) => {
         var result = [];
-        if (isAdmin === 1) {
+        if (isAdmin == 1) {
             result.push(<span key={index} className="label label-success">
                 true
             </span>)

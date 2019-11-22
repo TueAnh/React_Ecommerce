@@ -3,7 +3,7 @@ import './../layout/admin.css'
 import { Link } from 'react-router-dom'
 class Dashboard extends React.Component {
     render() {
-        var { lengthProducts,lengthUsers } = this.props;
+        var { lengthProducts,lengthUsers,lengthOrders } = this.props;
         return (
             <div className="col-sm-9">
                 <div className="well">
@@ -23,14 +23,14 @@ class Dashboard extends React.Component {
                         <div className="well">
                             <h4>Catagories</h4>
                             <p><b>{lengthProducts}</b> Items</p>
-                            <Link to="/admin/dashboard/products">View Details <span className="glyphicon">&#xe032;</span>
+                            <Link to="/admin/dashboard/Orders">View Details <span className="glyphicon">&#xe032;</span>
                             </Link>
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="well">
                             <h4>New Orders</h4>
-                            <p>12400 Orders</p>
+                            <p>{lengthOrders} Orders</p>
                             <Link to="/admin/dashboard/Orders">View Details <span className="glyphicon">&#xe032;</span>
                             </Link>
                         </div>

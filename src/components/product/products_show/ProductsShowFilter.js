@@ -11,40 +11,42 @@ class ProductsShowFilter extends Component {
 
     onClickEvent = (e) => {
         let id = e.target.id;
+        let lov = e.target.lov;
         let _style = [];
-        if(id == 0){
+        console.log(lov);
+        if(id == 0)
             this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
-            _style[0] = { backgroundColor: "#e7e7e7" }
-        }
-        else
+        else    
             this.props.fetchProductWithIdRequest(id);
-
-        this.props.categories.map((category, key) => {
-            _style[category.id] = {}
-            if (category.id == id)
-                _style[category.id] = { backgroundColor: "#e7e7e7" }
-        });
-
-
-        this.setState({
-            style: _style
-        })
+        
+        // for (let i = 0; i <= this.props.categories.length; i++) {
+        //     _style[i] = "";
+        //     // if (i == key)
+        //     //     _style[i] = {
+        //     //         backgroundColor: "#777"
+        //     //     }
+        // }
+        // //console.log(key);
+        // this.setState({
+        //     style: _style
+        // })
     }
 
     render() {
-        let { categories } = this.props
-        console.log(this.state.style)
+        let {categories} = this.props
         return (
             <div id="ProductsShowFilter">
                 <ul id="ProductsShowFilterUl">
                     <li id="0"
+                        lov="0"
                         style={this.state.style[0]}
                         className="ProductsShowFilterLi"
                         onClick={this.onClickEvent}>All</li>
                     {
                         categories.map((category, key) => {
                             return (
-                                <li style={this.state.style[category.id]}
+                                <li style={this.state.style[key + 1]}
+                                    key={key+1}
                                     className="ProductsShowFilterLi"
                                     onClick={this.onClickEvent}
                                     id={category.id}

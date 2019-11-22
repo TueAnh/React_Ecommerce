@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 class ProductsShowContainer extends Component {
     
-    componentWillMount() {
+    componentDidMount() {
         this.props.fetchCategoriesRequest(this.props.type_id);
         this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
     }
