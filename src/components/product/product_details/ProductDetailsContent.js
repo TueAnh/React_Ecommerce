@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './ProductDetailsContent.css';
-import { BrowserRouter as Link } from 'react-router-dom'
-import { type } from 'os';
+import { Link } from 'react-router-dom'
 
 class ProductDetailsContent extends Component {
     constructor(props) {
@@ -36,7 +35,10 @@ class ProductDetailsContent extends Component {
             let temp = (price % 1000);
             if(temp == 0)
                 temp = "000";
-            priceHaveDot = temp + "." + priceHaveDot;
+            if(priceHaveDot)
+                priceHaveDot = temp + "." + priceHaveDot;
+            else
+                priceHaveDot = temp;
             price /= 1000;
         }
         priceHaveDot = parseInt(price) + "." + priceHaveDot;
@@ -96,13 +98,13 @@ class ProductDetailsContent extends Component {
         return (
             <div className="ProductDetailsContent" style={styleProductDetailsContent}>
                 <div style={styleImgDiv} >
-                    <Link to="/product/1"><img style={styleProductDetailsContentImg} src={product.image} /></Link>
+                    <Link to="/product/:id"><img style={styleProductDetailsContentImg} src={product.image} /></Link>
                 </div>
                 <div className="Info" >
-                    <Link to="/product/1"><h1 style={styleH1}>{product.name}</h1></Link>
+                    <Link to='/product/:id'><h1 style={styleH1}>{product.name}</h1></Link>
                     {this.setStar(product.rating)}
                     {hr}
-                    <h3 style={styleH3} >{this.insertDot(product.price)}₫</h3>
+                    <h3 style={styleH3} >{this.insertDot(product.price)} ₫</h3>
                     {hr}
                     {
                         description.map((item, key) => {

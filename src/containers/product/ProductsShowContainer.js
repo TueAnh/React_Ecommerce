@@ -9,13 +9,13 @@ import {
 } from './../../actions/index'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 class ProductsShowContainer extends Component {
     
-    componentDidMount() {
+    componentWillMount() {
         this.props.fetchCategoriesRequest(this.props.type_id);
         this.props.fetchProductPhoneOrLapRequest(this.props.type_id);
     }
+
 
     render() {
         return (
@@ -28,7 +28,9 @@ class ProductsShowContainer extends Component {
                     />
                 <ProductsShowListProducts
                     type_id={this.props.type_id}
-                    productsPhonesOrLaptops={this.props.productsPhonesOrLaptops} />
+                    productsPhonesOrLaptops={this.props.productsPhonesOrLaptops} />    
+
+                        
             </div>
         )
     }

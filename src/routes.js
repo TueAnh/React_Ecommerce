@@ -21,7 +21,7 @@ const routes = [
         path : '/phone',
         exact : false,
         // main :()=><PhonePage/>
-        main :()=><ProductsShowContainer type_id = "1"/>
+        main :({match})=><ProductsShowContainer type_id = "1" match={match}/>
     },
     {
         path : '/laptop',
