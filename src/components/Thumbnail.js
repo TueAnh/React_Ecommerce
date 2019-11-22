@@ -3,6 +3,7 @@ import "./layout/margin.css"
 import "./layout/Thumbnail.css"
 import './ThumbnailItem'
 import ThumbnailItem from './ThumbnailItem';
+import * as Message from './../constants/Message';
 import {Link} from 'react-router-dom'
 class Thumbnail extends React.Component {
     render() {
@@ -27,13 +28,24 @@ class Thumbnail extends React.Component {
                                     <strong>{trendingBig.price} </strong>
                                 </div>
                             </div>
+                            <a
+                            className="btn btn-primary"
+                            onClick={() => this.onAddToCart(trendingBig)}
+                        >Add to Cart</a>
                         </div>
-                        <ThumbnailItem trendingSmall={trendingSmall} />
+                        <ThumbnailItem trendingSmall={trendingSmall} 
+                        onAddToCart={this.props.onAddToCart}
+                        onChangeMessage={this.props.onChangeMessage}
+                        />
                     </div>
                 </div>
             </>
 
         );
+    }
+    onAddToCart = (product) => {
+        this.props.onAddToCart(product);
+        this.props.onChangeMessage(Message.MSG_ADD_TO_CART_SUCCESS);
     }
 }
 

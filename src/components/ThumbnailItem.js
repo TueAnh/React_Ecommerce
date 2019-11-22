@@ -1,6 +1,7 @@
 import React from 'react';
 import "./layout/margin.css"
 import "./layout/Thumbnail.css"
+import * as Message from './../constants/Message';
 class ThumbnailItem extends React.Component {
     render() {
         var { trendingSmall } = this.props
@@ -23,10 +24,18 @@ class ThumbnailItem extends React.Component {
                         <div className="promo noimage">
                             <p> Mua kèm Office 365 Personal giảm 600.000đ và <b>1 K.mãi</b> khác</p>
                         </div>
+                        <a
+                            className="btn btn-primary"
+                            onClick={() => this.onAddToCart(item)}
+                        >Add to Cart</a>
                     </div>
                 );
             })
         );
+    }
+    onAddToCart = (product) => {
+        this.props.onAddToCart(product);
+        this.props.onChangeMessage(Message.MSG_ADD_TO_CART_SUCCESS);
     }
 
 }
