@@ -216,6 +216,13 @@ export const actUpdateUser = (user) => {
     }
 }
 
+//4.6 Search User
+export const actSeachUser = (keyword) => {
+    return {
+        type: types.SEARCH_USER,
+        keyword
+    }
+}
 
 
 //5 Login

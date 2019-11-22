@@ -18,6 +18,7 @@ import productsPhonesOrLaptops from './product/productsPhonesOrLaptops'
 import order from './order/order'
 import users from './users'
 import userEditting from './userEditting'
+import searchUser from './searchUser'
 import selectedCategory from './product/selectedCategory'
 import orderAdmin from './orderAdmin'
 const appReducer = combineReducers({
@@ -41,7 +42,8 @@ const appReducer = combineReducers({
     order,
     users,
     userEditting,
-    orderAdmin
+    orderAdmin,
+    searchUser
 
 });
 export default appReducer;

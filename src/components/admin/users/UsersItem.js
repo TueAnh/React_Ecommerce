@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 class UserItem extends React.Component {
 
     render() {
-        var { users, searchProduct } = this.props;
+        var { users, searchUser } = this.props;
         //search
-        if (searchProduct) {
+        if (searchUser) {
             console.log(users)
-            users = users.filter((product) => {
-                return product.name.toLowerCase().indexOf(searchProduct.toLowerCase()) !== -1 || product.category_id === parseInt(searchProduct);
+            users = users.filter((user) => {
+                return user.email.toLowerCase().indexOf(searchUser.toLowerCase()) !== -1 || user.id === parseInt(searchUser);
             })
         }
         return (
@@ -64,6 +64,7 @@ class UserItem extends React.Component {
         </span>)
         }
         return result;
+        
     }
 
 }

@@ -370,6 +370,12 @@
       "isAdmin": 1
     },
     {
+      "id": 1,
+      "email": "aadmin@gmail.com",
+      "password": "1234",
+      "isAdmin": 1
+    },
+    {
       "id": 2,
       "email": "bubu@gmail.com",
       "password": "12345",
@@ -476,6 +482,12 @@
       "password": "12",
       "isAdmin": 0,
       "id": 19
+    },
+    {
+      "id": 20,
+      "email": "doanquoctoan1998.lov@gmail.com",
+      "password": "1234",
+      "isAdmin": "1"
     }
   ],
   "orders": [
@@ -682,6 +694,88 @@
       "total": 44250000,
       "status": "accept",
       "id": 39
+    },
+    {
+      "user_order": {
+        "id": 1,
+        "email": "admin@gmail.com",
+        "password": "1234",
+        "isAdmin": 1
+      },
+      "products_order": [
+        {
+          "product": {
+            "id": 11,
+            "categoryId": 1,
+            "name": "iPhone 11 128GB",
+            "price": "23990000",
+            "image": "https://cdn.tgdd.vn/Products/Images/42/210644/iphone-11-128gb-purple-600x600.jpg",
+            "description": "/Man hinh: 6.1 inch, Liquid Retina/HDH: iOS 13/CPU: Apple A13 Bionic 6 nhan/RAM: 4 GB, ROM: 128 GB/Camera: Chinh 12 MP & Phu 12 MP, Selfie: 12 MP/PIN: 3110 mAh",
+            "trending": 1,
+            "rating": 5,
+            "quantity": 160
+          },
+          "quantity": 1
+        }
+      ],
+      "total": 23990000,
+      "status": "accept",
+      "id": 40
+    },
+    {
+      "user_order": {
+        "id": 1,
+        "email": "admin@gmail.com",
+        "password": "1234",
+        "isAdmin": 1
+      },
+      "products_order": [
+        {
+          "product": {
+            "id": 214,
+            "categoryId": 20,
+            "name": "Acer Aspire 3 A315 ",
+            "price": "9790000",
+            "image": "https://cdn.tgdd.vn/Products/Images/44/207884/acer-aspire-3-a315-54-30fk-i3-7020u-4gb-1tb-win10-18-600x600.jpg",
+            "description": "/Man hinh: 15.6 inch, HD 720/CPU: Core i3 Kabylake Refresh, 2.30 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 2 cell",
+            "trending": 1,
+            "rating": 5,
+            "quantity": 100
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": 236,
+            "categoryId": 20,
+            "name": "Acer Aspire A515 ",
+            "price": "10990000",
+            "image": "https://cdn.tgdd.vn/Products/Images/44/198789/acer-aspire-a515-53-3153-i3-8145u-4gb-1gb-win10-n-33397-thumb-1-600x600.jpg",
+            "description": "/Man hinh: 15.6 inch, Full HD/CPU: Core i3 Coffee Lake, 2.10 GHz/RAM: 4 GB, HDD: 1 TB SATA3, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel UHD Graphics 620/HDH: Windows 10 Home SL/Nang: 2.0 kg, Pin: 3 cell",
+            "trending": 1,
+            "rating": 5,
+            "quantity": 100
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 237,
+            "categoryId": 20,
+            "name": "Acer Spin 3 SP314 51 ",
+            "price": "11990000",
+            "image": "https://cdn.tgdd.vn/Products/Images/44/145919/acer-spin-3-sp314-51-39wk-i3-7130u-nxguwsv001-cava-1-600x600.jpg",
+            "description": "/Man hinh: 14 inch, Full HD/CPU: Core i3 Kabylake, 2.70 GHz/RAM: 4 GB, HDD: 500 GB, Ho tro khe cam SSD M.2 PCIe/Do hoa: Intel HD Graphics 620/HDH: Windows 10 Home SL/Nang: 1.7 kg, Pin: 3 cell",
+            "trending": 1,
+            "rating": 5,
+            "quantity": 100
+          },
+          "quantity": 1
+        }
+      ],
+      "total": 42560000,
+      "status": "accept",
+      "id": 41
     }
   ]
 }
