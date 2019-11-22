@@ -75,7 +75,7 @@ export const actFetchProducts = (products) => {
 export const actDeleteProductRequest = (id) => {
     return (dispatch) => {
         return callApi(`products/${id}`, 'DELETE', null).then(res => {
-            dispatch(actDeleteProduct(res.data))
+            dispatch(actDeleteProduct(id))
         });
     }
 }
@@ -167,7 +167,7 @@ export const actFetchUsers = (users) => {
 export const actDeleteUserRequest = (id) => {
     return (dispatch) => {
         return callApi(`users/${id}`, 'DELETE', null).then(res => {
-            dispatch(actDeleteUser(res.data))
+            dispatch(actDeleteUser(id))
         });
     }
 }
@@ -399,13 +399,15 @@ export const actFetchOrders = (orders) => {
 
 //9.2 Delete Order
 export const actDeleteOrderRequest = (id) => {
+    console.log("id",id);
     return (dispatch) => {
         return callApi(`orders/${id}`, 'DELETE', null).then(res => {
-            dispatch(actDeleteOrder(res.data))
+            dispatch(actDeleteOrder(id))
         });
     }
 }
 export const actDeleteOrder = (id) => {
+    console.log("id",id);
     return {
         type: types.DELETE_ORDER,
         id
