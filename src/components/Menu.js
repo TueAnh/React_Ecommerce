@@ -109,11 +109,13 @@ class Menu extends React.Component {
                         <ul className ="live">
                             {results.map((result) => {
                                 return (
+                                    <Link to={`/product/${result.id}`}>
                                     <li key={result.id} className ="live">
                                         <img src={result.image} className ="live" />
                                         <h3 className ="live">{result.name} </h3>
                                         <p className ="live">$ {result.price/20000}</p>
                                     </li>
+                                    </Link>
                                 );
                             })}
                         </ul>

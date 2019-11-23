@@ -153,31 +153,31 @@ class ProductDetailsComment extends Component {
         }
     }
 
-    printPreComment(styleComment, styleDate) {
-        if (this.state.comments != []) {
-            let _comments = []
-            for (let i = this.state.comments - 1; i >= 0; i--) {
-                _comments[this.state.comments - 1 - i] = <div>
-                    <hr />
-                    <h4><b>Nặc danh</b></h4>
-                    {this.setStar(this.state.comments[i]["rating"])}
-                    <div style={styleComment}>{this.state.comments[i]["comment"] ? this.state.comments[i]["comment"].comment : <i>No Comment</i>}</div>
-                    <div style={styleDate}>{this.state.comments[i]["date"] ? this.state.comments[i]["date"] : this.getDate()}</div>
-                </div>
-            }
-            _comments.map((comment, key) => {
-                return (
-                    <div>
-                        <hr />
-                        <h4><b>Nặc danh</b></h4>
-                        {this.setStar(comment.rating)}
-                        <div style={styleComment}>{comment.comment ? comment.comment : <i>No Comment</i>}</div>
-                        <div style={styleDate}>{comment.date ? comment.date : this.getDate()}</div>
-                    </div>
-                )
-            })
-        }
-    }
+    // printPreComment(styleComment, styleDate) {
+    //     if (this.state.comments != []) {
+    //         let _comments = []
+    //         for (let i = this.state.comments - 1; i >= 0; i--) {
+    //             _comments[this.state.comments - 1 - i] = <div>
+    //                 <hr />
+    //                 <h4><b>Nặc danh</b></h4>
+    //                 {this.setStar(this.state.comments[i]["rating"])}
+    //                 <div style={styleComment}>{this.state.comments[i]["comment"] ? this.state.comments[i]["comment"].comment : <i>No Comment</i>}</div>
+    //                 <div style={styleDate}>{this.state.comments[i]["date"] ? this.state.comments[i]["date"] : this.getDate()}</div>
+    //             </div>
+    //         }
+    //         _comments.map((comment, key) => {
+    //             return (
+    //                 <div>
+    //                     <hr />
+    //                     <h4><b>Nặc danh</b></h4>
+    //                     {this.setStar(comment.rating)}
+    //                     <div style={styleComment}>{comment.comment ? comment.comment : <i>No Comment</i>}</div>
+    //                     <div style={styleDate}>{comment.date ? comment.date : this.getDate()}</div>
+    //                 </div>
+    //             )
+    //         })
+    //     }
+    // }
 
     render() {
         let { product } = this.props

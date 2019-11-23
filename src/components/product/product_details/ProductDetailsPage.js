@@ -68,7 +68,7 @@ class ProductDetailsPage extends Component {
                                 contentHeight = "100px"
                                 imgWidth = "100%"
                                 imgDivWidth = "100%"
-                                imgDivHeight = "200px"
+                                imgDivHeight = "300px"
                                 imgDivMargin = ""
                                 h1FontSize = "15px"
                                 h1Height = "30px"

@@ -9,9 +9,9 @@ class ProductsShowListProducts extends Component {
     }
 
     showProduct = (products) => {
-        let styleHeight = "250px";
+        let styleHeight = "360px";
         if(this.props.type_id == 2)
-            styleHeight = "180px"
+            styleHeight = "280px"
         let rows = []
         let cols = []
         let styleRow = {
