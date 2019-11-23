@@ -47,7 +47,7 @@ class ProductDetailsPage extends Component {
                 <hr/>
 
                 <ProductDetailsComment 
-                    product = {product} 
+                    product = {this.props.product?this.props.product:product} 
                     comments = {this.props.comments}
                     fetchCommentsRequest={this.props.fetchCommentsRequest}/>
 

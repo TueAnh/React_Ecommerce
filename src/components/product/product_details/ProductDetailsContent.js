@@ -114,7 +114,7 @@ class ProductDetailsContent extends Component {
                         }
                         )
                     }
-                    <button style={styleButton} onClick={() => this.props.onAddToCart({product})}><span class="glyphicon glyphicon-shopping-cart"></span> MUA NGAY</button>
+                    <button style={styleButton} onClick={() => {this.props.onAddToCart(this.props.product,1);{console.log(this.props.product)}}}><span class="glyphicon glyphicon-shopping-cart"></span> MUA NGAY</button>
                 </div>
             </div>
         )

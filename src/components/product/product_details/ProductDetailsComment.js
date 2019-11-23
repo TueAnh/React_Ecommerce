@@ -27,21 +27,21 @@ class ProductDetailsComment extends Component {
     }
 
     setStar = (rating) => {
-        let star = [];
-        for(let i = 1; i <= 5; i++){
-            if(i <= rating){
-                star[i] = <span class="fa fa-star"></span>;
+        let stars = [];
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                stars[i] = <span class="fa fa-star"></span>;
             }
-            else{
-                if(rating > i-1)
-                    star[i] = <span class="fa fa-star-half-o"></span>
+            else {
+                if (rating > i - 1)
+                    stars[i] = <span class="fa fa-star-half-o"></span>
                 else
-                star[i] = <span class="fa fa-star-o"></span>
+                    stars[i] = <span class="fa fa-star-o"></span>
             }
         }
         return (
             <div>
-                {star[1]}{star[2]}{star[3]}{star[4]}{star[5]}
+                {stars[1]}{stars[2]}{stars[3]}{stars[4]}{stars[5]}
             </div>
         );
     }
@@ -139,6 +139,7 @@ class ProductDetailsComment extends Component {
             <div>
                 {console.log("comments"+this.props.comments)}
                 <span class="heading">Người dùng đánh giá</span>
+                {console.log(product.rating)}
                 {this.setStar(product.rating)}
                 <div>{product.rating} điểm trên 1 đống người dùng đã đánh giá sản phẩm.</div>
                 <hr style={styleHr} />
