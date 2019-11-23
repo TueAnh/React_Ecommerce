@@ -581,9 +581,7 @@ export const actFetchProductWithProductId = (product) => {
 export const actFetchCommentsRequest = () => {
     return (dispatch) => {
         return callApi(`comments?_sort=id&_order=desc`, 'GET', null).then(res => {
-            if (typeof res !== 'undefined')
             dispatch(actFetchComments(res.data));
-            else (dispatch(actFetchComments([])))
         });
     }
 }

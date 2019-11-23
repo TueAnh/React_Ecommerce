@@ -15,6 +15,9 @@ class ProductDetailsComment extends Component {
                 "fa fa-star-o",
                 "fa fa-star-o"
             ],
+            comments: [
+                
+            ]
         }
         // this.setStar = this.setStar.bind(this);
 
@@ -24,6 +27,11 @@ class ProductDetailsComment extends Component {
 
     componentDidMount() {
         this.props.fetchCommentsRequest();
+    }
+
+    componentDidUpdate() {
+        console.log("componentDidUpdate");
+
     }
 
     setStar = (rating) => {
@@ -122,12 +130,52 @@ class ProductDetailsComment extends Component {
         let rating = this.state.rating;
         if (rating) {
             let comment = {
-                rating: rating,
-                comment: e.target.content ? e.target.content : "Qúa tuyệt",
-                date: this.getDate()
+                "rating": rating,
+                "comment": e.target.content ? e.target.content : "Qúa tuyệt",
+                "date": this.getDate()
             }
             console.log(comment);
             this.props.addCommentRequest(comment);
+            console.log(this.props.comments)
+            this.setState({
+                rating: 0,
+                clickedStar: [],
+                star: [
+                    "",
+                    "fa fa-star-o",
+                    "fa fa-star-o",
+                    "fa fa-star-o",
+                    "fa fa-star-o",
+                    "fa fa-star-o"
+                ],
+                comments: this.state.comments.push(comment)
+            })
+        }
+    }
+
+    printPreComment(styleComment, styleDate) {
+        if (this.state.comments != []) {
+            let _comments = []
+            for (let i = this.state.comments - 1; i >= 0; i--) {
+                _comments[this.state.comments - 1 - i] = <div>
+                    <hr />
+                    <h4><b>Nặc danh</b></h4>
+                    {this.setStar(this.state.comments[i]["rating"])}
+                    <div style={styleComment}>{this.state.comments[i]["comment"] ? this.state.comments[i]["comment"].comment : <i>No Comment</i>}</div>
+                    <div style={styleDate}>{this.state.comments[i]["date"] ? this.state.comments[i]["date"] : this.getDate()}</div>
+                </div>
+            }
+            _comments.map((comment, key) => {
+                return (
+                    <div>
+                        <hr />
+                        <h4><b>Nặc danh</b></h4>
+                        {this.setStar(comment.rating)}
+                        <div style={styleComment}>{comment.comment ? comment.comment : <i>No Comment</i>}</div>
+                        <div style={styleDate}>{comment.date ? comment.date : this.getDate()}</div>
+                    </div>
+                )
+            })
         }
     }
 
@@ -152,6 +200,7 @@ class ProductDetailsComment extends Component {
         let content;
         return (
             <div>
+                {console.log("render")}
                 <span class="heading">Người dùng đánh giá</span>
                 {this.setStar(product.rating)}
                 <div>{product.rating} điểm trên 1 đống người dùng đã đánh giá sản phẩm.</div>
@@ -215,6 +264,7 @@ class ProductDetailsComment extends Component {
                     </div>
                 </div>
                 <div >
+                    {/* {this.printPreComment(styleComment, styleDate)} */}
                     {
                         this.props.comments.map((comment, key) => {
                             return (
@@ -236,7 +286,7 @@ class ProductDetailsComment extends Component {
                 <div id="ProductDetailsComment">
                     {this.commentStars(style)}
                     <textarea id="textArea" style={styleTextArea} cols="30" rows="6" placeholder="Viết gì đó đi bạn ơi ..."></textarea>
-                    <button content="Quá tuyệt" className="buttonMore" style={style}>Bình luận</button>
+                    <button content="" className="buttonMore" style={style} onClick={this.onClickSubmitComment}>Bình luận</button>
                 </div>
             </div>
         )
