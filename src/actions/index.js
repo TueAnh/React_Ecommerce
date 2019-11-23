@@ -595,6 +595,20 @@ export const actFetchComments = (comments) => {
     }
 }
 
+export const actAddCommentRequest = (comment) => {
+    return (dispatch) => {
+        return callApi('comments/', 'POST', comment).then(res => {
+            dispatch(actAddOrder(res.data))
+        });
+    }
+}
+export const actAddComment = (comment) => {
+    return {
+        type: types.ADD_COMMENT,
+        comment
+    }
+}
+
 
 /*
     </TuanAnh>

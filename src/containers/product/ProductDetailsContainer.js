@@ -4,7 +4,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {
     actFetchProductWithProductIdRequest,
-    actFetchCommentsRequest
+    actFetchCommentsRequest,
+    actAddCommentRequest,
+    actAddToCart
 } from './../../actions/index'
 class ProductDetailsContainer extends Component {
     render () {
@@ -16,6 +18,8 @@ class ProductDetailsContainer extends Component {
                     fetchProductWithProductIdRequest={this.props.fetchProductWithProductIdRequest}
                     comments={this.props.comments}
                     fetchCommentsRequest={this.props.fetchCommentsRequest}
+                    addCommentRequest={this.props.addCommentRequest}
+                    onAddToCart={this.props.onAddToCart}
                 />
         )
     }
@@ -29,6 +33,9 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
     fetchCommentsRequest: bindActionCreators(actFetchCommentsRequest, dispatch),
     fetchProductWithProductIdRequest: bindActionCreators(actFetchProductWithProductIdRequest, dispatch),
+    addCommentRequest: bindActionCreators(actAddCommentRequest, dispatch),
+    onAddToCart: bindActionCreators(actAddToCart, dispatch),
+
 })
 
 export default connect(mapStateToProps, mapDispatchToProps) (ProductDetailsContainer);

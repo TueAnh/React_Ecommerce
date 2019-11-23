@@ -25,8 +25,10 @@ import laptops from './product/laptops'
 import phones from './product/phones'
 import product from './product/product'
 import comments from './product/comments'
+import comment from './product/comment'
 
 const appReducer = combineReducers({
+    comment,
     comments,
     product,
     selectedCategory,

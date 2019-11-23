@@ -41,6 +41,7 @@ class ProductDetailsPage extends Component {
                         spanFontSize = "15px"
                         marginElement = "5px"
                         showInfo = "true"
+                        onAddToCart={this.props.onAddToCart}
                     />
                 </div>
 
@@ -49,8 +50,9 @@ class ProductDetailsPage extends Component {
                 <ProductDetailsComment 
                     product = {this.props.product?this.props.product:product} 
                     comments = {this.props.comments}
-                    fetchCommentsRequest={this.props.fetchCommentsRequest}/>
-
+                    fetchCommentsRequest={this.props.fetchCommentsRequest}
+                    addCommentRequest={this.props.addCommentRequest}/>
+                    
                 <hr/>
                 
                 <p>Sản phẩm tương tự</p>
@@ -75,6 +77,7 @@ class ProductDetailsPage extends Component {
                                 buttonFontSize = "14px"
                                 marginElement = "2px"
                                 showInfo = "false"
+                                onAddToCart={this.props.onAddToCart}
                             />
                         )
                     }

@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './ProductDetailsComment.css';
 
 class ProductDetailsComment extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            rating : 0,
-            clickedStar : [],
-            star : [
+            rating: 0,
+            clickedStar: [],
+            star: [
                 "",
                 "fa fa-star-o",
                 "fa fa-star-o",
@@ -22,8 +22,8 @@ class ProductDetailsComment extends Component {
         // this.onMouseOutEvent = this.onMouseOutEvent.bind(this);
     }
 
-    componentDidMount(){
-        this.props.fetchCommentsRequest()
+    componentDidMount() {
+        this.props.fetchCommentsRequest();
     }
 
     setStar = (rating) => {
@@ -46,16 +46,16 @@ class ProductDetailsComment extends Component {
         );
     }
 
-    commentStars = (style) =>{
+    commentStars = (style) => {
         let star = [];
-        for(let i = 1; i <= 5; i++){
-            star[i] = <span id = {i} class = {this.state.star[i]} 
-                            onMouseOver = {this.onMouseOverEvent}
-                            onMouseOut = {this.onMouseOutEvent}
-                            onClick = {this.onClickEvent}
-                        ></span>
+        for (let i = 1; i <= 5; i++) {
+            star[i] = <span id={i} class={this.state.star[i]}
+                onMouseOver={this.onMouseOverEvent}
+                onMouseOut={this.onMouseOutEvent}
+                onClick={this.onClickEvent}
+            ></span>
         }
-        return(
+        return (
             <div style={style}>
                 {star[1]}{star[2]}{star[3]}{star[4]}{star[5]}
             </div>
@@ -65,24 +65,24 @@ class ProductDetailsComment extends Component {
     onMouseOverEvent = (e) => {
         let starCheck = []
         let id = e.target.id;
-        for(let i = 1; i <= 5; i++){
-            if(i <= id){
-                starCheck[i] ="fa fa-star";
+        for (let i = 1; i <= 5; i++) {
+            if (i <= id) {
+                starCheck[i] = "fa fa-star";
             }
-            else{
+            else {
                 starCheck[i] = "fa fa-star-o";
             }
         }
         this.setState(
             {
-                rating : id,
-                star : starCheck
+                rating: id,
+                star: starCheck
             }
         )
     }
 
     onMouseOutEvent = (e) => {
-        if(this.state.clickedStar.length === 0){
+        if (this.state.clickedStar.length === 0) {
             let starCheck = [
                 "",
                 "fa fa-star-o",
@@ -93,14 +93,14 @@ class ProductDetailsComment extends Component {
             ];
             this.setState(
                 {
-                    star : starCheck
+                    star: starCheck
                 }
             )
         }
-        else{
+        else {
             this.setState(
                 {
-                    star : this.state.clickedStar
+                    star: this.state.clickedStar
                 }
             )
         }
@@ -108,38 +108,51 @@ class ProductDetailsComment extends Component {
 
     onClickEvent = () => {
         this.setState({
-           clickedStar : this.state.star
+            clickedStar: this.state.star
         })
     }
 
     getDate = () => {
         let d = new Date();
-        return d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+        return d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear();
+    }
+
+    onClickSubmitComment = (e) => {
+
+        let rating = this.state.rating;
+        if (rating) {
+            let comment = {
+                rating: rating,
+                comment: e.target.content ? e.target.content : "Qúa tuyệt",
+                date: this.getDate()
+            }
+            console.log(comment);
+            this.props.addCommentRequest(comment);
+        }
     }
 
     render() {
-        let {product} = this.props
+        let { product } = this.props
         let styleTextArea = {
-            width : "100%",
+            width: "100%",
         }
         let styleHr = {
-            border:"3px solid #f1f1f1",
+            border: "3px solid #f1f1f1",
         }
         let styleComment = {
             fontSize: "18px",
-            margin : "10px 0px"
+            margin: "10px 0px"
         }
         let styleDate = {
-            opacity : 0.5,
+            opacity: 0.5,
         }
         let style = {
-            margin:"5px 10px"
+            margin: "5px 10px"
         }
+        let content;
         return (
             <div>
-                {console.log("comments"+this.props.comments)}
                 <span class="heading">Người dùng đánh giá</span>
-                {console.log(product.rating)}
                 {this.setStar(product.rating)}
                 <div>{product.rating} điểm trên 1 đống người dùng đã đánh giá sản phẩm.</div>
                 <hr style={styleHr} />
@@ -206,24 +219,24 @@ class ProductDetailsComment extends Component {
                         this.props.comments.map((comment, key) => {
                             return (
                                 <div>
-                                    <hr/>
+                                    <hr />
                                     <h4><b>Nặc danh</b></h4>
                                     {this.setStar(comment.rating)}
-                                    <div style={styleComment}>{comment.comment?comment.comment:<i>No Comment</i>}</div>
-                                    <div style={styleDate}>{comment.date?comment.date:this.getDate()}</div>
+                                    <div style={styleComment}>{comment.comment ? comment.comment : <i>No Comment</i>}</div>
+                                    <div style={styleDate}>{comment.date ? comment.date : this.getDate()}</div>
                                 </div>
                             )
                         }
                         )
                     }
                 </div>
-                <button className = "buttonMore">Cũ hơn ...</button>
-                <hr/>
+                <button className="buttonMore">Cũ hơn ...</button>
+                <hr />
                 <p>Đánh giá của bạn</p>
-                <div id = "ProductDetailsComment">
-                    {this.commentStars(style)} 
-                    <textarea name="helllo" style = {styleTextArea} cols="30" rows="6" placeholder = "Viết gì đó đi bạn ơi ..."></textarea>
-                    <button className = "buttonMore" style = {style}>Bình luận</button>
+                <div id="ProductDetailsComment">
+                    {this.commentStars(style)}
+                    <textarea id="textArea" style={styleTextArea} cols="30" rows="6" placeholder="Viết gì đó đi bạn ơi ..."></textarea>
+                    <button content="Quá tuyệt" className="buttonMore" style={style}>Bình luận</button>
                 </div>
             </div>
         )
