@@ -18,9 +18,9 @@ class Thumbnail extends React.Component {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="feature">
-                                <a>
+                            <Link to={`/product/${trendingBig.id}`}>
                                     <img src={trendingBig.image} alt={trendingBig.name} style={{ width: '100%' }} />
-                                </a>
+                                </Link>
                                 <h3>{trendingBig.name} </h3>
                             </div>
                             <div className="caption">

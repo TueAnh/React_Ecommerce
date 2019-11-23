@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 class CarouselItem extends React.Component {
     render() {
         var { product , index ,incre ,length} = this.props
@@ -9,7 +10,9 @@ class CarouselItem extends React.Component {
         if(index=== length) active = 'active'
         return (
             <div className = {`item ${active}`}>
+                <Link to={`/product/${product.id}`}>
                 <img src={product.image} alt = {product.name} />
+                </Link>
             </div>
         );
     }

@@ -1,5 +1,7 @@
 import React from 'react';
 import * as Message from './../constants/Message';
+import {Link} from 'react-router-dom'
+
 class TrendingCarouselItem extends React.Component {
     render() {
         var sale = Math.floor(Math.random() *100);
@@ -32,7 +34,9 @@ class TrendingCarouselItem extends React.Component {
                             <div key={index} className="col-sm-3">
                                 <div className="thumb-wrapper">
                                     <div className="img-box">
+                                        <Link to={`/product/${product.id}`}>
                                         <img src={product.image} className="img-responsive img-fluid" alt={product.name} />
+                                        </Link>
                                     </div>
                                     <div className="thumb-content">
                                         <h4>{product.name}</h4>

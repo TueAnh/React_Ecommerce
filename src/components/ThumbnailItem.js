@@ -1,6 +1,7 @@
 import React from 'react';
 import "./layout/margin.css"
 import "./layout/Thumbnail.css"
+import {Link} from 'react-router-dom'
 import * as Message from './../constants/Message';
 class ThumbnailItem extends React.Component {
     render() {
@@ -16,10 +17,10 @@ class ThumbnailItem extends React.Component {
             trendingSmall.map((item, index) => {
                 return (
                     <div key={index} className="col-md-2 mt-50">
-                        <a >
+                        <Link to={`/product/${item.id}`}>
                             <img src={item.image} alt="product.name" style={{ width: '100%' }} />
                             <label className="installment">Trả góp 0%</label>
-                        </a>
+                        </Link>
                         <div>
                          <div className="price ml-10 mt-10 mb-10  "><strong>{this.insertDot(item.price)}₫</strong></div>
                         <a
