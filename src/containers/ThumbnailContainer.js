@@ -19,12 +19,14 @@ class ThumbnailContainer extends React.Component {
                     label='ĐIỆN THOẠI NỔI BẬT NHẤT' trending={trendingphone}
                     onAddToCart={onAddToCart}
                     onChangeMessage={onChangeMessage}
+                    paths="/phone"
                 ></Thumbnail>
                 <Thumbnail
                     label='MÁY TÍNH NỔI BẬT NHẤT'
                     trending={trendinglaptop}
                     onAddToCart={onAddToCart}
                     onChangeMessage={onChangeMessage}
+                    paths="/laptop"
                 ></Thumbnail>
             </>
         );
