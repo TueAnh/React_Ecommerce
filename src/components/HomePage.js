@@ -7,13 +7,13 @@ import Footer from './../components/Footer'
 export default class HomePage extends React.Component {
     render() {
         return (
-            <>
-                <CarouselContainer />
+            <div className = "App">
+                <CarouselContainer/>
                 <ImageBar/>
                 <TrendingCarouselContainer />
                 <ThumbnailContainer />
                 <Footer />
-            </>
+            </div>
         )
     }
 }

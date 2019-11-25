@@ -5,6 +5,7 @@
 
 }
 
+
 #ProductsShowFilterUl {
     list-style-type: none;
     margin: 0;
@@ -12,10 +13,29 @@
 }
 
 .ProductsShowFilterLi {
-    background-color: #f8f8f8;
     border: #e7e7e7 solid 0.3px;
     padding: 10px;
 }
+
+@keyframes fadeKer {
+	0% {
+        padding-left: 0px;
+        background: black;
+	    opacity: 0;
+    }
+
+    50% {
+        padding-left: 30px;
+    }
+
+	100% {
+        /* set cứng khúc này */
+	    visibility: visible;
+	    opacity: 1;
+	}
+
+}
+
 
 .ProductsShowFilterLi:hover {
     background-color: #e7e7e7;
@@ -26,9 +46,22 @@
     background-color: #777;
 }
 
-.ProductsShowFilterLi:visited {
-    background-color: #777;
-}
+.animation-1{animation: 1s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-2{animation: 1.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-3{animation: 2s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-4{animation: 2.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-5{animation: 3s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-6{animation: 3.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-7{animation: 4s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-8{animation: 4.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-9{animation: 5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-10{animation: 5.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-11{animation: 6s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-12{animation: 6.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-13{animation: 7s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-14{animation: 7.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-15{animation: 8s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
+.animation-16{animation: 8.5s fadeKer; animation-fill-mode: forwards; visibility: hidden;}
 
 
 

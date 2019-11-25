@@ -1,6 +1,7 @@
 import React from 'react';
 import { increaseIndex } from '../actions';
 class Carousel extends React.Component {
+    
     render() {
         var disabledPre = false;
         var disabledNext = false;
@@ -11,7 +12,7 @@ class Carousel extends React.Component {
             disabledNext = true;
         }
         return (
-            <div className="owl-one carousel slide" >
+            <div className="owl-one carousel slide " >
                 <div className="carousel-inner">
                     {this.props.children}
                 </div>

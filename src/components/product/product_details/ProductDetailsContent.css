@@ -7,7 +7,6 @@
 .ProductDetailsContent {
     animation: 5s fadeIn;
     animation-fill-mode: forwards;
-  
     visibility: hidden;
 }
 

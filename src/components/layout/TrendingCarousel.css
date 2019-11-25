@@ -47,7 +47,23 @@ h2::after {
 	margin: 0 auto;
 	left: 0;
 	right: 0;
+	animation: 5s fadeIn;
+	animation-fill-mode: forwards;
+	visibility: hidden;
 }
+
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  visibility: visible;
+	  opacity: 1;
+	}
+}
+
+
+
 .carousel .item h4 {
 	font-size: 18px;
 	margin: 10px 0;
@@ -86,8 +102,27 @@ h2::after {
     width: 40px;
     background: none;
     margin: auto 0;
-    background: rgba(0, 0, 0, 0.2);
+	border: transparent;
+	transition: 1s;
+	animation: 4s testAnimation;
 }
+
+@keyframes testAnimation {
+	0% {
+		background: black;
+
+	}
+	100% {
+		background: white;
+	}
+}
+
+
+.carousel-control:hover {
+	background-color: #e7e7e7;
+	box-shadow:0 0 10px black;
+}
+
 .carousel .carousel-control i {
     font-size: 30px;
     position: absolute;
