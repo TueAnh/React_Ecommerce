@@ -33,13 +33,25 @@
 
 .ProductDetailsContent h3 {
     /* font-size: 25px; */
-    color : red
+    color : red;
+
 }
 
+#h3{
+    animation: blinker 1s linear infinite;
+    color : red;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 
 .ProductDetailsContent img {
     margin: 0px 10px;
+    position: inherit;
 }
 
 

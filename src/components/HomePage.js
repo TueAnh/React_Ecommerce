@@ -9,7 +9,6 @@ export default class HomePage extends React.Component {
         return (
             <div className = "App">
                 <CarouselContainer/>
-                <ImageBar/>
                 <TrendingCarouselContainer />
                 <ThumbnailContainer />
                 <Footer />

@@ -84,17 +84,3 @@
     display: none;
   }
 }
-
-.ProductDetailsPage button {
-  width: 10%;
-  height: 40px;
-  font-size: 15px;
-  border-radius: 15px;
-  border: 0;
-}
-
-.ProductDetailsPage button:hover {
-  color: white;
-  background: #4285F4;
-  transition: 0.5s;
-}

@@ -1,6 +1,8 @@
 import React from 'react';
 import * as Message from './../constants/Message';
 import {Link} from 'react-router-dom'
+import ProductDetailsContent from './product/product_details/ProductDetailsContent'
+
 
 class TrendingCarouselItem extends React.Component {
     render() {
@@ -26,35 +28,59 @@ class TrendingCarouselItem extends React.Component {
         return result;
     }
     showContent = (trendingproducts,sale, active, i) => {
+        let style = {
+            display: "flex",
+        }
         return (
             <div key ={i}className={`item carousel-item ${active}`}>
-                <div className="row">
+                <div style={style}>
                     {trendingproducts.map((product, index) => {
                         return (
-                            <div key={index} className="col-sm-3">
-                                <div className="thumb-wrapper">
-                                    <div className="img-box">
-                                        <Link to={`/product/${product.id}`}>
-                                        <img src={product.image} className="img-responsive img-fluid" alt={product.name} />
-                                        </Link>
-                                    </div>
-                                    <div className="thumb-content">
-                                        <h4>{product.name}</h4>
-                                        <p className="item-price"> <span>{this.insertDot(product.price)}₫</span></p>
-                                        <div className="star-rating">
-                                            <ul className="list-inline">
-                                                <li className="list-inline-item">
-                                                    {this.showRating(product.rating)}
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a 
-                                         className="btn btn-primary"
-                                        onClick = {() => this.onAddToCart(product)}
-                                        >Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
+                            // <div key={index} className="col-sm-3">
+                            //     <div className="thumb-wrapper">
+                            //         <div className="img-box">
+                            //             <Link to={`/product/${product.id}`}>
+                            //             <img src={product.image} className="img-responsive img-fluid" alt={product.name} />
+                            //             </Link>
+                            //         </div>
+                            //         <div className="thumb-content">
+                            //             <h4>{product.name}</h4>
+                            //             <p className="item-price"> <span>{this.insertDot(product.price)}₫</span></p>
+                            //             <div className="star-rating">
+                            //                 <ul className="list-inline">
+                            //                     <li className="list-inline-item">
+                            //                         {this.showRating(product.rating)}
+                            //                     </li>
+                            //                 </ul>
+                            //             </div>
+                            //             <a 
+                            //              className="btn btn-primary"
+                            //             onClick = {() => this.onAddToCart(product)}
+                            //             >Add to Cart</a>
+                            //         </div>
+                            //     </div>
+                            // </div>
+                            <ProductDetailsContent 
+                                product = {product} 
+                                textAlign = "center"
+                                contentDisplay = "block"
+                                contentMargin = "10px"
+                                contentWidth = "25%"
+                                contentHeight = "100px"
+                                imgWidth = "100%"
+                                imgDivWidth = "100%"
+                                imgDivHeight = "180px"
+                                imgDivMargin = ""
+                                h1FontSize = "15px"
+                                h1Height = "30px"
+                                h3FontSize = "20px"
+                                spanFontSize = "14px"
+                                buttonFontSize = "14px"
+                                marginElement = "2px"
+                                showInfo = "false"
+                                onAddToCart={this.props.onAddToCart}
+                                discount = "500000"
+                            />
                         );
                     })}
                 </div>

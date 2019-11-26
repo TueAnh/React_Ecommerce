@@ -4,6 +4,9 @@ class CarouselItem extends React.Component {
     render() {
         var { product , index ,incre ,length} = this.props
         var active = '';
+        let style = {
+            position: "absolute"
+        }
         if(index === incre){
             active = 'active'
         }
@@ -11,7 +14,7 @@ class CarouselItem extends React.Component {
         return (
             <div className = {`item ${active}`}>
                 <Link to={`/product/${product.id}`}>
-                <img src={product.image} alt = {product.name} />
+                <img src={product.image} alt = {product.name} style ={style} />
                 </Link>
             </div>
         );

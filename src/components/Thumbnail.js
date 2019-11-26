@@ -5,20 +5,29 @@ import './ThumbnailItem'
 import ThumbnailItem from './ThumbnailItem';
 import * as Message from './../constants/Message';
 import {Link} from 'react-router-dom'
+import ProductDetailsContent from './product/product_details/ProductDetailsContent'
+
 class Thumbnail extends React.Component {
     render() {
+        let style = "320px"
+        if(this.props.type == "2"){
+            style = "220px"
+        }
+        let styleDiv = {
+            display: "flex",
+        }
         var {label,trending,paths} = this.props;
         var trendingBig = trending[0];
         var trendingSmall = trending.slice(1, 5);
         return (
             <>
-                <div >
+                <div>
                     <h3 className="mb-10" >{label}</h3>
                     <Link to={paths}> See more </Link>
-                    <div className="row">
+                    <div  style={styleDiv}>
                         <div className="col-md-4">
-                            <div className="feature">
-                            <Link to={`/product/${trendingBig.id}`}>
+                            {/* <div className="feature">
+                                <Link to={`/product/${trendingBig.id}`}>
                                     <img src={trendingBig.image} alt={trendingBig.name} style={{ width: '100%' }} />
                                 </Link>
                                 <h3>{trendingBig.name} </h3>
@@ -31,11 +40,33 @@ class Thumbnail extends React.Component {
                             <a
                             className="btn btn-primary"
                             onClick={() => this.onAddToCart(trendingBig)}
-                        >Add to Cart</a>
+                            >Add to Cart</a> */}
+                            <ProductDetailsContent 
+                                product = {trendingBig} 
+                                textAlign = "center"
+                                contentDisplay = "block"
+                                contentMargin = ""
+                                contentWidth = "100%"
+                                contentHeight = "50px"
+                                imgWidth = "100%"
+                                imgDivWidth = "100%"
+                                imgDivHeight = {style}
+                                imgDivMargin = ""
+                                h1FontSize = "15px"
+                                h1Height = "30px"
+                                h3FontSize = "14px"
+                                spanFontSize = "14px"
+                                buttonFontSize = "14px"
+                                marginElement = "2px"
+                                showInfo = "false"
+                                onAddToCart={this.props.onAddToCart}
+                            />
                         </div>
-                        <ThumbnailItem trendingSmall={trendingSmall} 
-                        onAddToCart={this.props.onAddToCart}
-                        onChangeMessage={this.props.onChangeMessage}
+                        <ThumbnailItem 
+                            type = {this.props.type}
+                            trendingSmall={trendingSmall} 
+                            onAddToCart={this.props.onAddToCart}
+                            onChangeMessage={this.props.onChangeMessage}
                         />
                     </div>
                 </div>

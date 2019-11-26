@@ -3,6 +3,9 @@ import './layout/TrendingCarousel.css'
 import TrendingCarouselItemContainer from './../containers/TrendingCarouselItemContainer';
 class TrendingCarousel extends React.Component {
     render() {
+        let style = {
+            width: "100%"
+        }
         var disabledPre = false;
         var disabledNext = false;
         if (this.props.index === 0) {
@@ -12,10 +15,10 @@ class TrendingCarousel extends React.Component {
             disabledNext = true;
         }
         return (
-            <div className="container">
+            <div className="container" style = {style}>
                 <div className="row">
                     <div className="col-md-12">
-                        <h2>Trending <b>Products</b></h2>
+                        <h3 class="mb-10">GIẢM GIÁ CỰC MẠNH</h3>
                         <div className="carousel slide" >
                             <TrendingCarouselItemContainer />
                             {/* Carousel controls */}

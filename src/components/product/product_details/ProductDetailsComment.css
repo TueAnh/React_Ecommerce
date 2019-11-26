@@ -9,12 +9,16 @@
     background:white;
     color: #4285F4;
     border: #E1E8ED solid 1px;
-    border-radius: 3px;
+    border-radius: 10px;
+    height: 35px;
+    transition: 0.5s;
 }
 
 .buttonMore:hover {
     background:#4285F4;
     color:white;
-    border: #E1E8ED solid;
+    border: #E1E8ED solid 1px;
+
 }
+
 

@@ -92,8 +92,27 @@ class ProductDetailsContent extends Component {
             margin: this.props.imgDivMargin,
 
         }
-        let hr = <hr style={styleHr} />
+        let styleDISCOUNT = {
+            lineHeight: "25px",
+            borderRadius: "15px",
+            height: "25px",
+            background: "red",
+            color: "white",
+            marginBottom: "10px"
+        }
+        let id = "";
+        let still = "";
         let { product } = this.props
+        let normal = this.setStar(product.rating)
+        let discount = 0;
+        if(this.props.discount != undefined){
+            normal = <div style={styleDISCOUNT}> GIẢM {this.insertDot(this.props.discount)} ₫</div>;
+            discount = parseInt(this.props.discount);
+            id = "h3";
+            still = "CÒN "
+        }
+        
+        let hr = <hr style={styleHr} />
         let description = product.description.split('/');
         return (
             <div className="ProductDetailsContent" style={styleProductDetailsContent}>
@@ -102,9 +121,9 @@ class ProductDetailsContent extends Component {
                 </div>
                 <div className="Info" >
                     <Link to={`/product/${product.id}`}><h1 style={styleH1}>{product.name}</h1></Link>
-                    {this.setStar(product.rating)}
+                    {normal}
                     {hr}
-                    <h3 style={styleH3} >{this.insertDot(product.price)} ₫</h3>
+                    <h3 id={id} style={styleH3} >{still}{this.insertDot(parseInt(product.price) - discount)} ₫</h3>
                     {hr}
                     {
                         description.map((item, key) => {

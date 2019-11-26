@@ -12,6 +12,13 @@ export const reductionIndex = () => {
     }
 }
 
+// export const setIndex = () => {
+//     return {
+//         type: types.SET_INDEX,
+//     }
+// }
+
+
 
 
 //2. Trending Carousel
