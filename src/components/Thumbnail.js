@@ -9,9 +9,12 @@ import ProductDetailsContent from './product/product_details/ProductDetailsConte
 
 class Thumbnail extends React.Component {
     render() {
-        let style = "320px"
+        let styleBot = {
+            margin : "50px 0px"
+        }
+        let style = "350px"
         if(this.props.type == "2"){
-            style = "220px"
+            style = "250px"
         }
         let styleDiv = {
             display: "flex",
@@ -20,7 +23,7 @@ class Thumbnail extends React.Component {
         var trendingBig = trending[0];
         var trendingSmall = trending.slice(1, 5);
         return (
-            <>
+            <div style = {styleBot}>
                 <div>
                     <h3 className="mb-10" >{label}</h3>
                     <Link to={paths}> See more </Link>
@@ -57,7 +60,7 @@ class Thumbnail extends React.Component {
                                 h3FontSize = "14px"
                                 spanFontSize = "14px"
                                 buttonFontSize = "14px"
-                                marginElement = "2px"
+                                marginElement = "3px"
                                 showInfo = "false"
                                 onAddToCart={this.props.onAddToCart}
                             />
@@ -70,7 +73,7 @@ class Thumbnail extends React.Component {
                         />
                     </div>
                 </div>
-            </>
+            </div>
 
         );
     }

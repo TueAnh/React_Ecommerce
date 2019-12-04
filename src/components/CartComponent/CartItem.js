@@ -10,77 +10,72 @@ class CartItem extends React.Component {
         }
     }
     render() {
+        let style = {
+            witdh : "100%"
+        }
         var { item } = this.props;
         var { quantity } = item.quantity > 0 ? item : this.state;
         return (
-            <tr>
-                <th scope="row">
-                    <div className="center-text-1">
+            <>
+                <tr>
+                    <th scope="row"  className="center-text-1" >
+                        <div >
                         <img src={item.product.image}
-
-                            alt={item.product.name} className="img-fluid z-depth-0 imgcart" />
-                    </div>
-
-                </th>
-                <td>
-                    <h5 className="center-text">
-                        <strong>{item.product.name}</strong>
-                    </h5>
-                </td>
-                <td><h4 className="center-text">{this.showFomatNumber(this.showSubTotal(item.product.price,1))}</h4></td>
-
-                <td className="center-on-small-only">
-                    <div className="center-text">
-                        {/* <span className="qty"> {quantity}</span> */}
-                        <div className="btn-group radio-group" data-toggle="buttons">
-                            <label
-                                onClick={() => this.onUpdateQuantity(item.product, item.quantity - 1)}
-                                className=" button1 btn btn-primary btn-rounded waves-effect waves-light"
-                            >
-                                <a>—</a>
-                            </label>
-                            <label
-                                className=" button2 btn btn-rounded waves-effect waves-light"
-                            >
-                                {quantity}
-                            </label>
-                            <label
-                                onClick={() => this.onUpdateQuantity(item.product, item.quantity + 1)}
-                             className=" button1 btn btn-primary btn-rounded waves-effect waves-light"
-                            >
-                                <a>+</a>
-                            </label>
+                            alt={item.product.name}
+                            className="img-fluid z-depth-0 imgcart" />
                         </div>
+            
+                    </th> 
+                    <td className="center-text-2" >
+                        <p>
+                        <strong> {item.product.name} </strong> 
+                        </p> 
+                    </td> 
+                    <td  className="center-text-3"> 
+                        <p> {this.showFomatNumber(this.showSubTotal(item.product.price, 1))} </p>
+                    </td >
+
+                    <td>
+                        <div className="center-text-4">
+                            <div className="btn-group radio-group" data-toggle = "buttons" >
+                                <label onClick={() => this.onUpdateQuantity(item.product, item.quantity - 1)}
+                                        className=" button1 btn btn-primary btn-rounded waves-effect waves-light" >
+                                <span class="glyphicon glyphicon-minus"></span></label> 
+                                <label className=" button2 btn btn-rounded waves-effect waves-light" > {quantity} </label> 
+                                <label onClick={() => this.onUpdateQuantity(item.product, item.quantity + 1)}
+                                        className=" button1 btn btn-primary btn-rounded waves-effect waves-light" >
+                                <span class="glyphicon glyphicon-plus"></span> 
+                                </label> 
+                            </div> 
+                        </div>
+                    </td> 
+                    <td  className="center-text-5"> 
+                        < p > {this.showFomatNumber(this.showSubTotal(item.product.price, item.quantity))} </p>
+                    </td >
+
+                    <td>
+                    <div className="center-text-6" >
+                        <button type="button" className="button waves-effect waves-light" data-toggle = "tooltip"
+                                data-placement = "top"
+                                title = ""
+                                data-original-title = "Remove item"
+                            onClick = {() => this.onDelete(item.product)} >Xoá</button> 
                     </div>
-
-                </td>
-                <td> <h4 className="center-text">{this.showFomatNumber(this.showSubTotal(item.product.price, item.quantity))}</h4></td>
-
-                <td>
-                    <div className="center-text-2">
-                        <button type="button"
-                            className="button waves-effect waves-light"
-                            data-toggle="tooltip" data-placement="top"
-                            title="" data-original-title="Remove item"
-                            onClick={() => this.onDelete(item.product)
-                            }
-                        >
-                            Xoá
-                    </button>
-                    </div>
-
-                </td>
-            </tr>
+                                                                        
+                    </td> 
+                </tr>
+                <hr style = {style}/>
+            </>
         );
     }
     showFomatNumber = (a) => {
         var number = a;
-        number = number.toLocaleString('vi', { style: 'currency', currency: 'VND' });
+        number = number.toLocaleString('vi', {style: 'currency', currency: 'VND' });
         return number;
     }
     onDelete = (product) => {
         // console.log(product);
-        var { onDeleteProductInCart, onChangeMessage } = this.props;
+        var {onDeleteProductInCart, onChangeMessage} = this.props;
         onDeleteProductInCart(product);
         onChangeMessage(Message.MSG_DELETE_PRODUCT_IN_CART_SUCCESS);
     }
@@ -89,14 +84,14 @@ class CartItem extends React.Component {
     }
     onUpdateQuantity = (product, quantity) => {
         if (quantity > 0) {
-            var { onUpdateProductInCart, onChangeMessage } = this.props;
+            var {onUpdateProductInCart, onChangeMessage} = this.props;
             this.setState({
                 quantity: quantity
             });
             onUpdateProductInCart(product, quantity);
-            onChangeMessage(Message.MSG_UPDATE_CART_SUCCESS);
+             onChangeMessage(Message.MSG_UPDATE_CART_SUCCESS);
             console.log(quantity);
         }
+        }
     }
-}
 export default CartItem;

@@ -69,7 +69,7 @@ class TrendingCarouselItem extends React.Component {
                                 contentHeight = "100px"
                                 imgWidth = "100%"
                                 imgDivWidth = "100%"
-                                imgDivHeight = "180px"
+                                imgDivHeight = "auto"
                                 imgDivMargin = ""
                                 h1FontSize = "15px"
                                 h1Height = "30px"

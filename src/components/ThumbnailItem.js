@@ -16,7 +16,7 @@ class ThumbnailItem extends React.Component {
     }
     showThumbItem = (trendingSmall) => {
         let styleH1 = this.props.type == "1"? "30px":"45px";
-        let styleImg = this.props.type == "1"? "150px":"100px";
+        let styleImg = this.props.type == "1"? "180px":"120px";
         return (
             trendingSmall.map((item, index) => {
                 return (

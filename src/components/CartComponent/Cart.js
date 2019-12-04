@@ -4,27 +4,23 @@ import React from 'react';
 import './../layout/CartItem.css';
 class Cart extends React.Component {
     render() {
-        var {children} = this.props;
+        var { children } = this.props;
         return (
             <section className="section">
-                    <div >
-                        <table className="table product-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th><h4 className="center-me">Sản Phẩm</h4></th>
-                                    <th><h4 className="center-me">Giá</h4></th>
-                                    <th><h4 className="center-me">Số Lượng</h4></th>
-                                    <th><h4 className="center-me">Tổng Cộng</h4></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {children}
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+                <thead>
+                    <tr>
+                        <th className="center-me-1"></th>
+                        <th className="center-me-2"><p>Sản Phẩm</p></th>
+                        <th className="center-me-3"><p>Giá</p></th>
+                        <th className="center-me-4"><p>Số Lượng</p></th>
+                        <th className="center-me-5"><p>Tổng Cộng</p></th>
+                        <th className="center-me-6"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {children}
+                </tbody>
+            </section>
         );
     }
 }

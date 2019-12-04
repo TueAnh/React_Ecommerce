@@ -9,9 +9,12 @@ class ProductsShowListProducts extends Component {
     }
 
     showProduct = (products) => {
-        let styleHeight = "220px";
+        let styleHeight = "250px";
         if(this.props.type_id == 2)
-            styleHeight = "150px"
+            styleHeight = "180px"
+        let styleFontHeight = "30px";
+        if(this.props.type_id == 2)
+            styleFontHeight = "45px"
         let rows = []
         let cols = []
         let styleRow = {
@@ -31,7 +34,7 @@ class ProductsShowListProducts extends Component {
                     imgDivHeight={styleHeight}
                     imgDivMargin=""
                     h1FontSize="15px"
-                    h1Height="45px"
+                    h1Height={styleFontHeight}
                     h3FontSize="14px"
                     spanFontSize="14px"
                     buttonFontSize="14px"

@@ -5,7 +5,8 @@ class Carousel extends React.Component {
     interval = 0;
 
     componentDidMount() {
-        this.interval = setInterval (this.controlNext, 10000);
+        if(this.props.check == 0)
+            this.interval = setInterval (this.controlNext, 10000);
     }
 
     componentWillUnmount() {

@@ -30,7 +30,6 @@
 } */
 
 
-
 .ProductDetailsContent h3 {
     /* font-size: 25px; */
     color : red;
@@ -52,12 +51,11 @@
 .ProductDetailsContent img {
     margin: 0px 10px;
     position: inherit;
-}
+}z
 
 
 hr{
-    margin: 10px 0px;
-    width: auto;
+    width: 100%;
 }
 
 
@@ -70,11 +68,11 @@ hr{
 } */
 
 .ProductDetailsContent button {
-    margin: 15px 0px;
+    margin: 0px 0px;
     width: 100%;
     height: 40px;
     font-size: 25px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 0;
 }
 

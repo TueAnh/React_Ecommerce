@@ -33,9 +33,9 @@ class ProductDetailsContent extends Component {
         let priceHaveDot = "";
         while (price > 1000) {
             let temp = (price % 1000);
-            if(temp == 0)
+            if (temp == 0)
                 temp = "000";
-            if(priceHaveDot)
+            if (priceHaveDot)
                 priceHaveDot = temp + "." + priceHaveDot;
             else
                 priceHaveDot = temp;
@@ -60,11 +60,13 @@ class ProductDetailsContent extends Component {
             margin: this.props.marginElement
 
         };
-
+        var x = window.screen.height;
+        console.log(x);
         let styleH1 = {
             fontSize: this.props.h1FontSize,
             height: this.props.h1Height,
-            margin: this.props.marginElement
+            margin: this.props.marginElement,
+            margin: "1px"
         };
 
         let styleH3 = {
@@ -74,12 +76,16 @@ class ProductDetailsContent extends Component {
         };
 
         let styleSpan = {
+            padding: "5px",
             fontSize: this.props.spanFontSize,
             margin: this.props.marginElement
         }
 
         let styleHr = {
-            margin: this.props.marginElement
+            width: "auto",
+            padding: "5px",
+            margin: "0px"
+
         }
 
         let styleButton = {
@@ -102,18 +108,18 @@ class ProductDetailsContent extends Component {
         }
         let id = "";
         let still = "";
-        let { product } = this.props
-        let normal = this.setStar(product.rating)
+        let { product } = this.props;
+        let hr = <hr style={styleHr} />
+        let normal = this.setStar(product.rating);
         let discount = 0;
-        if(this.props.discount != undefined){
+        if (this.props.discount != undefined) {
             normal = <div style={styleDISCOUNT}> GIẢM {this.insertDot(this.props.discount)} ₫</div>;
             discount = parseInt(this.props.discount);
             id = "h3";
             still = "CÒN "
         }
-        
-        let hr = <hr style={styleHr} />
         let description = product.description.split('/');
+        console.log(description)
         return (
             <div className="ProductDetailsContent" style={styleProductDetailsContent}>
                 <div style={styleImgDiv} >
@@ -128,12 +134,17 @@ class ProductDetailsContent extends Component {
                     {
                         description.map((item, key) => {
                             if (item != "" && this.props.showInfo == "true")
-                                return <span style={styleSpan} key={key}>{item}{hr}</span>
+                                return (
+                                    <>
+                                        <span style={styleSpan} key={key}>{item}</span>
+                                        {hr}
+                                    </>
+                                )
                             return ""
                         }
                         )
                     }
-                    <button style={styleButton} onClick={() => {this.props.onAddToCart(this.props.product,1)}}><span class="glyphicon glyphicon-shopping-cart"></span> MUA NGAY</button>
+                    <button style={styleButton} onClick={() => { this.props.onAddToCart(this.props.product, 1) }}><span class="glyphicon glyphicon-shopping-cart"></span> MUA NGAY</button>
                 </div>
             </div>
         )

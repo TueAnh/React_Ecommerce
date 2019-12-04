@@ -5,42 +5,41 @@ import Cart from './../components/CartComponent/Cart'
 import * as Message from './../constants/Message'
 import CartItem from '../components/CartComponent/CartItem';
 import CartResult from '../components/CartComponent/CartResult';
-import {actDeleteProductInCart, actChangeMessage,actUpdateProductInCart} from './../actions/index';
+import { actDeleteProductInCart, actChangeMessage, actUpdateProductInCart } from './../actions/index';
 import CartResultContainer from './CartResultContainer';
 // import message from '../reducers/messege';
 class CartContainer extends React.Component {
     render() {
-        var  {cart} = this.props;
+        var { cart } = this.props;
         return (
             <Cart>
                 {this.showCartItem(cart)}
-                {/* tính tông tiền */}
-                <CartResultContainer/>
+                <CartResultContainer />
             </Cart>
         );
     }
-    showCartItem = (cart) =>{
-        var {onDeleteProductInCart,onChangeMessage,onUpdateProductInCart} = this.props;
-        var result = <tr>
-            <td><h3>{Message.MSG_CART_EMPTY}</h3></td>
-        </tr>;
-        if(cart.length > 0){
-            result = cart.map((item,index) =>{
+    showCartItem = (cart) => {
+        var { onDeleteProductInCart, onChangeMessage, onUpdateProductInCart } = this.props;
+        var result = "";
+        if (cart.length > 0) {
+            result = cart.map((item, index) => {
                 return (
-                    <CartItem
-                    key ={index}
-                    item={item}
-                    index = {index}
-                    onDeleteProductInCart = {onDeleteProductInCart}
-                    onChangeMessage = {onChangeMessage}
-                    onUpdateProductInCart = {onUpdateProductInCart}
-                    />
+                    <>
+                        <CartItem
+                            key={index}
+                            item={item}
+                            index={index}
+                            onDeleteProductInCart={onDeleteProductInCart}
+                            onChangeMessage={onChangeMessage}
+                            onUpdateProductInCart={onUpdateProductInCart}
+                        />
+                    </>
                 );
             });
         }
         return result;
     }
-    
+
 }
 CartContainer.propTypes = {
     cart: PropTypes.arrayOf(PropTypes.shape({
@@ -58,22 +57,22 @@ CartContainer.propTypes = {
     })).isRequired
 }
 const mapStateToProps = state => {
-    return{
-        cart : state.cart
+    return {
+        cart: state.cart
     }
 }
-const mapDispatchToProps = (dispatch,props) => {
+const mapDispatchToProps = (dispatch, props) => {
     return {
-        onDeleteProductInCart : (product) => {
+        onDeleteProductInCart: (product) => {
             dispatch(actDeleteProductInCart(product));
         },
-        onChangeMessage : (message) => {
+        onChangeMessage: (message) => {
             dispatch(actChangeMessage(message));
         },
-        onUpdateProductInCart : (product,quantity) => {
-            dispatch(actUpdateProductInCart(product,quantity));
+        onUpdateProductInCart: (product, quantity) => {
+            dispatch(actUpdateProductInCart(product, quantity));
         },
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(CartContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(CartContainer);

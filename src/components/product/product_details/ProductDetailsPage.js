@@ -30,8 +30,8 @@ class ProductDetailsPage extends Component {
                         contentDisplay = "flex"
                         contentWidth = "100%"
                         contentMargin = "10px"
-                        imgHeight = "auto"
-                        imgWidth = "100%"
+                        imgHeight = "360px"
+                        imgWidth = "auto"
                         imgDivWidth = "60%"
                         imgDivHeight =""
                         imgDivMargin = "10px"
@@ -39,7 +39,7 @@ class ProductDetailsPage extends Component {
                         h1Height = ""
                         h3FontSize = "25px"
                         spanFontSize = "15px"
-                        marginElement = "5px"
+                        marginElement = "1px"
                         showInfo = "true"
                         onAddToCart={this.props.onAddToCart}
                     />
@@ -68,7 +68,7 @@ class ProductDetailsPage extends Component {
                                 contentHeight = "100px"
                                 imgWidth = "100%"
                                 imgDivWidth = "100%"
-                                imgDivHeight = "300px"
+                                imgDivHeight = "auto"
                                 imgDivMargin = ""
                                 h1FontSize = "15px"
                                 h1Height = "30px"

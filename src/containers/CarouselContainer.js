@@ -14,9 +14,10 @@ class CarouselContainer extends React.Component {
                         { image: "https://cdn.tgdd.vn/2019/11/banner/thu-cu-note10-800-300-800x300-(6).png", id: 23 },
                         { image: "https://cdn.tgdd.vn/2019/11/banner/800-300-800x300-(10).png", id: 12 },
                         ]
-        var { carousel } = this.props
+        var { carousel,check } = this.props
         return (
             <Carousel
+                check={check}
                 index={carousel}
                 increase={this.controlImageNext}
                 reduction={this.controlImagePre}
@@ -50,7 +51,8 @@ class CarouselContainer extends React.Component {
 }
 const mapStateToProps = (state) => {
     return {
-        carousel: state.carousel,
+        check: state.carousel[0],
+        carousel: state.carousel[1],
 
         products: state.products,
 

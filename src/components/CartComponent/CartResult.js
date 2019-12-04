@@ -30,28 +30,36 @@ class CartResult extends React.Component {
             total: total,
             status: "accept"
         };
+        let style = {
+            float: "right",
+            margin : "20px",
+            color: "red",
+            fontSize: "30px"
+        }
 
         return (
-            <tr>
-                <td colSpan="3"></td>
-                <td>
-                    <h4>
-                        <strong>Tổng Tiền</strong>
-                    </h4>
-                </td>
-                <td>
-                    <h4>
-                        <strong>{this.showFomatNumber(total)}</strong>
-                    </h4>
-                </td>
-                <td colSpan="3">
-                    <button type="button" className="btn btn-primary waves-effect waves-light"
-                        onClick={() => this.onCheckout(user, _order,cart)}
-                    >
-                        Complete purchase
-                    </button>
-                </td>
-            </tr>
+            <>
+                <tr>
+                    <td colSpan="3"></td>
+                    <td>
+                        <h4>
+                            <strong>Tổng Tiền </strong>
+                        </h4>
+                    </td>
+                    <td>
+                        <h4 style = {style}>
+                            <strong>{this.showFomatNumber(total)}</strong>
+                        </h4>
+                    </td>
+                    <td colSpan="3">
+                        <button type="button" className="btn btn-primary waves-effect waves-light"
+                            onClick={() => this.onCheckout(user, _order,cart)}
+                        >
+                            Complete purchase
+                        </button>
+                    </td>
+                </tr>
+            </>    
         );
     }
     showTotalAmount = (cart) => {

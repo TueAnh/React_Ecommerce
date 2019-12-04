@@ -7,18 +7,19 @@ import MessageContainer from '../containers/MessageContainer';
 import TrendingCarouselContainer from './../containers/TrendingCarouselContainer'
 class CartPage extends React.Component {
     render() {
+        let style = {
+            width : "100%"
+        }
         return (
             <div>
-                <main id="mainContainer">
-                    <div className="container">
-                        {/* <!-- Products --> */}
-                        {/* <ProductsContainer/> */}
-                        {/* <TrendingCarouselContainer /> */}
-                        {/* <!-- Message --> */}
-                        <MessageContainer />
-                        {/* <!-- Cart --> */}
-                        <CartContainer />
-                    </div>
+                <main style={style}>
+                    {/* <!-- Products --> */}
+                    {/* <ProductsContainer/> */}
+                    {/* <TrendingCarouselContainer /> */}
+                    {/* <!-- Message --> */}
+                    <MessageContainer />
+                    {/* <!-- Cart --> */}
+                    <CartContainer />
                 </main>
                 {/* <!-- Footer --> */}
                 {/* <Footer /> */}
