@@ -20,8 +20,7 @@ class AdminPage extends React.Component {
                                 <h2><Link to="/admin">LOGO</Link></h2>
                                 <ul className="nav nav-pills nav-stacked">
                                     <li className="active"><Link to="/admin/dashboard">Dashboard</Link></li>
-                                    <li><Link to="/admin/chart">Chart</Link></li>
-                                    <li><a href="#section3">Log Out</a></li>
+                                    {/* <li><Link to="/admin/chart">Chart</Link></li> */}
                                 </ul><br />
                             </div>
                             <br />

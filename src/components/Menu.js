@@ -105,7 +105,7 @@ class Menu extends React.Component {
         if (results) {
             if (Object.keys(results).length && results.length) {
                 return (
-                    <div className ="live">
+                    <div className ="live" >
                         <ul className ="live">
                             {results.map((result) => {
                                 return (
@@ -125,25 +125,40 @@ class Menu extends React.Component {
         }
     };
     render() {
+        let style = {
+            display: "inline-block",
+            width: "100%",
+        }
+        let styleP = {
+            marginLeft: "20px",
+            marginTop: "15px",
+        }
+        let styleNav = {
+            marginRight: "0px",
+        }
+        let styleNavv = {
+            marginTop: "0px ",
+            marginBottom: "0px"
+        }
         var { user, authentication } = this.props;
         const { query } = this.state;
         const { message, loading } = this.state;
         return (
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
-                    <div className="navbar-header">
+                    <div className="navbar-header" style = {style}>
                         <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span className="sr-only">Toggle navigation</span>
                             <span className="icon-bar" />
                             <span className="icon-bar" />
                             <span className="icon-bar" />
                         </button>
-                        <ul className='collapse navbar-collapse navbar-ex1-collapse' >
+                        <ul className='collapse navbar-collapse navbar-ex1-collapse' style = {styleNavv}>
                             <ul className="nav navbar-nav">
                                 {this.showMenu(menus)}
                                 {user.isAdmin === 1 && <li><Link to='/admin' exact >Admin</Link></li>}
                             </ul>
-                            <form className="navbar-form navbar-left" role="search">
+                            <form className="navbar-form navbar-left" role="search" style = {styleNavv}>
                                 <div className="form-group">
                                     <input type="text" className="form-control" placeholder="Product, catagories ... "
                                         type="text"
@@ -157,7 +172,7 @@ class Menu extends React.Component {
 
                             </form>
 
-                            <ul className="nav navbar-nav navbar-right">
+                            <ul className="nav navbar-nav navbar-right" style ={styleNav}>
                                 {authentication === false &&
                                     <>
                                         <li><Link to="/Register"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
@@ -166,11 +181,12 @@ class Menu extends React.Component {
                                 }
 
                                 <li>
-                                    <button className="btn"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" className="avatarIcon" onClick={this.onLogOut} />
-                                    </button>
+                                    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" className="avatarIcon" onClick={this.onLogOut} 
+                                    width = "50px"/>
+                                    
                                 </li>
                                 <li>
-                                    <p >{user.email}</p>
+                                    <p style={styleP}>{user.email}</p>
                                 </li>
                             </ul>
                         </ul>

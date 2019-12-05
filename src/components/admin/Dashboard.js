@@ -7,10 +7,6 @@ class Dashboard extends React.Component {
         return (
             <div className="col-sm-9">
                 {console.log("dashboard")};
-                <div className="well">
-                    <h4>Dashboard</h4>
-                    <p>Some text..</p>
-                </div>
                 <div className="row">
                     <div className="col-sm-3">
                         <div className="well">
@@ -42,42 +38,6 @@ class Dashboard extends React.Component {
                             <p><b>{lengthUsers}</b> Items</p>
                             <Link to="/admin/dashboard/Users">View Details <span className="glyphicon">&#xe032;</span>
                             </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-sm-4">
-                        <div className="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div className="col-sm-4">
-                        <div className="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div className="col-sm-4">
-                        <div className="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-8">
-                        <div className="well">
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div className="col-sm-4">
-                        <div className="well">
-                            <p>Text</p>
                         </div>
                     </div>
                 </div>
